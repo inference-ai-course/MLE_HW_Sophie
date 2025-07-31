@@ -1,0 +1,27 @@
+### 核心环境
+
+- __Python__: 3.12.7 (packaged by Anaconda, Inc.)
+- __操作系统__: macOS
+- __Tesseract OCR__: 5.5.1 (with leptonica-1.85.0)
+
+### Python依赖库版本
+
+- __pytesseract__: 0.3.13 (Python的Tesseract包装器)
+- __pdf2image__: 1.17.0 (PDF转图像库)
+- __Pillow__: 11.0.0 (图像处理库)
+- __opencv-python__: 4.11.0.86 (计算机视觉库，用于图像预处理)
+- __numpy__: 1.26.4 (数值计算库)
+- __requests__: >=2.25.0 (HTTP请求库，用于下载示例PDF)
+
+### 系统依赖
+
+- __poppler-utils__: 系统级依赖，pdf2image需要
+
+- __Tesseract OCR引擎__: 5.5.1，包含以下组件：
+
+  - leptonica: 1.85.0
+  - libgif: 5.2.2
+  - libjpeg: 8d (libjpeg-turbo 3.0.4)
+  - libpng: 1.6.49
+  - libtiff: 4.7.0
+  - zlib: 1.2.12
