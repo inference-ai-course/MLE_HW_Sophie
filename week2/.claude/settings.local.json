@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/pc/Documents/cursor/ml course/.conda/bin/python -c \"\nfrom PIL import Image\nimport pytesseract\n\n# Load the image\nimage = Image.open(''/Users/pc/Downloads/week1.2.png'')\n\n# Try Spanish OCR\ntry:\n    text_spanish = pytesseract.image_to_string(image, lang=''spa'')\n    print(''西班牙语OCR结果:'')\n    print(text_spanish[:200])\nexcept Exception as e:\n    print(f''西班牙语OCR失败: {e}'')\n\n# Check available languages\ntry:\n    languages = pytesseract.get_languages(config='''')\n    print(''\\n可用的Tesseract语言包:'')\n    for lang in languages:\n        print(f''  - {lang}'')\nexcept Exception as e:\n    print(f''获取语言列表失败: {e}'')\n\")"
+    ],
+    "deny": []
+  }
+}
