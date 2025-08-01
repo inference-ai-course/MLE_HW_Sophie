@@ -1,0 +1,33 @@
+# 自动语音识别系统依赖包
+# Automatic Speech Recognition System Dependencies
+
+# 核心ASR和下载工具
+yt-dlp>=2023.7.6              # YouTube音频/视频下载
+openai-whisper>=20231117      # OpenAI Whisper语音识别模型
+torch>=2.0.0                  # PyTorch深度学习框架（Whisper依赖）
+
+# OCR文本提取
+pytesseract>=0.3.13           # Tesseract OCR Python包装器
+Pillow>=11.0.0               # 图像处理库
+
+# 计算机视觉和图像处理
+opencv-python>=4.11.0.86     # 计算机视觉库，用于视频帧提取和图像预处理
+numpy>=1.26.4                # 数值计算库
+
+# 音频处理
+ffmpeg-python>=0.2.0         # FFmpeg Python绑定（音频转换和处理）
+
+# 系统和实用工具
+requests>=2.25.0             # HTTP请求库
+tqdm>=4.65.0                 # 进度条显示
+psutil>=5.9.0                # 系统资源监控
+
+# 可选依赖（提升性能）
+# GPU加速支持（如果有NVIDIA GPU）
+# torch-audio>=2.0.0         # 音频处理GPU加速
+# torchaudio>=2.0.0           # PyTorch音频扩展
+
+# 注意：
+# 1. 需要系统级安装 Tesseract OCR: brew install tesseract (macOS)
+# 2. 需要系统级安装 FFmpeg: brew install ffmpeg (macOS) 
+# 3. 对于Linux: sudo apt-get install tesseract-ocr ffmpeg

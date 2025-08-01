@@ -1,0 +1,745 @@
+2025-07-31 16:58:10,878 - INFO - 加载Whisper模型: base
+2025-07-31 16:58:13,881 - INFO - 临时文件目录: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2
+2025-07-31 16:58:13,881 - INFO - 开始批量处理 10 个视频
+2025-07-31 16:58:13,881 - INFO - 处理第 1/10 个视频: https://www.youtube.com/watch?v=aircAruvnKk  # 1. But what is a neural network? | Deep learning chapter 1
+2025-07-31 16:58:13,881 - INFO - 开始处理视频: talk_01
+2025-07-31 16:58:13,916 - INFO - 下载音频: https://www.youtube.com/watch?v=aircAruvnKk  # 1. But what is a neural network? | Deep learning chapter 1
+2025-07-31 16:58:25,906 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01.wav
+2025-07-31 16:58:25,907 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01.wav
+2025-07-31 16:58:46,534 - INFO - 转录完成: talk_01, 检测语言: en
+2025-07-31 16:58:46,571 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=aircAruvnKk  # 1. But what is a neural network? | Deep learning chapter 1
+2025-07-31 16:58:51,854 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0000.png
+2025-07-31 16:58:52,006 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0001.png
+2025-07-31 16:58:52,160 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0002.png
+2025-07-31 16:58:52,316 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0003.png
+2025-07-31 16:58:52,475 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0004.png
+2025-07-31 16:58:52,631 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0005.png
+2025-07-31 16:58:52,782 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0006.png
+2025-07-31 16:58:52,934 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0007.png
+2025-07-31 16:58:53,087 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0008.png
+2025-07-31 16:58:53,244 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0009.png
+2025-07-31 16:58:53,404 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0010.png
+2025-07-31 16:58:53,562 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0011.png
+2025-07-31 16:58:53,713 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0012.png
+2025-07-31 16:58:53,870 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0013.png
+2025-07-31 16:58:54,024 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0014.png
+2025-07-31 16:58:54,178 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0015.png
+2025-07-31 16:58:54,330 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0016.png
+2025-07-31 16:58:54,483 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0017.png
+2025-07-31 16:58:54,639 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0018.png
+2025-07-31 16:58:54,793 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0019.png
+2025-07-31 16:58:54,948 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0020.png
+2025-07-31 16:58:55,100 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0021.png
+2025-07-31 16:58:55,251 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0022.png
+2025-07-31 16:58:55,407 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0023.png
+2025-07-31 16:58:55,556 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0024.png
+2025-07-31 16:58:55,708 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0025.png
+2025-07-31 16:58:55,864 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0026.png
+2025-07-31 16:58:56,014 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0027.png
+2025-07-31 16:58:56,166 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0028.png
+2025-07-31 16:58:56,321 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0029.png
+2025-07-31 16:58:56,497 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0030.png
+2025-07-31 16:58:56,650 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0031.png
+2025-07-31 16:58:56,807 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0032.png
+2025-07-31 16:58:56,970 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0033.png
+2025-07-31 16:58:57,125 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0034.png
+2025-07-31 16:58:57,284 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0035.png
+2025-07-31 16:58:57,437 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0036.png
+2025-07-31 16:58:57,589 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0037.png
+2025-07-31 16:58:57,637 - INFO - 总共提取 38 帧
+2025-07-31 16:58:57,832 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0001.png -> 4 字符
+2025-07-31 16:58:57,927 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0002.png -> 34 字符
+2025-07-31 16:58:58,034 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0003.png -> 46 字符
+2025-07-31 16:58:58,168 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0004.png -> 57 字符
+2025-07-31 16:58:58,290 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0005.png -> 76 字符
+2025-07-31 16:58:58,386 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0006.png -> 34 字符
+2025-07-31 16:58:58,524 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0007.png -> 88 字符
+2025-07-31 16:58:58,691 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0009.png -> 15 字符
+2025-07-31 16:58:58,860 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0011.png -> 6 字符
+2025-07-31 16:58:58,943 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0012.png -> 8 字符
+2025-07-31 16:58:59,055 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0013.png -> 45 字符
+2025-07-31 16:58:59,139 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0014.png -> 2 字符
+2025-07-31 16:58:59,223 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0015.png -> 12 字符
+2025-07-31 16:58:59,417 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0017.png -> 51 字符
+2025-07-31 16:58:59,587 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0018.png -> 140 字符
+2025-07-31 16:58:59,712 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0019.png -> 103 字符
+2025-07-31 16:58:59,816 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0020.png -> 40 字符
+2025-07-31 16:58:59,983 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0021.png -> 111 字符
+2025-07-31 16:59:00,105 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0022.png -> 83 字符
+2025-07-31 16:59:00,257 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0023.png -> 131 字符
+2025-07-31 16:59:00,363 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0024.png -> 56 字符
+2025-07-31 16:59:00,499 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0025.png -> 83 字符
+2025-07-31 16:59:00,606 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0026.png -> 34 字符
+2025-07-31 16:59:00,709 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0027.png -> 29 字符
+2025-07-31 16:59:00,806 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0028.png -> 31 字符
+2025-07-31 16:59:00,892 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0029.png -> 13 字符
+2025-07-31 16:59:01,070 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0031.png -> 36 字符
+2025-07-31 16:59:01,166 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0032.png -> 31 字符
+2025-07-31 16:59:01,269 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0033.png -> 38 字符
+2025-07-31 16:59:01,501 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0034.png -> 353 字符
+2025-07-31 16:59:01,584 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0035.png -> 14 字符
+2025-07-31 16:59:01,700 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0036.png -> 62 字符
+2025-07-31 16:59:01,785 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_01_frame_0037.png -> 13 字符
+2025-07-31 16:59:01,785 - INFO - 视频处理完成: talk_01
+2025-07-31 16:59:01,785 - INFO - 视频 talk_01 处理成功
+2025-07-31 16:59:01,786 - INFO - 处理第 2/10 个视频: https://www.youtube.com/watch?v=IHZwWFHWa-w  # 2. Gradient descent, how neural networks learn | Chapter 2
+2025-07-31 16:59:01,786 - INFO - 开始处理视频: talk_02
+2025-07-31 16:59:01,806 - INFO - 下载音频: https://www.youtube.com/watch?v=IHZwWFHWa-w  # 2. Gradient descent, how neural networks learn | Chapter 2
+2025-07-31 16:59:06,671 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02.wav
+2025-07-31 16:59:06,671 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02.wav
+2025-07-31 16:59:28,756 - INFO - 转录完成: talk_02, 检测语言: en
+2025-07-31 16:59:28,780 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=IHZwWFHWa-w  # 2. Gradient descent, how neural networks learn | Chapter 2
+2025-07-31 16:59:34,743 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0000.png
+2025-07-31 16:59:34,895 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0001.png
+2025-07-31 16:59:35,051 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0002.png
+2025-07-31 16:59:35,208 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0003.png
+2025-07-31 16:59:35,362 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0004.png
+2025-07-31 16:59:35,517 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0005.png
+2025-07-31 16:59:35,670 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0006.png
+2025-07-31 16:59:35,825 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0007.png
+2025-07-31 16:59:35,982 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0008.png
+2025-07-31 16:59:36,137 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0009.png
+2025-07-31 16:59:36,292 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0010.png
+2025-07-31 16:59:36,443 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0011.png
+2025-07-31 16:59:36,598 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0012.png
+2025-07-31 16:59:36,753 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0013.png
+2025-07-31 16:59:36,910 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0014.png
+2025-07-31 16:59:37,067 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0015.png
+2025-07-31 16:59:37,221 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0016.png
+2025-07-31 16:59:37,377 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0017.png
+2025-07-31 16:59:37,533 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0018.png
+2025-07-31 16:59:37,688 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0019.png
+2025-07-31 16:59:37,843 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0020.png
+2025-07-31 16:59:38,014 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0021.png
+2025-07-31 16:59:38,167 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0022.png
+2025-07-31 16:59:38,324 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0023.png
+2025-07-31 16:59:38,478 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0024.png
+2025-07-31 16:59:38,634 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0025.png
+2025-07-31 16:59:38,788 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0026.png
+2025-07-31 16:59:38,940 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0027.png
+2025-07-31 16:59:39,096 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0028.png
+2025-07-31 16:59:39,251 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0029.png
+2025-07-31 16:59:39,407 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0030.png
+2025-07-31 16:59:39,564 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0031.png
+2025-07-31 16:59:39,721 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0032.png
+2025-07-31 16:59:39,875 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0033.png
+2025-07-31 16:59:40,030 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0034.png
+2025-07-31 16:59:40,200 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0035.png
+2025-07-31 16:59:40,362 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0036.png
+2025-07-31 16:59:40,518 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0037.png
+2025-07-31 16:59:40,675 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0038.png
+2025-07-31 16:59:40,829 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0039.png
+2025-07-31 16:59:40,985 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0040.png
+2025-07-31 16:59:41,135 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0041.png
+2025-07-31 16:59:41,151 - INFO - 总共提取 42 帧
+2025-07-31 16:59:41,309 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0001.png -> 7 字符
+2025-07-31 16:59:41,463 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0002.png -> 137 字符
+2025-07-31 16:59:41,557 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0003.png -> 15 字符
+2025-07-31 16:59:41,660 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0004.png -> 48 字符
+2025-07-31 16:59:41,792 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0005.png -> 89 字符
+2025-07-31 16:59:41,927 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0006.png -> 79 字符
+2025-07-31 16:59:42,017 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0007.png -> 18 字符
+2025-07-31 16:59:42,191 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0008.png -> 163 字符
+2025-07-31 16:59:42,372 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0009.png -> 173 字符
+2025-07-31 16:59:42,516 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0010.png -> 121 字符
+2025-07-31 16:59:42,627 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0011.png -> 35 字符
+2025-07-31 16:59:42,734 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0012.png -> 64 字符
+2025-07-31 16:59:42,816 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0013.png -> 14 字符
+2025-07-31 16:59:42,906 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0014.png -> 6 字符
+2025-07-31 16:59:42,996 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0015.png -> 19 字符
+2025-07-31 16:59:43,096 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0016.png -> 35 字符
+2025-07-31 16:59:43,223 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0017.png -> 81 字符
+2025-07-31 16:59:43,351 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0018.png -> 91 字符
+2025-07-31 16:59:43,472 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0019.png -> 75 字符
+2025-07-31 16:59:43,567 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0020.png -> 20 字符
+2025-07-31 16:59:43,699 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0021.png -> 58 字符
+2025-07-31 16:59:43,788 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0022.png -> 20 字符
+2025-07-31 16:59:43,928 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0023.png -> 87 字符
+2025-07-31 16:59:44,010 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0024.png -> 5 字符
+2025-07-31 16:59:44,184 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0025.png -> 201 字符
+2025-07-31 16:59:44,338 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0026.png -> 130 字符
+2025-07-31 16:59:44,425 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0027.png -> 8 字符
+2025-07-31 16:59:44,570 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0028.png -> 102 字符
+2025-07-31 16:59:44,672 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0029.png -> 44 字符
+2025-07-31 16:59:44,780 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0030.png -> 44 字符
+2025-07-31 16:59:44,865 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0031.png -> 5 字符
+2025-07-31 16:59:45,056 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0032.png -> 183 字符
+2025-07-31 16:59:45,158 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0033.png -> 39 字符
+2025-07-31 16:59:45,244 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0034.png -> 14 字符
+2025-07-31 16:59:45,339 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0035.png -> 43 字符
+2025-07-31 16:59:45,520 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0037.png -> 30 字符
+2025-07-31 16:59:45,674 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0038.png -> 118 字符
+2025-07-31 16:59:45,826 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0039.png -> 114 字符
+2025-07-31 16:59:46,080 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0040.png -> 387 字符
+2025-07-31 16:59:46,164 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_02_frame_0041.png -> 13 字符
+2025-07-31 16:59:46,164 - INFO - 视频处理完成: talk_02
+2025-07-31 16:59:46,164 - INFO - 视频 talk_02 处理成功
+2025-07-31 16:59:46,164 - INFO - 处理第 3/10 个视频: https://www.youtube.com/watch?v=Ilg3gGewQ5U  # 3. Backpropagation, intuitively | Chapter 3
+2025-07-31 16:59:46,164 - INFO - 开始处理视频: talk_03
+2025-07-31 16:59:46,184 - INFO - 下载音频: https://www.youtube.com/watch?v=Ilg3gGewQ5U  # 3. Backpropagation, intuitively | Chapter 3
+2025-07-31 16:59:50,030 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03.wav
+2025-07-31 16:59:50,030 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03.wav
+2025-07-31 17:00:03,858 - INFO - 转录完成: talk_03, 检测语言: en
+2025-07-31 17:00:03,881 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=Ilg3gGewQ5U  # 3. Backpropagation, intuitively | Chapter 3
+2025-07-31 17:00:09,580 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0000.png
+2025-07-31 17:00:09,737 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0001.png
+2025-07-31 17:00:09,895 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0002.png
+2025-07-31 17:00:10,053 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0003.png
+2025-07-31 17:00:10,210 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0004.png
+2025-07-31 17:00:10,365 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0005.png
+2025-07-31 17:00:10,521 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0006.png
+2025-07-31 17:00:10,680 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0007.png
+2025-07-31 17:00:10,839 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0008.png
+2025-07-31 17:00:11,000 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0009.png
+2025-07-31 17:00:11,156 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0010.png
+2025-07-31 17:00:11,310 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0011.png
+2025-07-31 17:00:11,464 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0012.png
+2025-07-31 17:00:11,620 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0013.png
+2025-07-31 17:00:11,774 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0014.png
+2025-07-31 17:00:11,932 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0015.png
+2025-07-31 17:00:12,087 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0016.png
+2025-07-31 17:00:12,241 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0017.png
+2025-07-31 17:00:12,394 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0018.png
+2025-07-31 17:00:12,548 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0019.png
+2025-07-31 17:00:12,704 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0020.png
+2025-07-31 17:00:12,861 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0021.png
+2025-07-31 17:00:13,012 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0022.png
+2025-07-31 17:00:13,167 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0023.png
+2025-07-31 17:00:13,325 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0024.png
+2025-07-31 17:00:13,480 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0025.png
+2025-07-31 17:00:13,566 - INFO - 总共提取 26 帧
+2025-07-31 17:00:13,817 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0002.png -> 13 字符
+2025-07-31 17:00:13,933 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0003.png -> 57 字符
+2025-07-31 17:00:14,092 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0004.png -> 132 字符
+2025-07-31 17:00:14,236 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0005.png -> 104 字符
+2025-07-31 17:00:14,359 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0006.png -> 70 字符
+2025-07-31 17:00:14,530 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0007.png -> 134 字符
+2025-07-31 17:00:14,636 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0008.png -> 35 字符
+2025-07-31 17:00:14,768 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0009.png -> 55 字符
+2025-07-31 17:00:14,883 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0010.png -> 47 字符
+2025-07-31 17:00:15,013 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0011.png -> 84 字符
+2025-07-31 17:00:15,150 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0012.png -> 104 字符
+2025-07-31 17:00:15,289 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0013.png -> 102 字符
+2025-07-31 17:00:15,432 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0014.png -> 123 字符
+2025-07-31 17:00:15,552 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0015.png -> 34 字符
+2025-07-31 17:00:15,738 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0016.png -> 180 字符
+2025-07-31 17:00:15,838 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0017.png -> 46 字符
+2025-07-31 17:00:15,941 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0018.png -> 37 字符
+2025-07-31 17:00:16,156 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0020.png -> 56 字符
+2025-07-31 17:00:16,281 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0021.png -> 62 字符
+2025-07-31 17:00:16,478 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0022.png -> 153 字符
+2025-07-31 17:00:16,722 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0023.png -> 274 字符
+2025-07-31 17:00:16,842 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0024.png -> 60 字符
+2025-07-31 17:00:16,931 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_03_frame_0025.png -> 13 字符
+2025-07-31 17:00:16,932 - INFO - 视频处理完成: talk_03
+2025-07-31 17:00:16,932 - INFO - 视频 talk_03 处理成功
+2025-07-31 17:00:16,932 - INFO - 处理第 4/10 个视频: https://www.youtube.com/watch?v=tIeHLnjs5U8  # 4. Backpropagation calculus | Chapter 4
+2025-07-31 17:00:16,932 - INFO - 开始处理视频: talk_04
+2025-07-31 17:00:16,952 - INFO - 下载音频: https://www.youtube.com/watch?v=tIeHLnjs5U8  # 4. Backpropagation calculus | Chapter 4
+2025-07-31 17:00:21,341 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04.wav
+2025-07-31 17:00:21,341 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04.wav
+2025-07-31 17:00:31,905 - INFO - 转录完成: talk_04, 检测语言: en
+2025-07-31 17:00:31,928 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=tIeHLnjs5U8  # 4. Backpropagation calculus | Chapter 4
+2025-07-31 17:00:34,883 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0000.png
+2025-07-31 17:00:35,036 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0001.png
+2025-07-31 17:00:35,184 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0002.png
+2025-07-31 17:00:35,329 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0003.png
+2025-07-31 17:00:35,478 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0004.png
+2025-07-31 17:00:35,630 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0005.png
+2025-07-31 17:00:35,784 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0006.png
+2025-07-31 17:00:35,938 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0007.png
+2025-07-31 17:00:36,093 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0008.png
+2025-07-31 17:00:36,251 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0009.png
+2025-07-31 17:00:36,406 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0010.png
+2025-07-31 17:00:36,560 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0011.png
+2025-07-31 17:00:36,714 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0012.png
+2025-07-31 17:00:36,867 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0013.png
+2025-07-31 17:00:37,020 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0014.png
+2025-07-31 17:00:37,169 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0015.png
+2025-07-31 17:00:37,319 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0016.png
+2025-07-31 17:00:37,469 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0017.png
+2025-07-31 17:00:37,620 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0018.png
+2025-07-31 17:00:37,773 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0019.png
+2025-07-31 17:00:37,925 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0020.png
+2025-07-31 17:00:38,011 - INFO - 总共提取 21 帧
+2025-07-31 17:00:38,222 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0001.png -> 71 字符
+2025-07-31 17:00:38,316 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0002.png -> 26 字符
+2025-07-31 17:00:38,405 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0003.png -> 23 字符
+2025-07-31 17:00:38,525 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0004.png -> 58 字符
+2025-07-31 17:00:38,671 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0005.png -> 82 字符
+2025-07-31 17:00:38,822 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0006.png -> 119 字符
+2025-07-31 17:00:39,015 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0007.png -> 170 字符
+2025-07-31 17:00:39,166 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0008.png -> 95 字符
+2025-07-31 17:00:39,312 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0009.png -> 85 字符
+2025-07-31 17:00:39,470 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0010.png -> 106 字符
+2025-07-31 17:00:39,620 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0011.png -> 93 字符
+2025-07-31 17:00:39,790 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0012.png -> 124 字符
+2025-07-31 17:00:39,958 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0013.png -> 125 字符
+2025-07-31 17:00:40,050 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0014.png -> 21 字符
+2025-07-31 17:00:40,174 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0015.png -> 75 字符
+2025-07-31 17:00:40,320 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0016.png -> 106 字符
+2025-07-31 17:00:40,443 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0017.png -> 74 字符
+2025-07-31 17:00:40,606 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0018.png -> 121 字符
+2025-07-31 17:00:40,703 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0019.png -> 36 字符
+2025-07-31 17:00:40,791 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_04_frame_0020.png -> 13 字符
+2025-07-31 17:00:40,791 - INFO - 视频处理完成: talk_04
+2025-07-31 17:00:40,791 - INFO - 视频 talk_04 处理成功
+2025-07-31 17:00:40,792 - INFO - 处理第 5/10 个视频: https://www.youtube.com/watch?v=LPZh9BOjkQs  # 5. Large Language Models explained briefly
+2025-07-31 17:00:40,792 - INFO - 开始处理视频: talk_05
+2025-07-31 17:00:40,812 - INFO - 下载音频: https://www.youtube.com/watch?v=LPZh9BOjkQs  # 5. Large Language Models explained briefly
+2025-07-31 17:00:44,210 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05.wav
+2025-07-31 17:00:44,210 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05.wav
+2025-07-31 17:00:52,687 - INFO - 转录完成: talk_05, 检测语言: en
+2025-07-31 17:00:52,711 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=LPZh9BOjkQs  # 5. Large Language Models explained briefly
+2025-07-31 17:00:58,244 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0000.png
+2025-07-31 17:00:58,397 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0001.png
+2025-07-31 17:00:58,550 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0002.png
+2025-07-31 17:00:58,703 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0003.png
+2025-07-31 17:00:58,852 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0004.png
+2025-07-31 17:00:59,004 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0005.png
+2025-07-31 17:00:59,156 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0006.png
+2025-07-31 17:00:59,308 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0007.png
+2025-07-31 17:00:59,456 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0008.png
+2025-07-31 17:00:59,608 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0009.png
+2025-07-31 17:00:59,758 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0010.png
+2025-07-31 17:00:59,911 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0011.png
+2025-07-31 17:01:00,066 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0012.png
+2025-07-31 17:01:00,221 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0013.png
+2025-07-31 17:01:00,376 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0014.png
+2025-07-31 17:01:00,531 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0015.png
+2025-07-31 17:01:00,667 - INFO - 总共提取 16 帧
+2025-07-31 17:01:00,777 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0000.png -> 46 字符
+2025-07-31 17:01:00,897 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0001.png -> 92 字符
+2025-07-31 17:01:01,041 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0002.png -> 179 字符
+2025-07-31 17:01:01,303 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0003.png -> 423 字符
+2025-07-31 17:01:01,441 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0004.png -> 105 字符
+2025-07-31 17:01:01,543 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0005.png -> 41 字符
+2025-07-31 17:01:01,656 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0006.png -> 24 字符
+2025-07-31 17:01:01,772 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0007.png -> 77 字符
+2025-07-31 17:01:01,874 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0008.png -> 41 字符
+2025-07-31 17:01:01,974 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0009.png -> 51 字符
+2025-07-31 17:01:02,178 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0011.png -> 53 字符
+2025-07-31 17:01:02,362 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0013.png -> 43 字符
+2025-07-31 17:01:02,535 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0014.png -> 159 字符
+2025-07-31 17:01:02,642 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_05_frame_0015.png -> 50 字符
+2025-07-31 17:01:02,642 - INFO - 视频处理完成: talk_05
+2025-07-31 17:01:02,642 - INFO - 视频 talk_05 处理成功
+2025-07-31 17:01:02,642 - INFO - 处理第 6/10 个视频: https://www.youtube.com/watch?v=wjZofJX0v4M  # 6. Transformers, the tech behind LLMs | Chapter 5
+2025-07-31 17:01:02,642 - INFO - 开始处理视频: talk_06
+2025-07-31 17:01:02,662 - INFO - 下载音频: https://www.youtube.com/watch?v=wjZofJX0v4M  # 6. Transformers, the tech behind LLMs | Chapter 5
+2025-07-31 17:01:08,794 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06.wav
+2025-07-31 17:01:08,795 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06.wav
+2025-07-31 17:01:40,178 - INFO - 转录完成: talk_06, 检测语言: en
+2025-07-31 17:01:40,202 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=wjZofJX0v4M  # 6. Transformers, the tech behind LLMs | Chapter 5
+2025-07-31 17:01:50,340 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0000.png
+2025-07-31 17:01:50,498 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0001.png
+2025-07-31 17:01:50,650 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0002.png
+2025-07-31 17:01:50,799 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0003.png
+2025-07-31 17:01:50,952 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0004.png
+2025-07-31 17:01:51,105 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0005.png
+2025-07-31 17:01:51,257 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0006.png
+2025-07-31 17:01:51,405 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0007.png
+2025-07-31 17:01:51,554 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0008.png
+2025-07-31 17:01:51,704 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0009.png
+2025-07-31 17:01:51,857 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0010.png
+2025-07-31 17:01:52,009 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0011.png
+2025-07-31 17:01:52,168 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0012.png
+2025-07-31 17:01:52,318 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0013.png
+2025-07-31 17:01:52,470 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0014.png
+2025-07-31 17:01:52,620 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0015.png
+2025-07-31 17:01:52,776 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0016.png
+2025-07-31 17:01:52,932 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0017.png
+2025-07-31 17:01:53,086 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0018.png
+2025-07-31 17:01:53,236 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0019.png
+2025-07-31 17:01:53,388 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0020.png
+2025-07-31 17:01:53,539 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0021.png
+2025-07-31 17:01:53,695 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0022.png
+2025-07-31 17:01:53,851 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0023.png
+2025-07-31 17:01:54,003 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0024.png
+2025-07-31 17:01:54,160 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0025.png
+2025-07-31 17:01:54,307 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0026.png
+2025-07-31 17:01:54,460 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0027.png
+2025-07-31 17:01:54,613 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0028.png
+2025-07-31 17:01:54,769 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0029.png
+2025-07-31 17:01:54,919 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0030.png
+2025-07-31 17:01:55,073 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0031.png
+2025-07-31 17:01:55,226 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0032.png
+2025-07-31 17:01:55,379 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0033.png
+2025-07-31 17:01:55,531 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0034.png
+2025-07-31 17:01:55,681 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0035.png
+2025-07-31 17:01:55,833 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0036.png
+2025-07-31 17:01:55,984 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0037.png
+2025-07-31 17:01:56,138 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0038.png
+2025-07-31 17:01:56,288 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0039.png
+2025-07-31 17:01:56,439 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0040.png
+2025-07-31 17:01:56,589 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0041.png
+2025-07-31 17:01:56,740 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0042.png
+2025-07-31 17:01:56,898 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0043.png
+2025-07-31 17:01:57,056 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0044.png
+2025-07-31 17:01:57,213 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0045.png
+2025-07-31 17:01:57,366 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0046.png
+2025-07-31 17:01:57,520 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0047.png
+2025-07-31 17:01:57,680 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0048.png
+2025-07-31 17:01:57,838 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0049.png
+2025-07-31 17:01:57,995 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0050.png
+2025-07-31 17:01:58,151 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0051.png
+2025-07-31 17:01:58,307 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0052.png
+2025-07-31 17:01:58,461 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0053.png
+2025-07-31 17:01:58,612 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0054.png
+2025-07-31 17:01:58,681 - INFO - 总共提取 55 帧
+2025-07-31 17:01:58,782 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0000.png -> 1 字符
+2025-07-31 17:01:58,883 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0001.png -> 34 字符
+2025-07-31 17:01:59,009 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0002.png -> 92 字符
+2025-07-31 17:01:59,107 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0003.png -> 56 字符
+2025-07-31 17:01:59,205 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0004.png -> 51 字符
+2025-07-31 17:01:59,390 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0005.png -> 253 字符
+2025-07-31 17:01:59,537 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0006.png -> 179 字符
+2025-07-31 17:01:59,637 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0007.png -> 56 字符
+2025-07-31 17:01:59,725 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0008.png -> 13 字符
+2025-07-31 17:01:59,822 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0009.png -> 28 字符
+2025-07-31 17:02:00,064 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0011.png -> 125 字符
+2025-07-31 17:02:00,282 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0012.png -> 315 字符
+2025-07-31 17:02:00,508 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0013.png -> 315 字符
+2025-07-31 17:02:00,639 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0014.png -> 74 字符
+2025-07-31 17:02:00,721 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0015.png -> 3 字符
+2025-07-31 17:02:00,890 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0016.png -> 185 字符
+2025-07-31 17:02:00,990 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0017.png -> 43 字符
+2025-07-31 17:02:01,143 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0018.png -> 170 字符
+2025-07-31 17:02:01,241 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0019.png -> 35 字符
+2025-07-31 17:02:01,334 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0020.png -> 19 字符
+2025-07-31 17:02:01,474 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0021.png -> 92 字符
+2025-07-31 17:02:01,677 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0022.png -> 167 字符
+2025-07-31 17:02:01,771 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0023.png -> 23 字符
+2025-07-31 17:02:01,962 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0025.png -> 48 字符
+2025-07-31 17:02:02,046 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0026.png -> 16 字符
+2025-07-31 17:02:02,152 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0027.png -> 36 字符
+2025-07-31 17:02:02,264 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0028.png -> 48 字符
+2025-07-31 17:02:02,445 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0030.png -> 49 字符
+2025-07-31 17:02:02,530 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0031.png -> 6 字符
+2025-07-31 17:02:02,630 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0032.png -> 41 字符
+2025-07-31 17:02:02,741 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0033.png -> 73 字符
+2025-07-31 17:02:02,871 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0034.png -> 87 字符
+2025-07-31 17:02:02,976 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0035.png -> 35 字符
+2025-07-31 17:02:03,068 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0036.png -> 21 字符
+2025-07-31 17:02:03,158 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0037.png -> 12 字符
+2025-07-31 17:02:03,279 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0038.png -> 77 字符
+2025-07-31 17:02:03,470 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0040.png -> 55 字符
+2025-07-31 17:02:03,795 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0044.png -> 8 字符
+2025-07-31 17:02:03,916 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0045.png -> 67 字符
+2025-07-31 17:02:04,009 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0046.png -> 18 字符
+2025-07-31 17:02:04,169 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0047.png -> 132 字符
+2025-07-31 17:02:04,338 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0048.png -> 196 字符
+2025-07-31 17:02:04,514 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0049.png -> 152 字符
+2025-07-31 17:02:04,639 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0050.png -> 96 字符
+2025-07-31 17:02:04,803 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0051.png -> 170 字符
+2025-07-31 17:02:05,175 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0053.png -> 296 字符
+2025-07-31 17:02:05,407 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_06_frame_0054.png -> 297 字符
+2025-07-31 17:02:05,408 - INFO - 视频处理完成: talk_06
+2025-07-31 17:02:05,408 - INFO - 视频 talk_06 处理成功
+2025-07-31 17:02:05,408 - INFO - 处理第 7/10 个视频: https://www.youtube.com/watch?v=eMlx5fFNoYc  # 7. Attention in transformers, step-by-step | Chapter 6
+2025-07-31 17:02:05,408 - INFO - 开始处理视频: talk_07
+2025-07-31 17:02:05,428 - INFO - 下载音频: https://www.youtube.com/watch?v=eMlx5fFNoYc  # 7. Attention in transformers, step-by-step | Chapter 6
+2025-07-31 17:02:11,725 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07.wav
+2025-07-31 17:02:11,725 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07.wav
+2025-07-31 17:02:41,073 - INFO - 转录完成: talk_07, 检测语言: en
+2025-07-31 17:02:41,096 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=eMlx5fFNoYc  # 7. Attention in transformers, step-by-step | Chapter 6
+2025-07-31 17:02:47,545 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0000.png
+2025-07-31 17:02:47,699 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0001.png
+2025-07-31 17:02:47,847 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0002.png
+2025-07-31 17:02:48,004 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0003.png
+2025-07-31 17:02:48,159 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0004.png
+2025-07-31 17:02:48,309 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0005.png
+2025-07-31 17:02:48,462 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0006.png
+2025-07-31 17:02:48,613 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0007.png
+2025-07-31 17:02:48,762 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0008.png
+2025-07-31 17:02:48,914 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0009.png
+2025-07-31 17:02:49,072 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0010.png
+2025-07-31 17:02:49,237 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0011.png
+2025-07-31 17:02:49,394 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0012.png
+2025-07-31 17:02:49,550 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0013.png
+2025-07-31 17:02:49,701 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0014.png
+2025-07-31 17:02:49,855 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0015.png
+2025-07-31 17:02:50,007 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0016.png
+2025-07-31 17:02:50,170 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0017.png
+2025-07-31 17:02:50,325 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0018.png
+2025-07-31 17:02:50,481 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0019.png
+2025-07-31 17:02:50,639 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0020.png
+2025-07-31 17:02:50,794 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0021.png
+2025-07-31 17:02:50,947 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0022.png
+2025-07-31 17:02:51,097 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0023.png
+2025-07-31 17:02:51,252 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0024.png
+2025-07-31 17:02:51,404 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0025.png
+2025-07-31 17:02:51,562 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0026.png
+2025-07-31 17:02:51,713 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0027.png
+2025-07-31 17:02:51,867 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0028.png
+2025-07-31 17:02:52,023 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0029.png
+2025-07-31 17:02:52,181 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0030.png
+2025-07-31 17:02:52,339 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0031.png
+2025-07-31 17:02:52,497 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0032.png
+2025-07-31 17:02:52,648 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0033.png
+2025-07-31 17:02:52,800 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0034.png
+2025-07-31 17:02:52,951 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0035.png
+2025-07-31 17:02:53,103 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0036.png
+2025-07-31 17:02:53,254 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0037.png
+2025-07-31 17:02:53,404 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0038.png
+2025-07-31 17:02:53,559 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0039.png
+2025-07-31 17:02:53,711 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0040.png
+2025-07-31 17:02:53,864 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0041.png
+2025-07-31 17:02:54,016 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0042.png
+2025-07-31 17:02:54,166 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0043.png
+2025-07-31 17:02:54,319 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0044.png
+2025-07-31 17:02:54,470 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0045.png
+2025-07-31 17:02:54,619 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0046.png
+2025-07-31 17:02:54,781 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0047.png
+2025-07-31 17:02:54,939 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0048.png
+2025-07-31 17:02:55,096 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0049.png
+2025-07-31 17:02:55,252 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0050.png
+2025-07-31 17:02:55,409 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0051.png
+2025-07-31 17:02:55,563 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0052.png
+2025-07-31 17:02:55,611 - INFO - 总共提取 53 帧
+2025-07-31 17:02:55,744 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0000.png -> 53 字符
+2025-07-31 17:02:55,826 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0001.png -> 13 字符
+2025-07-31 17:02:55,983 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0002.png -> 131 字符
+2025-07-31 17:02:56,083 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0003.png -> 50 字符
+2025-07-31 17:02:56,159 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0004.png -> 7 字符
+2025-07-31 17:02:56,333 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0006.png -> 49 字符
+2025-07-31 17:02:56,420 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0007.png -> 13 字符
+2025-07-31 17:02:56,664 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0008.png -> 204 字符
+2025-07-31 17:02:56,742 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0009.png -> 7 字符
+2025-07-31 17:02:56,847 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0010.png -> 61 字符
+2025-07-31 17:02:56,973 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0011.png -> 88 字符
+2025-07-31 17:02:57,116 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0012.png -> 151 字符
+2025-07-31 17:02:57,240 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0013.png -> 86 字符
+2025-07-31 17:02:57,314 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0014.png -> 4 字符
+2025-07-31 17:02:57,459 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0015.png -> 134 字符
+2025-07-31 17:02:57,550 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0016.png -> 44 字符
+2025-07-31 17:02:57,678 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0017.png -> 46 字符
+2025-07-31 17:02:57,796 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0018.png -> 71 字符
+2025-07-31 17:02:57,900 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0019.png -> 47 字符
+2025-07-31 17:02:58,004 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0020.png -> 48 字符
+2025-07-31 17:02:58,155 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0021.png -> 104 字符
+2025-07-31 17:02:58,280 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0022.png -> 86 字符
+2025-07-31 17:02:58,466 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0023.png -> 281 字符
+2025-07-31 17:02:58,702 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0024.png -> 173 字符
+2025-07-31 17:02:58,787 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0025.png -> 8 字符
+2025-07-31 17:02:59,112 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0026.png -> 327 字符
+2025-07-31 17:02:59,198 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0027.png -> 25 字符
+2025-07-31 17:02:59,457 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0029.png -> 138 字符
+2025-07-31 17:02:59,596 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0030.png -> 133 字符
+2025-07-31 17:02:59,760 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0031.png -> 173 字符
+2025-07-31 17:02:59,922 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0033.png -> 25 字符
+2025-07-31 17:03:00,011 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0034.png -> 36 字符
+2025-07-31 17:03:00,110 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0035.png -> 45 字符
+2025-07-31 17:03:00,522 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0038.png -> 236 字符
+2025-07-31 17:03:00,627 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0039.png -> 45 字符
+2025-07-31 17:03:00,757 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0040.png -> 106 字符
+2025-07-31 17:03:00,867 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0041.png -> 89 字符
+2025-07-31 17:03:00,993 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0042.png -> 74 字符
+2025-07-31 17:03:01,094 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0043.png -> 54 字符
+2025-07-31 17:03:01,200 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0044.png -> 88 字符
+2025-07-31 17:03:01,298 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0045.png -> 58 字符
+2025-07-31 17:03:01,400 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0046.png -> 50 字符
+2025-07-31 17:03:01,507 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0047.png -> 52 字符
+2025-07-31 17:03:01,624 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0048.png -> 91 字符
+2025-07-31 17:03:01,790 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0049.png -> 199 字符
+2025-07-31 17:03:01,911 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0050.png -> 90 字符
+2025-07-31 17:03:02,033 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0051.png -> 141 字符
+2025-07-31 17:03:02,245 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_07_frame_0052.png -> 282 字符
+2025-07-31 17:03:02,246 - INFO - 视频处理完成: talk_07
+2025-07-31 17:03:02,246 - INFO - 视频 talk_07 处理成功
+2025-07-31 17:03:02,246 - INFO - 处理第 8/10 个视频: https://www.youtube.com/watch?v=9-Jl0dxWQs8  # 8. How might LLMs store facts | Chapter 7
+2025-07-31 17:03:02,246 - INFO - 开始处理视频: talk_08
+2025-07-31 17:03:02,266 - INFO - 下载音频: https://www.youtube.com/watch?v=9-Jl0dxWQs8  # 8. How might LLMs store facts | Chapter 7
+2025-07-31 17:03:08,540 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08.wav
+2025-07-31 17:03:08,540 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08.wav
+2025-07-31 17:03:32,813 - INFO - 转录完成: talk_08, 检测语言: en
+2025-07-31 17:03:32,837 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=9-Jl0dxWQs8  # 8. How might LLMs store facts | Chapter 7
+2025-07-31 17:03:39,759 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0000.png
+2025-07-31 17:03:39,915 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0001.png
+2025-07-31 17:03:40,074 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0002.png
+2025-07-31 17:03:40,227 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0003.png
+2025-07-31 17:03:40,384 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0004.png
+2025-07-31 17:03:40,538 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0005.png
+2025-07-31 17:03:40,692 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0006.png
+2025-07-31 17:03:40,843 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0007.png
+2025-07-31 17:03:40,998 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0008.png
+2025-07-31 17:03:41,150 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0009.png
+2025-07-31 17:03:41,302 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0010.png
+2025-07-31 17:03:41,457 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0011.png
+2025-07-31 17:03:41,612 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0012.png
+2025-07-31 17:03:41,762 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0013.png
+2025-07-31 17:03:41,913 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0014.png
+2025-07-31 17:03:42,063 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0015.png
+2025-07-31 17:03:42,216 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0016.png
+2025-07-31 17:03:42,369 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0017.png
+2025-07-31 17:03:42,524 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0018.png
+2025-07-31 17:03:42,676 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0019.png
+2025-07-31 17:03:42,828 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0020.png
+2025-07-31 17:03:42,982 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0021.png
+2025-07-31 17:03:43,137 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0022.png
+2025-07-31 17:03:43,290 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0023.png
+2025-07-31 17:03:43,448 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0024.png
+2025-07-31 17:03:43,603 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0025.png
+2025-07-31 17:03:43,757 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0026.png
+2025-07-31 17:03:43,911 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0027.png
+2025-07-31 17:03:44,067 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0028.png
+2025-07-31 17:03:44,219 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0029.png
+2025-07-31 17:03:44,369 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0030.png
+2025-07-31 17:03:44,522 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0031.png
+2025-07-31 17:03:44,674 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0032.png
+2025-07-31 17:03:44,828 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0033.png
+2025-07-31 17:03:44,982 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0034.png
+2025-07-31 17:03:45,134 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0035.png
+2025-07-31 17:03:45,287 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0036.png
+2025-07-31 17:03:45,439 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0037.png
+2025-07-31 17:03:45,592 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0038.png
+2025-07-31 17:03:45,752 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0039.png
+2025-07-31 17:03:45,911 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0040.png
+2025-07-31 17:03:46,063 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0041.png
+2025-07-31 17:03:46,216 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0042.png
+2025-07-31 17:03:46,370 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0043.png
+2025-07-31 17:03:46,524 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0044.png
+2025-07-31 17:03:46,677 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0045.png
+2025-07-31 17:03:46,738 - INFO - 总共提取 46 帧
+2025-07-31 17:03:46,930 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0001.png -> 22 字符
+2025-07-31 17:03:47,025 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0002.png -> 31 字符
+2025-07-31 17:03:47,142 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0003.png -> 48 字符
+2025-07-31 17:03:47,229 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0004.png -> 15 字符
+2025-07-31 17:03:47,405 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0006.png -> 31 字符
+2025-07-31 17:03:47,536 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0007.png -> 74 字符
+2025-07-31 17:03:47,617 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0008.png -> 2 字符
+2025-07-31 17:03:47,741 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0009.png -> 85 字符
+2025-07-31 17:03:47,838 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0010.png -> 37 字符
+2025-07-31 17:03:47,929 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0011.png -> 18 字符
+2025-07-31 17:03:48,032 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0012.png -> 42 字符
+2025-07-31 17:03:48,112 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0013.png -> 3 字符
+2025-07-31 17:03:48,381 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0016.png -> 46 字符
+2025-07-31 17:03:48,501 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0017.png -> 62 字符
+2025-07-31 17:03:48,580 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0018.png -> 2 字符
+2025-07-31 17:03:48,695 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0019.png -> 72 字符
+2025-07-31 17:03:48,804 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0020.png -> 52 字符
+2025-07-31 17:03:48,909 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0021.png -> 42 字符
+2025-07-31 17:03:49,028 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0022.png -> 56 字符
+2025-07-31 17:03:49,145 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0023.png -> 56 字符
+2025-07-31 17:03:49,256 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0024.png -> 42 字符
+2025-07-31 17:03:49,348 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0025.png -> 25 字符
+2025-07-31 17:03:49,474 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0026.png -> 56 字符
+2025-07-31 17:03:49,595 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0027.png -> 57 字符
+2025-07-31 17:03:49,760 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0029.png -> 14 字符
+2025-07-31 17:03:49,867 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0030.png -> 50 字符
+2025-07-31 17:03:49,957 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0031.png -> 24 字符
+2025-07-31 17:03:50,056 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0032.png -> 41 字符
+2025-07-31 17:03:50,155 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0033.png -> 25 字符
+2025-07-31 17:03:50,273 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0034.png -> 79 字符
+2025-07-31 17:03:50,425 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0035.png -> 85 字符
+2025-07-31 17:03:50,513 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0036.png -> 16 字符
+2025-07-31 17:03:50,636 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0037.png -> 89 字符
+2025-07-31 17:03:50,756 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0038.png -> 84 字符
+2025-07-31 17:03:50,837 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0039.png -> 2 字符
+2025-07-31 17:03:50,964 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0040.png -> 89 字符
+2025-07-31 17:03:51,077 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0041.png -> 58 字符
+2025-07-31 17:03:51,174 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0042.png -> 17 字符
+2025-07-31 17:03:51,282 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0043.png -> 77 字符
+2025-07-31 17:03:51,437 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0044.png -> 110 字符
+2025-07-31 17:03:51,655 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_08_frame_0045.png -> 244 字符
+2025-07-31 17:03:51,655 - INFO - 视频处理完成: talk_08
+2025-07-31 17:03:51,655 - INFO - 视频 talk_08 处理成功
+2025-07-31 17:03:51,655 - INFO - 处理第 9/10 个视频: https://www.youtube.com/watch?v=fNk_zzaMoSs  # 9. Vectors | Chapter 1, Essence of linear algebra
+2025-07-31 17:03:51,655 - INFO - 开始处理视频: talk_09
+2025-07-31 17:03:51,676 - INFO - 下载音频: https://www.youtube.com/watch?v=fNk_zzaMoSs  # 9. Vectors | Chapter 1, Essence of linear algebra
+2025-07-31 17:03:55,760 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09.wav
+2025-07-31 17:03:55,760 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09.wav
+2025-07-31 17:04:06,493 - INFO - 转录完成: talk_09, 检测语言: en
+2025-07-31 17:04:06,519 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=fNk_zzaMoSs  # 9. Vectors | Chapter 1, Essence of linear algebra
+2025-07-31 17:04:09,391 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0000.png
+2025-07-31 17:04:09,543 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0001.png
+2025-07-31 17:04:09,693 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0002.png
+2025-07-31 17:04:09,842 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0003.png
+2025-07-31 17:04:09,992 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0004.png
+2025-07-31 17:04:10,145 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0005.png
+2025-07-31 17:04:10,296 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0006.png
+2025-07-31 17:04:10,445 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0007.png
+2025-07-31 17:04:10,597 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0008.png
+2025-07-31 17:04:10,748 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0009.png
+2025-07-31 17:04:10,902 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0010.png
+2025-07-31 17:04:11,056 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0011.png
+2025-07-31 17:04:11,205 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0012.png
+2025-07-31 17:04:11,356 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0013.png
+2025-07-31 17:04:11,506 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0014.png
+2025-07-31 17:04:11,658 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0015.png
+2025-07-31 17:04:11,806 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0016.png
+2025-07-31 17:04:11,955 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0017.png
+2025-07-31 17:04:12,108 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0018.png
+2025-07-31 17:04:12,263 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0019.png
+2025-07-31 17:04:12,376 - INFO - 总共提取 20 帧
+2025-07-31 17:04:12,565 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0001.png -> 53 字符
+2025-07-31 17:04:12,667 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0002.png -> 37 字符
+2025-07-31 17:04:12,753 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0003.png -> 13 字符
+2025-07-31 17:04:12,868 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0004.png -> 60 字符
+2025-07-31 17:04:13,035 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0005.png -> 113 字符
+2025-07-31 17:04:13,115 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0006.png -> 4 字符
+2025-07-31 17:04:13,272 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0008.png -> 3 字符
+2025-07-31 17:04:13,351 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0009.png -> 3 字符
+2025-07-31 17:04:13,516 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0010.png -> 108 字符
+2025-07-31 17:04:13,685 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0011.png -> 113 字符
+2025-07-31 17:04:13,832 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0012.png -> 36 字符
+2025-07-31 17:04:13,912 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0013.png -> 2 字符
+2025-07-31 17:04:13,992 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0014.png -> 5 字符
+2025-07-31 17:04:14,075 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0015.png -> 9 字符
+2025-07-31 17:04:14,156 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0016.png -> 4 字符
+2025-07-31 17:04:14,246 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0017.png -> 17 字符
+2025-07-31 17:04:14,415 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0018.png -> 98 字符
+2025-07-31 17:04:14,523 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_09_frame_0019.png -> 61 字符
+2025-07-31 17:04:14,524 - INFO - 视频处理完成: talk_09
+2025-07-31 17:04:14,524 - INFO - 视频 talk_09 处理成功
+2025-07-31 17:04:14,524 - INFO - 处理第 10/10 个视频: https://www.youtube.com/watch?v=k7RM-ot2NWY  # 10. Linear combinations, span, and basis vectors | Chapter 2
+2025-07-31 17:04:14,524 - INFO - 开始处理视频: talk_10
+2025-07-31 17:04:14,544 - INFO - 下载音频: https://www.youtube.com/watch?v=k7RM-ot2NWY  # 10. Linear combinations, span, and basis vectors | Chapter 2
+2025-07-31 17:04:18,235 - INFO - 音频下载成功: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10.wav
+2025-07-31 17:04:18,236 - INFO - 开始转录音频: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10.wav
+2025-07-31 17:04:28,519 - INFO - 转录完成: talk_10, 检测语言: en
+2025-07-31 17:04:28,543 - INFO - 下载视频用于帧提取: https://www.youtube.com/watch?v=k7RM-ot2NWY  # 10. Linear combinations, span, and basis vectors | Chapter 2
+2025-07-31 17:04:32,225 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0000.png
+2025-07-31 17:04:32,378 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0001.png
+2025-07-31 17:04:32,533 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0002.png
+2025-07-31 17:04:32,687 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0003.png
+2025-07-31 17:04:32,838 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0004.png
+2025-07-31 17:04:32,993 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0005.png
+2025-07-31 17:04:33,147 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0006.png
+2025-07-31 17:04:33,301 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0007.png
+2025-07-31 17:04:33,457 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0008.png
+2025-07-31 17:04:33,612 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0009.png
+2025-07-31 17:04:33,767 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0010.png
+2025-07-31 17:04:33,925 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0011.png
+2025-07-31 17:04:34,077 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0012.png
+2025-07-31 17:04:34,227 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0013.png
+2025-07-31 17:04:34,378 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0014.png
+2025-07-31 17:04:34,530 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0015.png
+2025-07-31 17:04:34,688 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0016.png
+2025-07-31 17:04:34,844 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0017.png
+2025-07-31 17:04:34,999 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0018.png
+2025-07-31 17:04:35,149 - INFO - 提取帧: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0019.png
+2025-07-31 17:04:35,295 - INFO - 总共提取 20 帧
+2025-07-31 17:04:35,478 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0001.png -> 6 字符
+2025-07-31 17:04:35,557 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0002.png -> 3 字符
+2025-07-31 17:04:35,668 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0003.png -> 61 字符
+2025-07-31 17:04:35,768 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0004.png -> 40 字符
+2025-07-31 17:04:35,854 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0005.png -> 13 字符
+2025-07-31 17:04:36,020 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0006.png -> 118 字符
+2025-07-31 17:04:36,184 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0007.png -> 105 字符
+2025-07-31 17:04:36,409 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0009.png -> 114 字符
+2025-07-31 17:04:36,574 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0010.png -> 91 字符
+2025-07-31 17:04:36,732 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0012.png -> 1 字符
+2025-07-31 17:04:36,810 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0013.png -> 1 字符
+2025-07-31 17:04:36,966 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0015.png -> 3 字符
+2025-07-31 17:04:37,048 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0016.png -> 1 字符
+2025-07-31 17:04:37,192 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0017.png -> 95 字符
+2025-07-31 17:04:37,292 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0018.png -> 47 字符
+2025-07-31 17:04:37,432 - INFO - OCR提取文本: /var/folders/md/jx00px7j64jb171dzf32jybr0000gn/T/tmp5fe_z6i2/talk_10_frame_0019.png -> 119 字符
+2025-07-31 17:04:37,432 - INFO - 视频处理完成: talk_10
+2025-07-31 17:04:37,432 - INFO - 视频 talk_10 处理成功
+2025-07-31 17:04:37,432 - INFO - 批量处理完成，成功处理 10 个视频
+2025-07-31 17:04:37,435 - INFO - 结果已保存到: talks_transcripts.jsonl
+2025-07-31 17:04:37,435 - INFO - 总共保存 10 条转录记录
+2025-07-31 17:04:37,435 - INFO - 所有任务完成！
+2025-07-31 17:04:37,478 - INFO - 临时文件清理完成
