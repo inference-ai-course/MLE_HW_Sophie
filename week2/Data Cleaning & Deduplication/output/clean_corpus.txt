@@ -1,0 +1,18 @@
+Welcome to our website!Contact us at [EMAIL_REMOVED] or call [PHONE_REMOVED]
+
+This is a clean English document without any HTML tags.
+
+Another HTML document with and phone number ([PHONE_REMOVED]
+
+这是一个中文文档，包含一些测试内容。
+
+This is a duplicate document.   document.   document.
+
+Credit card number: [CREDIT_CARD_REMOVED] should be removed
+
+Another English document with similar content to test deduplication.
+
+Clean document number one with unique content.
+
+Clean document number two with different unique content.
+
