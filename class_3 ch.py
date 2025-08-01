@@ -145,9 +145,17 @@ with open("/Users/pc/Documents/cursor/ml course/MLE_in_Gen_AI-Course/Class3/test
 
 # 调用AI视觉模型进行文字提取
 # 注意：API密钥从环境变量读取，确保安全性
+from dotenv import load_dotenv
 import os
-api_key = os.getenv("OPENAI_API_KEY", "your-api-key-here")
+
+load_dotenv()
+api_key = os.getenv('OPENAI_API_KEY')# Use your actual API key here
+
+if not api_key:
+    raise ValueError("请设置OPENAI_API_KEY环境变量")
+
 result = vision_extract(b64_img, "Extract all the readable text from this document.", api_key=api_key)
+
 print(result["choices"][0]["message"]["content"])
 
 
