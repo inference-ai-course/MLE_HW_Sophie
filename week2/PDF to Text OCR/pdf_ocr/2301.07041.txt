@@ -1,0 +1,1240 @@
+OCR处理结果 - 2301.07041.pdf
+处理时间: 2025-07-31 16:20:31
+总页数: 18
+================================================================================
+
+
+--- 第 1 页 ---
+
+Verifiable Fully Homomorphic Encryption:
+Alexander. Viand", Christian Knabenhans’, Anwar Hithnawi
+Abstract—Fully Honiomorphic ‘Encryption: (FHE) is seeing: in- = Honest-but-Curious:Assumption: Historically;, the EHE:re-
+creasing real-world deployment:to protect.data.iniuse byallow- —_ search. community  has:extensively:made-use of the assump-
+cases,  ing-computation over: encrypted data. However, thesame mal- _ tion. that: the server. ‘running an FHE application: ‘would ‘be:
+x C+ — jeability that enables homomorphic computations also raises _hoiiest-biit=Ctitioiis,-rather than, actively maliciotis [13]-[16].
+‘ oO   integrity ‘issues, which have so; far: been ‘mostly overlooked. ‘This. assumption may be reasonable in ‘some deployment
+4 @©\" While FHE’s Jack. of integrity ‘has obvious! implications for Scenarios’ (¢.g.,,;when FHE is used only to ensure regula-
+i” correctness, it also has ‘severe implications ‘for confidentiality: tory compliance or when. dealing with: trusted. institutions
+2 8 . _ a:nalicious’server can leverage the lack-of-integrity to carry out Cooperating on their, own data). However, ‘the: necessity’ ‘to;
+«i aa “  interactive’key-recovery attacks: As’ a:result; virtually all FHE   trust, the server to:this extent. is: very: limiting to: the: scope:
+2 "Ta schemes)and applications/assume:an honest:but-curious server OF application ‘scenarios, since a violation of the assumption
+"  = ‘t_ who does ‘not: deviate: fron the protocol. In practice, however, —_[ireatens Tot. only. correctness ‘but. also confidentiality. a
+“this assumption ‘is insufficient for a wide range ‘of deployment —_@4dition,-even otherwise trusted parties can be compromised
+i f=! scenarios: While: there has been work that aims to address    by’ malicious’ ‘third parties, exposing, this  attack: surface:
+° 4" this: gap; ‘these have, remained. isolated ‘efforts| considering — While FHE protects against passive: attacks, a. malicious or
+a i®@)  onlyaspects of' the overall problem and. fail, to: fully’ address    compromised. server ‘taking Part an. an, RHE, application: can
+« ““e'* the: meeds and characteristics: of modern FHE schemes and    leverage:'this to undermine data Gonhdenality. class of
+TQ. te Tn thie naner: we analvze existin    steority, attacks Known as key-recovery attacks exploits. the anterac=
+; its   applications: In this ‘paper; ‘we! analyze existing, FHE ‘integrity:    Che nea As nan ea
+aad   ae    Oa ge   a   a   tive nattire of ‘real-world deployments ‘to construct (partial)
+‘4 ——!" approaches, present attacks’ ‘that .exploit: gaps' im ‘prior work;   we ge ip pag et
+oe and propose ‘a, new. notion, ‘for. maliciously-secure; verifiable:    decryption. oracles. These exploit the: fact that ia server: can
+or @s\    a AKT. Gn. the Ged gh    a scraftia ciphertext that fails ‘to decrypt ‘correctly for certain:
+« x. FHE: ‘We then. instantiate this, new. notion. ‘with a: ‘range’ of.      er eee ee es   Pane eae:   a
+n> 2 re    ;     eg    Paerearee       ee   secret‘ keys,, using: the client’s) reaction or‘lack: thereof as jan:
+* i techniques; ‘analyzing ‘them ‘and. evaluating ‘their’ performance    vcd om | Ppeaeeept | ism gon cepcormanen smpy nen fiocs Ve meee, Wag cee, Boscom |
+a     ee depp teats      aMtobiltcht Chote ccdantial bay OLacle: Practical. key-recovery attacks have been: developed
+y Sf: ina rangevof different:settings: We highlight their, potential but    forall maiox FHE schemes. (8]-(12]. Therefore. there is an
+8 oO"     Iso show’ where future work: on tailored integrity ‘solutions:for     ree et ee Sees SIL Js ee es Mere 1s an
+a = t   THE Gs stilrequired? = = BEUy SONOS:      urgentneed to strengthen FHE to:maintain strong guarantees
+1S!      “is still required.                               in the: context of these attacks.
+“=i 4. Tntroduction                               Existing: FHE Integrity Approaches: In order to remediate
+a &%                                                                                                                           these ‘attacks, .a.line’ of research: has ‘emerged that ‘constructs,
+«3 soniputations on encrypted data, has recently emerged into, St/Shability against chosen ciphertextiattacks (IND-CCAD)
+tee Tate tk ab cesastion| Haas amumpumman gad mnatecten, LuoésSe SCheties remain secre ven, ih the presence of dé=
+“i weey't practice. Thanks to'theoretical improvements, :and-Optimiza= te: aanmwy af «hase. mnwetmic
+eg Be ee     on en ae    éryption: oracles, Unfortitnately:, many of these: constric-
+# mM:   tions. in both: software |[1.J-[3] and. ‘hardware implementa- jet" = Sree € cevptocraphic’ primitives even
+AO    ployments (e:g:, the Microsoft Edge Password. Monitor’ [7]):     stronger than FHE and/or. are'too inefficient to:implement in
+=" Computing on encrypted data inherently, requires malleable Practice. ® dierent linevo! research focuses on achieving
+otmcces fa, a, ths aA AR RENGIR AUT SPREE de Ale SATA    integrity for FHE; guaranteeing a function was correctly
+ciphertexts (€:8., the addition of two ciphertexts4s also Valid, a ee nen gpa age fae,
+tc cenen\ TEaaiagat thie HanllSneilae alee: gatase dus Vesian    executed, on the: ciphertext while, presetving the: confiden=
+ciphertext). However, this malleability also: Taises the: issue ee em nnatale?
+OE a ta ng    tality of inputs [25]-[32]. Whilé. these are ‘iniore. concretely:
+of integrity, ‘as the server can. deviate from the coMputatror: ep tas tara teen
+edi ee ee ie aS   efficient ‘than ‘the constructions mentioned. above, ‘there. is''a
+requested. by ‘the client. This ‘has obvious! implications; for.   ee    a     a     ee te
+:     :    oy             .     ce     mane     nae. Significant gap: between the’ ‘assumptions: made ‘by. existing)
+correctness: but can,.also /have!:more! severe ‘consequences:            dhe chet    ;    DE       a
+ra           ee     Ser aes     work: and ‘the ‘way: state-of-the-art FHE; schemes; are used ‘in:
+a, malicious server can.:exploit the :malleability: of EHE: to:      Se ge ee    ae    od gai ge
+cacy pases emer naman, wataniee FOT_T191 wadawwie@aa tha Practice: In:particular, existing schemes:can only tolerate ad-.
+carry Out, key-recovery ‘attacks [8]-[12], Undermining the ge gs cent gin moan iaa ahaL AES WBA ORANAY
+Bid watt; [ttc AP ETT Gis, Paw wan sce mamale aie    cateeeae wetSanés limited 16 Verification oracles ‘that are weaker‘than.
+conhdentuality of FHE: .So: far, most work on FHE. schemes    (an ia ail
+Fg edt at Whore Hcrrman ayy adtbin capuice Hithe tecemen Taw centhboes    the: decryption oraclés ‘present an ‘most ‘real-world. settings.
+and applications has chosen to‘sidé-step this issue. by making       ee    ae      om              ee
+assumptions on. the setting and threat model. However, ‘as  _-More. broadly, the: issue ‘of maliciously-secure private
+tion, we must. move ‘beyond. these assumptions to a‘threat © FHE. For example, ‘maliciously-secure secure Multi-Rarty
+model, that can ‘withstand téal-world. adversaries.           Computation. (MPC) has. been. studied extensively [33].
+However, most: techniques do’ :not: transfer ‘to the: -FHE
+Equal, ontribition;                                            setting ‘since: ‘they: rely’ on. ‘the: ‘interactive nature: of MPC
+
+
+--------------------------------------------------
+
+
+--- 第 2 页 ---
+
+(€.g.. Cut-aiid-choose*protocols). In addition, there has been 2. Background
+work ‘studying; how: to: construct:verifiable:computation with        CS          -
+input ‘privacy: from: other primitives: [34]. However,. these       ‘We briefly ifttoduce Fully Homomorphic Eneryption
+approaches remain ‘in ‘the ‘realm ‘of‘theory; and recent: work and important ‘integrity’ techniques, We describe these: con-
+in, this; area, builds: almost: exclusively: upon FHE:                            cepts informally, highlighting properties and aspects relevant
+                                                 to our:analysis;, ‘and ‘refer. to. Appendix .A. for formal. defini-
+Ae pst i Oe hd Be ty tions of the concepts: we: rely: on: throughout: the: paper.
+Contributions. This work-is ‘the ‘first to considerintegrity in                                                 =           —
+the! contextiof real-world FHE deployment'settings, address-  2.1,, Fully Homomorphie Encryption
+ing the issue: of FHE integrity holistically: This; paper aims:        A jhomomorphic encryption, scheme allows ‘meaningful
+to both, highlight the: dangers arising from the gap between —_ computation.'to be performed. on. data while ‘it is encrypted.
+existing; notions. and, real-world. jscenarios;, and, to proposé For’ example,. in’ an additively ‘homomorphic encryption
+efficient. instantiations of @ new robust notion for FHE scheme, Dec(Enc(x'+-y)) = Dec(Enc(a)) © Dec(Enc(y)).
+integrity that effectively addresses. these: challenges. More Fully Homomorphic Encryption [35] ‘offers both: additive:
+concretely, this paper presents: the following contributions:         and multiplicative homomorphism. For integer plaintext
+spaces, arithmetic circuits ‘with addition and multiplication
+@ Analysis. of FHE Integrity Constructions. Tn. this Sls allow the computation of any polynomial, while: for
+paper, We are the first to holistically analyze FHE. integrity Dina" plaintext spaces, this emulates bmary circuits with
+across thé boundaties of different approaches, ‘Towards this,  *OR and. AND gates and allows arbitrary computations: to
+we unify the existing constructions into a set of general  P& Performed on encrypted data. Modern’ FHE schemes: are
+proaches: “We. then, show how: these: notions: fall, short when:    L earning ‘with, hirors (REWE) [31 hardness. assumptions.
+considering how FHE, is used ‘in practice; highlighting: the      In: this’ setting, carefully calibrated noise is added. to the
+mismatch between the setting assumed in the existing in=  ©nCryption. This noise: grows during computation, and once
+tegrity literature and the settings used for the vastmajority of Crosses a certain threshold, decryption. will.no longer be
+FHE applications. Finally, we. show how this enables attacks °° mrect. RHE ischemes addres sithis:by intr oducing; ciphertext
+on. both ‘correctness ‘and confidentiality;, even in.the presence         mau ten ANE. ‘Operations ue t ; do.  not  change t be encrypted.
+                                            schemes are: frequently used in. déveled mode,,'where: they
+.        oe                oe         a     support a. parameter:dependent: fixed: depth. of. computation:
+1@) Formalizing Maliciously-Secure Verifiable FHE. We before’ the noise overflows into the: message. Alternatively,
+define ‘a new ‘notion. of integrity’ for FHE ‘that captures'réal- — bootstrapping,;which’homomorphically refreshes the cipher=
+world. FHE. deployment settings,..addressing the issues. we text, allows for arbitratily deep. compititations, However,
+identified in: our analysis. Existing notions are usually a —_ bootstrapping is computationally expensive and, therefore,
+Frankensteinian. combination. of existing: integrity notions usually. avoided. in. state-of-the-art HE applications:
+and ad-hoc confidentiality: properties;,interleaving FHE;and 5g i ee        -
+integrity aspects, ‘This makes them: hard to reason about or 2-2» Integrity Techniques
+extend, In contrast,, we: present a ‘natural. clean-slate: notion           ‘We briefly introduce three key’ integrity techniques ‘that
+of verifiable: EHE that composes the standard notion of. FHE     have been: used ‘in the context of FHE, —_
+with, modular integrity: properties. This: allows: ournotion to: a ee cepts Gee OR Re eR cage
+adapt to: the «wide; variety of FHE deployment settings: we Message Authentication: Codes. A Message Authentication
+observe in. practice, We show how’ to generically construct Code (MAC) is a. short unforgeable tag used ‘to ‘verify’ the
+our'notion fromia standard FHE scheme, commitments, and  @uthenticityand integrity of a message. ‘They ‘are ‘generated
+Zero-Knowledge Proofs (ZKPs, Using, @ Secret MAC key and. then. sent along with. the
+*     oe ees     i.                               corresponding message.. Note: that ‘verifying, a. MAC also.
+;                                                        requires access to: the MAC key. While: MAGs are usually
+@) Instantiating Verifiable FHE in Practice: ‘We instan- intentionally: non-malleable,. homomorphic MACs allow for
+tiate our notion of maliciously-secure verifiable FHE, using —_-goiié Operations similar to, homiomorphic encryption.
+a Vatiety OF different state-of-the-art ZKP systems, In the         A oe Dee fe UA         :     Deh UTED
+process, we highlight a series of fundamental challenges in - 2¢0"Knowledge: Proofs. A: Zero-Knowledge Proof (ZKP)
+several. approaches to bridge’ this gap and. introduce .a, new:    the: tcith “of a.inathematical statement Withoue fevealing: ads
+optimization for emulating FHE ring arithmetic:inside field “i10mal information. Non-interactive ZKPs allow the prover
+based ZKPs; We. evaluate our instantiations on a vatiéty.    to generate ‘a proof that the verifier canscheck independently,
+of different workloads and compare them to a hardware: 204 there exist techniques to turn any ZKP' non-interactive.
+parison. We! show’ that ‘verifiable: FHE can. be practical, but 4 ~ (mw) dora given. oy and f without zevealing ‘w:
+also: highlight the need for future’ work on..ZKP systems TEE Attestation: Trusted Execution Environments ((‘TEEs):
+specifically: designed, forthe unique-characteristics: of FHE:. are: hardware: components;capable of isolating; code running:
+
+
+--------------------------------------------------
+
+
+--- 第 3 页 ---
+
+on. them, from the rest of the ‘machine. Code running on plaintext and are then, processed in, ‘parallel, (but indepen:
+a TEE, cannot be ‘tampered, with by other processes, even dently) to’ produce: the output: MAC vand. ciphertext pair.
+the: operating ‘system or‘ hypervisor: 'TEEs: are’ commercially Since the. MAC in EaM is'not encrypted under FHE,, it must
+available: in: commodity: hardware: provided ‘by all major _ itself provide strong security, i.e. be semantically: secure.
+hardware::vendors. [38]-[40]. TEEs aré: frequently: uséd.'to, In. addition; ithe MAC must offer the same homomorphic
+provide cotifidentiality from either the sever operators or  operationis as’the underlying FHE-scheme; Li et al. construct
+other VMs ruining on the same hardware, but they car also such’ ai, EaM scheme using multilinear maps, assuming
+provide integrity through.codeattestation, which generates a. generic) FHE. scheme [41].. While it describes ‘how ‘to
+certificate; thatthe outputs ‘were generated through ai correct — support addition‘and multiplication: operations, itis not:clear.
+execution. of the; program.                                      how. this scheme can:"be extended to’ handle: the: complex:
+ciphertext maintenance operations: (e:g;, relinearization) ‘that
+3. Analysis of FHE Integrity Constructions © eeessaty’ for modem FHE. schemes to achieve state-of
+=                   os                         the-art efficiency. In general, itis unclear how to: expand
+In this section, we aim. to answer the question: to what __ the expressiveness of homomorphic MACs while ‘maintain-
+extent do the recent developments in FHE integrity address | 8 the ‘strong, security ‘guarantees required for the EaM
+the:needs of real-world FHE deployments, and where and approach.
+why do. they fall. short? Recently,,'a ‘numberof approaches ‘The Enerypt-then- MAC (EtM); approach ‘firsts encrypts
+for FHE, integrity: have. been, proposed, covering :a,variety _ theplaintext using FHE and then applies the. MAC to the
+of settings and introducing a plethora. of subtly different resulting: ciphertext. This temoves. ‘the need. ‘for the MAC
+notions: and, properties. In ‘this section; we are'the first'to. to preserve confidentiality, but: the MAC: does still need to
+holistically analyze FHE integrity: across the boundaries of | be homomorphic with respect to: operations’ on ciphertexts
+the different approaches, Towards this, we unify the existing © (including ciphertext maintenance operations). Fiore: ‘et: al..
+constructions ‘into .a. set .of general. paradigms ‘that form make’ use'of this: paradigm ‘in [28];, instantiating their MAC
+a ‘taxonomy: of-FHE integrity approaches. This allows us —_ using: pairings: In. order ‘to enable: ‘this, they: needed, ‘to in-
+to consider’ the strengths and ‘weaknesses of the:-proposed _—_troducé a homomorphi¢ hash function to: bridge the gap: be=
+notions: independently ‘of individual instantiations; We then  tween-FHE ciphertexts and the MACs: i:¢., polynomial rings’
+show how ‘these: fiotions fall short. when considering how and pairing groups. In order'to achieve efficient verification,
+FHE is ‘used in practice, highlighting the mismatch between _they-ailso rely’ on-amortized:closed-form efficient PRFs [43].
+the'setting assumed in the existing:integrity'liferatureand the © However, the combination of these primitives limits: the
+settings ‘used. for’ the’ vast: majority of HE applications: Fi- expressiveness of ‘the: resulting: construction. Specifically, it
+nally;, we show’ how this enables attacks ‘on both correctness Only’ siipports quadratic circuits, 1-¢.,. circuits With, at most
+and confidentiality even in, ‘the presence: of these integrity one multiplication.gate. In, general,.it is’ unclear*whethier it is
+mechanisiis.                       _-- possible to create MACs. that. support both arbitrarily deep
+circuits: and ‘complex: operations .on ‘the: ciphertexts.
+3.1. Taxonomy of FHE Integrity Paradigms.            Finally, ‘the MACsthen-Encrypt (MIE), ‘paradigm ifirst
+            ——           computes a MAC over the plaintext: and ‘then encrypts
+‘We providea complete taxonomy of all the literature ‘on the MAC-augmented. plaititext ‘under FHE. This removes
+FHE integrity that: wei are aware of at the time of writing, the Teed to support ciphertext. maintenance operations, as
+We analyze. ‘them according to the underlying techniques, these ‘do. not ‘affect: the. encrypted message. ‘Gennaro’ and
+grouping them into Message-Authentication-Code-, Zero=  Wichs [26] provided one of the’ first. FHE integrity ‘con-
+Knowledge-Proof- and Attestation—based approaches. We _ struction based on this paradigm. However, the:construction:
+discuss the existing: constructions ata level of abstraction _ is) not efficiently: verifiable; 1-e., verifying the MAC requires
+that allows. us ‘to directly: compare: them and ‘focus on. their | Tecomputation ‘thats as expensive as computing ’the original
+suitability ‘for ‘practical, FHE :deployments., We ‘provide a _ result. The work proposed potential ways toxsolve this issue,
+summaty: of our analysis in Table. 1.                       but did ‘not: instantiate a. solution. Catalano and Fiore [27]
+bcmcesrcg sittin iflmssis Mectitmeptccitecn sti Riese, addressed the verification efficiency; but in turn: their con-
+Homomorphic Message Authentication Codes. Message tu ction is limited to arithmetic circuits of a bounded depth.
+‘Authentication Codes  (MAC 8) have Jong: been. use d f0 £0 More:recently; Chatel et:al. [32] ‘have: generalized thesetwo:
+the: context of PAE. Special (fully) homomorphic MACs are can efficiently support arbitrary cirenits and modern state-
+required, ‘so that: the: server. can. combine valid MACs ‘on the    re ne ne Pg            =
+ee    awe he ge me ee ee     of-thevart Schémes..
+inputs ‘to, an KHE operation. to:a valid MAC ofthe output, ~~ ~™
+Existing’ Constriictions fall into three different paradigms | Zero-Knowledge Proofs. Zero-Knowledge: Proofs are a
+based on how they combine the MAC andthe underlying ‘natural primitive to explore. for integrity constructions. Tn
+FHE ‘scheme: (i) Encrypt-and-MAC. (EaM), (ii) Encrypt- _this approach, the server first computes the FHE circuit, stor-
+then-MAC (EtM),, and (ii) MAC-then-Encrypt (Mt).                ing intermediate ciphertext results, and then computes‘a Suc-
+In. the;:Encrypt-and-MAC (EaM)::paradigm, ‘the initial — cinet: Non-interactive ARgument of Knowledge: (SNARK)
+MAC and. FHE ‘ciphertext are ‘computed ‘from ‘the same _ that asserts: that ‘the server knows ‘an assignment of interme-
+
+
+--------------------------------------------------
+
+
+--- 第 4 页 ---
+
+exe Mine.      Cieait:     Seiver Inputs: Server’ Privacy Approx. FHE,       ‘Adversarial Model       Implementation:
+"Verif Oracles! ‘Dee. Oracles)
+[26]      2          Any:          ©.           ©           ie)           o           ie)           ©
+[32]      °          Any          ie)           ©           O           O:           e)           Ke)
+tM: [28]         fe)              Ouadeatie             C                  ie)                  @                  lon                  ©                  °         :
+EaM [41]      a          Any          ©           ©           oO           OF          ©           ©
+ZKP [30]          ie)           LogspaceUnif’           Ko)                  Ks)                  ©                  oH                 sa)                  ©
+[31]      a)          Any          °.           Koy           ®           Oi          ©           a]
+TEE [42]           °                    Any,                    ke)                      (eo)                      °                      oO:                      o                      9
+Table: 1, CHARACTERISTICS'AND EIMITATIONS OF EXISTING FHE INTEGRITY PARADIGMS;AND'APPROACHES;
+‘AV INDICATES INSUFFICIENT DETAILS ARE-GIVEN WHILE @ INDICATES PARTIAL:SUPPORT:
+diate. valliés ‘to the: cirétit so ‘that, for the givei input, the tore restricted in tétms of meiiory atid available. computa»
+circuitresilts.in the outputiciphertext. In theory; any generic —_tional ‘power than. the underlying untrusted hardware: More
+ZKP system could be used to generate this proof. However, fundamentally, they’ can.only be employed in settings where
+a‘triviaLinstantiation-would introduce prohibitively large ad- the’ additional ‘trust. assumption’ on’ the ‘specific: hardware:
+ditional -overhead ‘in: emulating’ the: complex ‘ring operations —_ vendor. is ‘acceptable. Natarajan :et al. [42] ‘present an .FEE-
+used. in FHE schemes. Recent ‘work: has; therefore focused  in-TEE: design ‘and, implementation, ‘that, ‘because: of. the
+instead on developing ZKP systems tailored. to: FHE.                      ability:‘of TEEs to.express arbitrary computations, can easily
+_ One’ line: of work uses: (homomorphic) ‘hashing to bring — Support modern state-of-the-art FHE. schemes ‘with little ‘to
+the) size. of FHE ciphertexts. down. into a.range: that can no required modifications,
+bé handled more éfficiently: with ZKP techniques. This
+includes’ ‘the. ‘first SNARK: for FHE. (presented by Fiore et 3.2, FHE: Integrity: in Practice:
+al. [29] atid follow-up work ‘by Bois et al. [30]. However,
+the homomorphic hashing requirement limits: this ‘approach     In, this section, we consider to what extent. the as-
+to simple schemes such, as; the: BV scheme [44]‘which:does sumptions’ and guarantees ‘proposed ‘in’ ‘the ‘existing -FHE
+not ‘feature: the complex ‘ciphertext maintenance operations _ integrity: literature fulfill therequirements of:real-world:FHE:
+that are neécessary'to achieve the practical efficiency enjoyed deployments. We highlight the differences between the de-
+by’ state-of-the-art FHE schemes. -An alternative. approach ployment settings assumed by: the: existing‘literature and the
+by Ganesh et: al. [31] instead focuses. on. constructing a needs of real-world FHE deployments, uncovering signif-
+generic: ZKP’ system: that: natively operates on the: rings —_i¢ant' mismatches. In ‘the following’ (Sections 3,3. and 3:4),
+used, in |FHE; ‘schemes. This, ‘drastically improves the effi- we discuss the! implications of. this mismatch.for correctness’
+ciency of ‘proving the ring: operations, ‘that make up, basic and confidentiality:.
+homomorphic ‘operations’ such: .as ‘addition and. mulaplica: pane Deployment: Settings, The existing literature on PAE
+tion, However! ciphertext-maintenance operations generally   Beppo pages moe ig Long pa cepohemagsnsce| om panes opeig tan gemggty, i oat [ouus
+« sraritinaw vat heer weed tediteran Vashevnian AtPParet aliens paceman   integrity assumes. the outsourced computation setting, where’
+réquire ‘either switching: between. different rings or:non-ting 8  ~-—FY    wy    are ee nn Cee
+yeaa    es      -_    a agg a. client: ‘provides; ‘an: ‘encrypted. input: a and. ‘a function, (or.
+operations such as rounding, which,are notisupported‘by the    a     oe day     Lace of'inXi
+™   -    we a ty   ioe me etreuit) f to; the server, which ‘them computes’ f(x) homo-
+current construction. ‘While: such. tailored. approaches hold       er    a rs     a    sr rss
+Pe a as ss ee    as     morphically: and, returns the encrypted. :result., While: this;
+the: promise: of significant :performance:improvements; ‘they ee A en eee yee Pen TAP TEI bon yzten os mpd ntios
+ane mamumntley vmaie CER at PHLAmEY etatacnttia ace Sselllig 18 the. most natural to define FHE 1, 1tus not the only
+cannot..currently support efficient. moder state-of-the-art oe, taammauey caw Tor eumriics ee
+ eahapiae. "Pharatice. eglen oe maneide    ve ote, SEUNG ‘OF Even the: ‘most widespread one. In practice, the:
+FHE scheiiies:, ‘Therefore, when ‘we consider FHE integrity   vtec pase ponmat ¢Pores ocd le] een tees Locate oufce poe viens pipeng®s cee eueeperepat
+ee Cig se ee ect] ofan     ;    Spy Server. has' the’ ability ‘to: both choose :the :circuit:to compute
+in. ‘practice in. Section’ 5, we will focus on generic ZKP.   ance    Mage ey ege te,    BN ee
+ee    :    i ee eigen    and, to: provide ‘additional. inputs. “[his ‘opens up’ a ‘variety: of
+systems: and. discuss how to:efficiently instantiatesit for‘FHE., —.    Lares     ern   rn an
+     —_    Oo        =      ;          _ important: ‘additional, ‘use cases that enable;:a. form: of two-
+Trusted. Execution Environment Attestation. Trusted party computation. For.example; ‘this can’ be used. to, offer.
+Execiition, Environments (TEEs) such as Intel SGX [38] _ privacy=presetving: Machine Learning as a ‘Service. (MLaas)
+can, be used. to. provide confidentiality, but a. series of | where the server has a model that it wants:to make available
+attacks [45], [46] has. put. their suitability for ‘this task as. a. Service: and. the client: ‘wants to. receive: a. homomor-
+in, question. However; their integrity protections, ie, their  phically computed. inference ‘on ‘its' ‘private input [48]-[S0]..
+ability’ to :attest‘to the program.running ‘in the enclave, have § More: generally, we can categorize different types of FHE
+so, far mostly':resisted. practical attacks [47]. Therefore;.it deployment by: the: aspects ‘that: must.:remain. private. We:
+is natural ‘to augment ‘the confidentiality properties of FHE assume ‘that ‘the client always has some secrét inputs, but
+with; the integrity protections of TEEs by running FHE — beyorid that, we distinguish between settings with no. server
+inside'.an’ enclave. However, ‘the. computational. complexity —_ input, ‘public (server) inputs, or private server inputs.. We
+of FHE and ‘especially the ‘large sizes! of::ciphertexts and can. also. distinguish ‘between. settings. with:.a, public circuit
+evaluation keys*pose!a.challenge! to TEEs, ‘which are‘usually f,,.and ‘settings: where the‘circuit is private'to either the client
+
+
+--------------------------------------------------
+
+
+--- 第 5 页 ---
+
+or the server. In the following, we discuss the impact that to essentially “standardize” the cipliertext ‘before: returning
+these changes’ have .oti -FHE integrity.                  it to the: client. Existing: integrity notions, however, are
+(Private) Server Inputs: Public: and. iprivate server, inputs    incompatib le: ‘with: such. an. ‘approach isince! they all require:
+7    a ee ar nn re    the: circuit: to, be: ‘known to: both parties., This: ean. be: ad-
+have ‘significant. implications for :integrity;,, with, the: latter Ge ocsad in. theory: by ‘using a universal circuit that, tak
+posing more fundamental «challenges; Nevertheless, éven 4» Ene ory Py a nS | ae Be CITCIAE Ua, TAKES
+cate] as Zarmiite FGUGAY THE THe AP GAMIS LEIASED ARBCARTS    the actual circuit as. (private) inptit. However; given the
+public inputs prevent the Use of some integrity approaches, ee     elWapane RAN HAAG
+cua we MAC hated eclitinne D6L[OR) 129] Tai] Thse Overhead of both the ‘underlying FHE schemes and most
+such as: MAC-based: solutions [26]-[28], [32], [41]. This en eee a
+is inherent in the concept of MACs, which only the ¢lient    integrity schemes, this will. be: infeasible: in, miost. scenarios.
+can generate for: fresh: ‘messat es. On theo ther hand. TEE-    Note: that this approach. is; also: required ‘when ‘the: circuit: is!
+nr ere ae    Bes. ass = private: to the clients, even when not-using ‘integrity: systems:,
+and. ZKP-based.approaches can-usually: support public inputs    While currently: impractical, future developments in, EHE
+with, straightforward extensions; even though ‘these are Not eee eee meee ene eee destiie th nes pane ethninnan
+ANWeiAaal dan the Aviatiws! litsintine Cinae thes tnniine ape acceleration, might make it. feasible: to Use ‘these techniques
+considered in ‘the existing literature. Since these inputs are pt. at otitical. hish:value applications
+public, they can ‘be transmitted to the client along with [OF Simple. yet critical, high-value applications.
+the’ result ‘and iproof (or attestation); of correctness, allowing: 44 Agocie o.@
+them: to: complete! the ‘verification. Private server. inputs; on     3:35 Attacks: on Correctness
+the: other. Ihand; tare, ‘more! challenging; because; they aise        ‘The ability of the server to provide inputs opens up
+fundamental, questions ‘about: the meaning: of correctness new" attack. ‘surface! since integrity issues’ can. now: arise
+RL the presence. For ‘examipes Ay the Deivacy-Dreserving not only. from. deviations in the computation ‘but also’ from
+fie ‘setting, 1b ‘of eee ye ne at fe sien     malicious: inputs. In this setting, the ‘server:can produce; “in-
+on. the’ correctness of the Computation’ can: be made‘without —_correct® resuilts even, when: executing the -circuit: “correctly?
+revealing; the ‘model to theiclient. This ‘highlightsia funda- —_ajigwing then to produce a, valid aor of correctiiess: fr
+mental, gap'between the application-level correctness that these “incorrect” results. We identify two different cases?
+We usually want {0 achieve, anc! the circuit Kevel correctness first, the computation can result in an invalid ciphertext that
+that ‘existing’ integrity Motions ‘Work On. We: discuss. {ls fails to:decrypt:correctly. Second,’ the:computation:can return:
+oe BEDS         ye ey OO       © pl        level expectations.
+inputs opens; up‘a new attack surface:and:allows a malicious        ;  B a.       en       wae
+server to undermine the: confidentiality of FHE. Intuitively,      Invalid Ciphertexts: The:noise inherent, in FHE: ciphertexts
+these issues’ arise: because: the private naturesof the inputs SWS during computation and, for. all but trivial, circuits,
+allows the server to'choose malformed. inputs that “poison” Must be managed carefully using ‘ciphertext-maintenance
+the’ output in a way. that will: lead to’a decryption failure at erations. When. the server inputs a ciphertext’ with larger
+the’ client, which. the: server can: observe.through the client’s  R01Se ‘than expected, the noise: will. overflow and garble
+reaction. While TEE-and'ZKP-based approaches.can techni- the message. As a-‘result, decryption. will. no Jonger return
+cally: be extended to; support private ‘inputs; straightforward    the: correct result. Note, however, that ‘this is: not neces-
+extensions are ineffectual in. preventing such attacks. ‘We Sally observable by the client: the. decryption will return
+discuss these issues in more detail in Section 3:4.               an essentially zandom: value;, but; without application-level,
+ce wea CONSENS; this is indistinguishable from, a correct result.
+Private: Circuits. -A. large number’ of FHE, applications Existing: integrity ‘notions. donot consider this aspect since
+consider. a setting where the’ circuits.are public, which is they are’ designed. for the! outsourced computation. setting,
+appropriate for many ‘applications either because! the circuit where all inputs are ftom theiclient and can.therefore’ be ‘as-
+tion. is determined by inputs rather than the circuit (e.g.  clearlytndermining the idea of integrity. More importantly,
+ML where architectures’ tend. to be ‘more’ standardized, but    this’ also: has! sévere implications on. confidentiality, which
+modelparameters are, the:result of: expensive data collection we discuss ‘in Section. 3.4.                           ,
+and ‘training). ‘The existing; FHE integrity notions therefore    Apelicationbevel Correctness, Udine axisdas juresiiar
+almost always: assume this: public-circuit setting: However;  * ‘pplication:  ater orrecthiess.   Using’ ExISHNS Integrity
+moré advanced. scénatios. could require the. circuit! to be MUONS, a proof of “correctness” only guarantees that the
+private to either the. client or the server! In practice, FHE Tsu is the: output of the: specified circuit applied to the
+by; ‘the: server’ and. not. shared'‘with the client. While it is = "° wailtse eps ore Bee ees a pent can she cf at hey
+technically possible: to: derive information ab; but the circuit = WE owt fh i me wearer i sooet want ene ae
+from, thé résulting ciphertext by analyzing its noise, this is “*  evates "Wien, hi neces aver. mHOSE a pucations a Oe
+usually insufficient in practice to reveal significant additional _ {WO-PaNty Setting, Mis is no longer possible. Tus allows me
+information beyond that contained in’the resuleitself, Nevers Server {0 alfeet the correctness of the result on an ‘appli
+theless, the FHE community has'also developed techniques ©2407! Ievel.. For‘example;, consider a, Private: Information
+to achieve: ‘more: formal cireuit privacy guarantees, which      ‘1. This, attack: still! works: when: thé: server provides 4 plaintext; since
+use ‘either bootstrapping [51]-[53] or noise flooding: [S54]  _tiessagersize alsocimpacts noise @rowithi.
+
+
+--------------------------------------------------
+
+
+--- 第 6 页 ---
+
+Retrieval (PIR) application,. where: a client wants to run a such’ strong oracles ‘and instead target decryption failure ora=
+private: query’ against: a database stored on the server..The clés, Thésevoracles arise when the server'manipulates the:re-
+server ‘could ‘compromise: application-level correctness by — sult to have:noise overflow; leading ‘to: an invalid decryption.
+censoring: individual-entries in: the database: to ‘furtherisome. | When’ the! client detects ‘and reacts ‘to this ‘unexpected. result
+notions could hide specific: Wikipedia articles or andividial _further“ifiteractioiis), this leaks information to the adversary.
+transactions from a blockchaii history while still providing Because most FHE ‘application scenarios. involve multiple
+a proof of ‘correctness’...                           queries to: the server (¢.g., MLaaS; PIR,, etc), avoiding
+these ‘oracles: is frequently impossible .in ‘practice:.. Common
+3.4. Attacks'.on Confidentiality (Key Recovery)              patterns’ ‘in FHE: applications; frequently allow ‘the: server. to
+have full:control.over the shape of the:ciphertext:result, even
+In. addition. to: impacting ‘correctness, the mismatch be- 10. the présence of existing integrity notions. For example,
+tween existing notions: and real-world requirements causes Consider f(@yWi,W2) = (@} Wi) + We» Which appears
+a:‘considerably: ‘more: serious issue: ‘a malicious, server'can | When implementing a, biased matrix-vector multiplication,
+exploit the interactive. nature of practical FHE, deployments a. common. operation: in ML; applications., The adversary. can
+té compromise confidentiality. In fact, using key-recovery)  choose'wi, = 0 ‘and an. arbitrary w2, as inputs, and prove
+attacks, ‘a server could. potentially recover the client’s full _ that f(z, wi; we) = 'w3 for any’. provided. by: the'client:
+secret'key: These’ attacks’ fall outside the ‘scope! of the'semi- However, these attacks ‘usually do not even require full con=
+honest-server' setting ‘assumed: by’ FHE: schemes but should _ trol, of the: output: becatise state-of-the-art FHE ‘applications
+be addressed in: a’ setting: where ‘the server is not trusted :to. —_ are: heavily optimized ‘for efficiency, they usually have ‘very
+by’ integrity notions. Existing integrity notions ‘for FHE, outsized ‘inputs is likely: to ‘cause ‘a noise overflow. Since
+however, fail, to. do. so.                                                                          existing:integrity notions only: consider the:correct:execution
+Voc:          ee dee Tha hidde.     Bay               of the opérations inthe circuit, they do tiot-addréss this issue,
+Key Recovery’ ftacks. Intuitively speaking, Key- Recovery. although some provide what appear to be strong guarantees
+Attacks exploit the ‘fact that the: decryption Operation Come ee ea thon cams ais bit sag sam ne ioe omen
+bities the. ciphertext and the secret key. While. a decryption ©. Put Privacy ne [90] that-one.mightexpect to exclude
+of a valid. ciphertext ‘will only ever output the encrypted SUC MACKS, even. these do'not prevent such ‘attacks. ‘This
+message, ‘a malformed ciphertext can result im (parts ‘of)    is; because their privacy. guarantees only hold ‘against: a
+the: searat ke  "being: returned an sie d  For  x tm jle: ye Much weaker adversary limited. to verification oracles; (1:e.,
+bvicfiv- outline a simmle kev recovery attack by Chenal and _wfotthing the adversary Whether aii attempted proof passed
+Tang [11] against the BY scheme [44].In BV, decryption is Verification). However, since decryption (failures) oracles
+trivial ‘recovers the ‘secret ‘ke  Decyg(ct) = (0+ 1 ‘ 5] _ robust notion, of FHE integrity ‘that; 1s specifically designed
+EA], ~ sk (under some assumptions om the parameters; © sccommodate real-world deployment settings and threat
+we refer to [11] for the details). In ‘this simple attack,   models
+the client can easily detect that this ciphertext has been yyy Gamea Varifiaklo
+maliciously matted to. be a (trivial) encryption of the secret    4. Maliciously-Secure Verifiable FHE
+key:. However,, FHE: also :features; encryptions of the: ‘secret      ‘Tn this section: we definé:a ew. notion of iateerity for
+key that are indistinguishable fron: standard: ciphertexts. ‘For,     Gt GerantPretioe Se aque wan acid TAGS NESEY TOP
+Sy      ee     rt a     _     FHE. ‘Specifically, it captures feal-world FHE deployment
+example; ‘key-recovery attacks can take jadvantage of the = ae eg apowes esate on adler aATISTOUS SSECSE ft
+sidluation Kaye provided ve the: senver ih, most. schemes,  SeMMES: mcluding those wath. wetively ‘malicious Server an
+SESE (OTE SNCTY EONS (Oh UTEMODS OL SEYS: WIT. aN ON     bination. of: an. existing ‘integrity notion (e.g., MAC ‘un-
+the Sever to perform. crucial ciphertext maintenance oper    epee py    OAT tee. Gk.    ait. Te     a
+eg ae   ae a   forgeability: [41] or: ‘Verifiable Computation: [28]) and: ad-
+ations’ (e:g.,. relinearization, -key-switching;, bootstrapping). = 4. Ree      a ier
+If given access’ to a decryption ‘oracle; an ‘adversary. could    hoc: coniidentiality properties: “As a result, they generally
+decrypt these evaluation keys: and:recoyer'the secret’key: For.        MUREEAVE mappa and:  integrity 3 spects ian whieh ama Kes ett,
+mepamtinden wom Adaueent Ie nk mgralety ta. cadlinun ming jax,  Hatd tO reason; about of to extend. In contrast, we present a
+example, we present how ‘to exploit, the: relinearization key = sal notion of verifiable FHE, that cleanly. composes the
+used in the BGV. scheme. We recall that BGV [14] tises a    natural: notion of verifiable FHE. that cleanly. composes: the
+telinearization:key' rk. — (a get ke. a)  ‘which igq St@2dard notion. of FHE: with: integrity’ properties. Whereas
+valid encryption. of'sk” under’sk. Using: a.decryption. oracle,    “ilowne notions fly define hic, (our moet framewerk
+we: can. recover. sk* and learn information. about sk             OWS. US. fo: Cast'y ‘Getine: extensions (OF Me core notions
+ee ONE I ENOL        ee      This. énables. us. to support a wide range of FHE deploy=
+Beyond Decryption Oracles. Full decryption ofacles that tent settings with varying requirements., We first. present
+would. allow an. adversary to: exploit the straightforward the :core definition of... mialiciously-secure verifiable -FHE
+ow      y     XP            &     vé              7                 ACIOUS'Y
+attacks*we discussed ‘above.are not commonplace‘in‘practice.. scheme (vFHE) and present:'the soundness, completeness;,
+However, ‘more: sophisticated. attacks; [10] ‘do not:equire correctness, ‘and security’ properties it must: fulfill. ‘Then,
+6
+
+
+--------------------------------------------------
+
+
+--- 第 7 页 ---
+
+we. describe: how to extend. this notion with privacy for      o Decax(Gy) + 9
+the: server inputs, as: well. as ‘with input ‘predicates. Finally, © The scheme ‘must, satisfy the correctness, completeness,
+from. an IND-CPA ‘secure FHE: scheme, commitments,.and — @0ntext-of our adversary model.        .
+a:compatible ZKP'system before studying how’to instantiate      Sin tent dite atime atecnrtey emestesttio wsuDiltie teen ther eee
+this constriction efficiently in the next section (Section 5), ‘Note that this notion “already supports public ‘inputs on
+                    °         ‘     the: server, modeling them: as':part. of the function f. “We:
+A@ Web Nt   Cn.   RT, th. TO    discuss ‘how’ to extend.-it to: support private:.server inputs:
+4.1, Defining; Maliciously-Secure Verifiable FHE       in the next section: Note also that. fis public: by: default;
+a Ba   gn cigiie af    fie eth oe     24   arid we disciss how to éxtend this. notion: to: support circiit
+One of the:key. insights of ourmotion is that-we consider oe a aaa ° Suppor erent
+ee epeage ts mins nerpuaf! ons tne DME oes cceanes cae oa4f Bangle. Ps ce spe nesica oct A otieagg Boe    privacy in. a followiiig: Section. We présent: our notion: with,
+a stronger and arguably more-realisti¢ threat: modél. Existing:   desionated verifiability. ie. some secret’key-material might
+oe des tn Bee bene evn ge een nn ag ae     esignated verifiability;, 1.€.,, some secrét-key-material might
+notions result nan mconsistent view of the.server, whichis 4. yequired to verify a.ciphertext:.   aliave deat ahve we
+i nn ann       e required to verify: a.‘ciphertext:."We believe that this is:
+both: expected ‘to deviate ‘from the: comptitation (Otherwise, = eat GHIT cating whereronty the eacret Icey hatd
+wa ee eg ee on natural:for the FHE setting,whereronly the secret-key: holder.
+integrity notions would. not be necessary. yet;,:at the sanie     3    ee nbs te T Ho mee hen dean on quae chp Bence
+athe     neers    ee a we. Gan. deerypt a ciphertext: and: therefore ‘has any: benefit from
+time’. ‘assumes that ‘the: server will not ‘use ‘these’ ‘deviations    vreee BRU ode, Meese se ronan vnswepibece peru, duos ipabend iis catduecee eae
+Wee acetal     and    in Téottnee araniac that arice &    verifying it. However, out notion can be ‘trivially adapted ‘to
+to exploit: common: decryptiom (failure) oracles: that: arise in     fin cont Pnd [the 4 Auetaat inne dont acne Sen desalea a
+vee Gh tap a on giclee pvp glee at lig ee ey.  puble verifiability af desired, Note. that even. in. a. threshold
+real-world FHE to‘undermine confidentiality. This can result “Fite Gy multickev EFHE settine. desisnated verifiability 4
+Dee ptt cy maf ede how Ween nea) nlf coe ana oboe    “HE or multi-key HE setting, designated ‘verifiability is:
+ina false sense Of security, leadifig Users. OF Constructions ope. cine hy    isk:    cam texiemil ihe NPC rai,
+Fn ee ee ge es SUfficient;, since ‘the key holders :can ‘extend. the: MPC ‘proto-
+ae hieving, these totions to believe, that they: hayes stronger    col, they :run to decrypt to also'realize verification,
+protections: than. these ‘notions, in, fact offer; Because: of ~~  ya    1 CECTYD “fo also’ realize Veriieation.    -
+this inconsistency, ‘we believe that: the natural ‘threat model © Adversary Model. We ‘assume a PPT" adversary ‘with
+beyond. the semi-honest server: assumption should. be an —- acces: to! ‘am ‘unbounded verification: ‘and, decryption’ ‘or-
+actively iialicious seiver with full access to a, decryption —acle’ Opec(cesTy;%) = b which returns b = J if
+oracle. In addition, we also consider an unbounded verifica= Verify pay (Cay Tyy'Tz) = Oy and, b = Decgx(cq,) otherwise*: In
+tion. oracle in order to give. similar strength tothe integrity addition, the adversaty has access to the usual. encryption
+guarantees,       -          -         / oracle gnc, which ‘we omit: for brevity:
+.  While there is. a natural definition for ‘confidentiality in Definition 4.2) (Correctness):
+this threat.model (i:e., IND“CCA1 security’), extending ex- A scheme’ is correct if any honest computation will decrypt
+isting FHE integrity notions with this guarantee isnon-trivial —_f9 .the expected result; More foriially, a Scheme is correct if
+because these notions interleave: aspects of integrity and = for all functions f, and for all & in the domain of f;
+confidentiality: As a result, formalizing‘the-interactions that ~    .      .    OP ne a epiecpade px]
+arise between these (and'their-oracles)‘would be challenging  [ OB  (Bk, sk) 4 KGen(1",.f)
+and prone: to’ errors. Wei instead, detangle ‘confidentiality:      Pr} Déésk(¢y) =f (@) | (ce, 7) Enciey(e) | =A
+(Dec(Ene(m)) = m) and completeness (i.e. ‘Verihabilityy . oy, a      OS
+which are usually'combined:in existing notions. This allows Definition 4.3.(Completeness)            |
+allows) us to: easily define: extensions of our‘core notion. sty computed result. More formally, a scheme 1s complete
+For example, we: are-'the :first to: extend integrity notions    if for all functions f, and forall x in the domain of f.
+to approximate. FHE [55], where: correctness’ holds, only: ap-        |                          (pk.sk) & KGen(d, f)]
+proximately (Dec(Enc(m)) © 7m). Because'we split.cortect= 5, Vetitye(Cy,thet) =  he, -7:) &Enente) peed
+ness and completeness, changing between verifiable FHE — '™ | VM" Ysk\Cw'TayTuy) = | (Cay 7) Enchey(a) | ="
+and Verifiable approximate! FHE has.no knock-on-effects on     |              (cis Ty) — Evaliey(Ca.)
+the’ remainder. of tthe ‘notion. For ‘space ‘reasons, ‘we present _pefinition 4.4 (Soundness):
+the-exact notion.of correctness here and refer to.Appendix.A: 4 scheme is soiuid if the adversary cannot make Vetity
+fora, discussion ‘of the: approximate notion.                    accept an incorrect answer Formally, a scheme is. sound if
+Definition 4.1. (Maliciously-Secure ‘Verifiable FHE).          forany PPE adversary, A and any function: f the following:
+-A.maliciously-secure. verifiable, .FHE (vFHE) scheme is a probability is: negligible in the security parameter A:
+tuple (KGen, Enc, Eval,Verify,/Dec) of PPT algorithms:
+@ Enckey(2) —* (CxsTe) where key is either? pk or sk          [Merifyse(Cys Tae ty) = | Hee A Pere: Ode )
+© Evalpu(Gx) (Gy; Ty) Where y= FZ)       ‘Pr         iN            Be ee
+© Veritysie(Ciy, Tans Ty) > Os the Client accepts if b = 1.and              Deceg(ey) % fle)          (x Tw) & Enthey (x)
+mpiorite Wh py oD.                 sO                   ECsk Cy) LAE)    Yon we y    Okncj OBec'   ae
+rejects’ otherwise:                                           L                        (Gm) Are (Cn; Te) |
+2.:FHE cafiot achieve IND-CCA2' by its:nature.                                          4.’We' note: that this ;decryption: oracle: returns ‘for, fresh, ciphertexts:
+3:/Wheri key is’ pk;, the scheriie achiévés public delegatability, whichis However, ‘the adversary. can. still-use: the; oraclésfor a fresh: ciphertext by
+flatural for HE  since.all moderna Scheiies offer public-keyséncryption,             senerating a Oitput tay; for the: ciphertext output bythe identity furetion:,
+
+
+--------------------------------------------------
+
+
+--- 第 8 页 ---
+
+Definition 4.5 (Security):                           Definition 4.6 ‘(vFHE ‘with. Server Privacy):
+We extend. the: definition of IND-CCA1 to our notion. Note .A malicously-secure: verifiable FHE scheme: ‘with server.
+that we do not require’ an ‘evaluation oracle since Evaljg privacy: is a@ tuple (KGen, Enc, Verify,,Dec, Eval) of PPE
+is public and can; be executed by: the adversary: directly. algorithms:
+Formally, @ scheme is secure yl for any PIT adversary A       « KGen,, Ene, Verify, Decare defined as in Definition 4.1,
+and any Junction f the advantage Adv ~~~" [A] (A) =       e Evalpx(Cz, 0), = (G, Ty). ‘where y =f, w)
+2 [Pr le = b| a | of the attacker in the following game is         for private server inputs w
+negligible in the, security parameter X:                                                The, scheme must satisfy (slightly modified versions: of) the
+a                  _                                      correctness, completeness, soundness). and security propéer=
+IND-GCA1 for vRHE               ties defined above:
+‘(pkysk) & KGen(1*,, py                               e For correctness (Definition: 4/2) -and. completeness.
+(ag, my) 4: ACE ODE (>, pk)                       (Definition 4.3) only. trivial syntactic changes to! ac-
+(Fe) 4 Enemy                           ‘commodate the modified Evallare required.
+awe pee                      « For soundness (Definition 4.4), DeCa(cy) - fle)
+be APHe(er)                                           replaced by fw s.t. Decu(ey) = f(@,w). Informally,
+this means. that if Verify accepts, then there. exists at
+4.2. Server Privacy                                                                              Teast. ‘one. Ssét.of private ‘server inputs that satisfies: the:
+« ‘The definition of security: (Definition 4.5) remains un-
+Verifiable. FHE' as defined: in Definition 4.1 addresses          changed, but the scheme must additionally satisfy the
+key-recovery’ attacks’ ‘and ‘ensures: that, client inputs are: pro-                  server privacy property defined below.
+tected as! expected. However; it does not address the privacy Definition 4.7 (Server Privacy)
+of server inputs and we therefore provide:an extension,of — Jyformally, a schemeoffers server privacy when Eval reveals
+the: notion ‘which, can; be. used in: settings. where formal    nothing about thé server inputs beyond what can be learned
+guarantees for Server privacy are required. In the existing fron the output, We assume a semi-honest PPT adversary
+FHE Jiterature, the notion. of circuit, privacy addresses: both    ‘with aecess to all keys, ingéluding sk, Formally, a scheme
+the’ privacy: of the function ‘and any server‘inputs. Itrequires offers, server.‘privacy’ when: the following are (statistically)
+that the result ofa computation’ ‘is :indistinguishable: from    indistinguishable for all w,w':
+a fresh: eneryption, (with the same parameters). However,        Po rr er er or ey ee
+this is a Stronger guarantee than ‘what we require here since             (f(x; w), Evalpx(ca,w)) © (f(@yw'), Evalpe(ce, w'))
+we. address’ circuit privacy as' a separate: property in’ the     com      se
+next, section: In addition, ‘the. traditional. definition:might be 4.3. Circuit Privacy
+hard. to::achieve: in:‘practice;, given that the: integrity tags 7
+of: a, fresh encryption’ cand. a computation ‘output might be:        “When. considering: ‘circuit ‘privacy, ‘there: are; two: natural
+substantially: different;. making distinguishing them trivial, versions: of this property: We can have either the: server or.
+We instead define our notion as VFHE plus a. new ‘the elient provide: the (private) circuit. While applications
+property ‘we ‘term, “Server Privacy”. Informally: speaking, it  Telying on this are currently rare: in ‘practice, certain critical,
+requires that ‘the: result of. an. evaluation reveals’ nothing ‘to,    applications. could require: formal guarantees of this nature,
+the client beyond the output of the: function. ‘Existing: work    While the: FHE:; literature: has: defined ‘the: notion of circuit
+that considers hiding server inputs does. not explicitly state P’vacy trom ‘the very beginning, existing integrity: notions
+the threat! model for this setting, We address this issue and generally did. not consider this aspect. This seems initially
+define an adversary model that considers the client as the _JUStIfied in, the case of a:server-provided ‘circuit Since the
+adversary; For. example, considering ‘the: perspective of the  Tesulting correctness guarantees are essentially meaningless.
+client, the indistinguishability has to hold even. when the | However, this is only true when. ignoring decryption oracles
+adversary’ has ‘access’ to: thei secret:key: ‘In, addition, ‘we must    (as existing, notions do): Inthe ‘presence of deeryp ton: ora
+assume that the cliént generates ‘keys.and, encrypts honestly, _ les,-it remains’ meaningful to ensure the well-formedness of
+ie. We assume a sémi-honesti client. We could strengthen  ©tphertexts to prevent key-recovery attacks. Client-provided
+the. threat ‘model at the cost of requiring’ proofs of correct — CICIt privacy, on. the: other hand, does ‘not have a cor
+this would be prohibitively expensive and not appropriate    appeared in existing integrity notions, However, of ‘the EWOs:
+for:most ‘settings. We:note the parallels between this setting 48 arguably the more interesting, in the ‘context of integrity
+and generic: 2-party MPC. However, in MPC, parties-usually:    since. one! ‘can extend the: Privacy: guarantees; ‘to ‘the circuit
+have equal protection. Here, the guarantee offered to the | While maintaining the same strong: correctness guarantees:
+client is stronger, since the:server never learns the output  Becallse our notion separates the concepts of server input
+of the function and therefore. has no information on the Privacy’ and ‘circuit privacy, we: can, easily define: both chent
+client input, not even. that which, would. be: derivable from 2M setver"versions of the: latter. Both ‘are ‘very: similar and,
+the: function output.                                            in. the following, we: define: cireuit privacy only: ‘from the
+perspective: of':the client and refer to Appendix .A. ‘for the:
+8
+
+
+--------------------------------------------------
+
+
+--- 第 9 页 ---
+
+server ‘circuit. privacy definitions. We define citeuit privacy the input checks asa predicate ¢ iW +> {0,1} and extend
+as'an'extension of the core VEHE notion. (Definition.4.1), the notion: as follows:        :        oo
+however, it:can be trivially:definedias ‘an extension of VFHE _— Definition 4.10 (VEHE with Input: Predicates)
+with, server. privacy, too.                                                     A wialiously-sécure ‘Verifiable FHE scheme: with, Client cit
+Definition 4.8 (vFHE ‘with, Client Circuit Privacy):                    cuit privacy 1s a tuple! (KGen, Enc, Verify, Dec, Eval) of PPT
+A malicously-secure Verifiable. FHE scheme: with client cir:  @/gorithms as defined in Definition 4.6.     ;
+cuit privacy is @ tuple (KGen, Enc, Verify, Dec, Eval) of PPT ‘The scheme must’ satisfy (slightly: modified. versions: of) the
+algorithms:           :             correctness, ‘completeness, soundness, and: ‘security, proper-
+
+Fy Evalsi(es, cf) —. (ey, Ty), where y= f(x) for fEF          Moe ), thé probability is also éonditional on
+The  scheme must satisfy: the comer ness COMP leteness;           « For soundness. (Definition: 4.4), the conditionals remain,
+soundness; and security: properties:.defined above, (with.triy-         9       asim aametion dre nerhahilinn nk
+EP mec gtin fmm yee tee re paacail Pe a pupeyen Bp eng      the same; but-we consider the: probability of
+lal, Syntactic changes. as necessary). In addition, it must                               :        ee
+Satisfy thé Client circuit: privacy property defined below.                                    Verify .g(eys Tas Ty) = 1 A
+Informally, a: scheme offers client circuit privacy’ when Eval                              :                        ;
+reveals nothing aboutthe function. Formally, a:scheme offers         Informally, this means that if Verify. accepts, the pred-
+Client circuit privacy when, for all ff € Fs the following        cates must havealsovheld., =
+
+         en          .      .                      changed:
+Evalpic(cz, ef) © Evalpk(cae7)                                   ~
+_           .                                  4:5. Generic Construction
+4:4. Input Predicates
+:                                                            ‘We show’ how ‘to generically construct a maliciously
+
+Guarantees about, the correct execution. ofa circuit:are secure’ verifiable FHE. scheme (Definition 4.1) from a stan-
+usually: not sufficient to guarantee: desirable application- | dard FHE:scheme and a generic ZKP system..In. order ‘to
+level properties, Arguably; there:is little differencé to the achieve security: in:ithis malicious’ setting (especially: when.
+client between a “cottect’ exectition of thé circtit on “in= considering: private: server inputs) we need to.:combine a
+correct’ inputs ‘and ‘an incorrect execution of the’ circuit, proof, of circuit correctness. (Le, of correct: computation)
+While some amount :of ‘possible deviation is inherent in —_with. well-formedness checks. on’ the inputs that ensure: the
+any 2-party. computation, a rich history of MPC and.ZKP result «will be: safe to: decrypt. This, requires ‘us’ to. make’ the
+applications; has; shown howto use input:checks to ensure concept: of valid: decryptions; explicit, which, ‘will ‘usually:
+that a, computation achievés higher-level. properties [33]. have am application-dependent component. For’ example; a
+For example, in Machine Learning a8.a Service (MLaaS), —_ logit -vector returned. by a, machine learning: model. should
+a: Cliént Can run, Several Validation, queries on inputs with consist of probabilities that sum to oné. Therefore, we do
+known. labels to etisure the model has sufficient accuracy not hard-codé a:concept of ‘validity into our construction,
+before querying’ it with real inputs.. However, in:the:privacy- _ but iristead, .defirie if relative to; a.set of functions: that return
+preserving MlLaaS setting, where the model ‘weights are. valid. results (for a certain: range of inputs).     oe
+private: to the server; the: server could jswitch, out or degrade        ‘We build our construction ftom a, standard IND-CPA
+the todel without the client noticing. This can bé solved © FHE Scheie, ‘which; includes all imodetn state-of-the-art
+efficiently by requiring the server to commit to the model —schemies. While it might initially appear’ more attractive
+weights. before: the: validation and ‘then ensuring’ that the to utilize an IND-CCA1 FHE scheme, sitice our security
+provided ‘model ‘weights match ‘the: commitment.as partof notion: is similarly defined, this ‘is not ideal. Comparatively
+each query. Alternatively; the client might: want to ensure few IND“CCA1 FHE; schemes are known [19], [22], [56]
+that the server‘inputs lie inside ia valid range thatas.a:subset and ‘theexisting schemes are computationally much more
+of the possible plaintext space, arid, more generally; We can expensive than IND-CPA Scheiiies. This 48. becatisé exist
+consider arbitrary predicates ‘on the server inputs that must ing IND-CCA1, schemes either already explicitly include
+hold: for the’ client ‘to ‘accept ‘the result.                                  integrity protections [56] or rely'on powerful primitives that,
+
+‘We note ‘that one could, in theory; integrate such input in turn, would, require ‘integrity-like protections: [19],. [22]
+checks; into ‘the ‘function. ‘f. However, this would, require to ‘realize. As: a. result, starting -our, construction. «with an:
+evaluating: them under FHE cand, potentially: cause issués © IND“CCA1. scheme:.and.'then: adding: ‘integrity protections
+when: trying ‘to combing ‘this. with thé notion, of Grcuit for circuit corectiess wouldlead to, duplicated éfforts when
+privacy. We define our notion.as an extension of VFHE with —_instafitiating the construction in, practice,
+private’ server inputs, as it only*really applies in this setting:      ‘Note that ‘constructing: a scheme for the core: VFHE
+public inputs are ‘modeled ‘as ‘part of the) circuit:and can be — definition is comparatively, straightforward, as; ‘this; setting
+trivially’ checked for ‘consistency: by the client. ‘We:model _ only:features public’ server. inputs: for any f (which includes:
+
+9.
+
+
+--------------------------------------------------
+
+
+--- 第 10 页 ---
+
+the public inputs) that. results in a, valid ciphertext for together oderiv FHE. and. ZKP systemis, including the mis-
+any: freshly encrypted. client inputs, we. can. combine an § match between ‘the large ‘polynomial rings used in ‘most
+IND-GPA. secure FHE scheme witha MAC-then-Encrypt state-of-the-art. FHE schemes and ‘the ‘integer fields. used ‘in:
+scheme such as; Chatel et/al.. [32] ora generic: ZKP ‘proofof — thervast majority. of ZKP. systems. We.investigate several. ap-
+circuit; correctness: Therefore; we :instead focus on showing —_ proaches'to bridge’this gap and introduce a new optimization
+how ‘to achieve the moré complex fiotion of Verifiable FHE _ for’ emulating ring arithmetic inside. ZKPs.
+with, private: server inputs, where ‘we imust actively counter:        ‘We consider a. wide range of ZKP systemg and iden=
+act: the possibility of key-recovery attacks. ‘We. discuss this tify four promising candidates’ that are best suited. to the
+construction below: and: refer to. Appendix: B for construc- characteristics .of FHE ‘verification. In addition,, we: also:
+tions: of. the ‘core vVFHE definition: and ‘the other extensions, discuss how, to: instantiate our. notion. with ‘hardware: attes-
+including approximate:corréctness, circuit privacy; and input _ tation primitives, introducing: an ‘optimization ‘that: allows:
+predicates. Finally, we. disciiss concrete instantiations. Of us to accelerate FHE-in-TEE, by a:factor of two: over the
+these constructions in, the following section (Section, 5).              existing state-Of-the-ait for multiplications. We evaluate our
+Construction... (vVEHE ‘with ‘Private ‘Server’ Input)               ZKP. : and TEE-b ased instantiations fora variety’ ® fidifferent
+—     —-     _     oN     aes               workloads going far:-beyond the type of circuits that existing,
+e Let € =(E.KGen,,€.Enc, €.Dec, €.Eval) bean    FHE ‘integrity: notions’ can: express.
+IND-CPA secure FHE:; scheme: with (FHE); circuit: pri-                                 .
+vacy: (See: Appendix: A, for formal definitions):          gates     os      :
+, tet Foun be a set of functions, with fc iPforall  5-L. Verifiable FHE via ZKP
+we Xandwe W, €.Dece:(E-Eval (cx, W)) tesults in          .         ‘            Co aes
+‘a valid plaintext? (which.can be:a:subset of all possible      Jn, the following, we: discuss how to instantiate ‘our
+plaintext).                                                   construction for verifiable: FHE; with private: server. inputs:
+eet If = (IKGen; IProve, IlVerify) be a  (¢-f Section 4.5);
+generic zero-knowledge proof (e.g5.a,.ZkSNARK) for Bridging /FHE' and ZKP. The’ areas of FHE and -ZKP:
+ZRPPOK {to iy = EsEVvalpk, (1; Ce, w) A WE Whe     have been. maturing ‘mostly independently; and. state-of-the-
+For f © FF. we construct: a vFHE scheme ‘with pri- — art.ZKP systems,have primarily been’tailored to applications:
+vate! server. inputs’ (KGen, Enc, Eval, Verify, Dec) satisfying that share few characteristics with. FHE. In. addition, HE
+Definition, 4.6 from these ‘building ‘blocks’ as ‘follows:         computations are inhereiitly large. and complex, making
+« KGen(1?, f) + ((pkes pki) ,(skes sky); where           proofs non-trivial. Most: of this complexity arises from, the
+(pkg; ski.) = €:KGen(14,.f) and                                                   advaticed ‘ciphertext: maintenance ‘operations used by’ state-
+(pki, Ski) = IL/KGen (1, f)                              of-the-art ‘schemes:. A's: ai result, previous work ‘on ‘FHE
+o Encg(2) — (Gey), where 7, — ¢€, and @, = integrity frequently chose to ‘use: simple: schemes such as
+(E.Encps(m)) for 2ex                                                      the: BV scheme: [44] to avoid this complexity. However, the
+© Evalpi( Ce; td) > (Cy, 7y)s Where ¢,. = €.Eval(f,e,,td) applicability of these. schemes is’ limited in practice because
+and 7,=IlProve(¢,,tr,0) of their prohibitive overhead. We instead choose: to target
+© Verify.(ey, Ta, Ty) = LU Merifyyp:sk ((7y;, 7).                         modern state-of-the-art. FHE schemes ‘which: offer’ the: per-
+& Decaley) y,, where y= €. Deciig. (ey)                      formance ‘necessary: to realize! real-world FHE: applications.
+                          -FHE .schentes; ‘fall. into: ‘two: main -families,, with. the:
+Proof The. correctness of our construction, reduces:to the © /WE-based FHEW [16] and TFHE [15] schemes focusing
+cortéctness of the FHE scheme, and the completeness re- Primarily’ on evaluating binary circuits, while RUWE based
+duces to the completeness of the ZKP scheme. Security can Schemes such as. BGY [14]; BIFV [58] [13] and CRKS [55))
+be ‘reduced. 'to the semantic ‘security of the FHE' scheme  f0cus.on arithmetic circuits, Initially, LWE-based schemes
+(because: we; assume’ f € Fx yw, and enforce we W.   might appear promising: isin, they’ use: smaller ciphertexts
+and correct’ execution, through the ZKP, anda inthe and offer faster computation. However, efficient implemen
+encryption); Soundnéss, follows directly from the soundness _ttions of ‘schemes ‘in this family usually make heavy'use of
+privacy’ (as defined in FHE) of the FHE scheme and through  vethead in the: ZKP proofs. The RLWE schemes, in turn,
+the’.zero-knowledge: property: of the ‘ZKP. We! refer to. the    feature larger’ ciphertexts but also offer, a powerful. form: of
+extended version of this:paper [57] for'amoreformal proof, ata parallelism [59] thatis at the! core ‘of most state-of-the-
+_         art: FHE: results, ‘While’ our construction can ‘be ‘instantiated.
+© Tesdankialiwo Vasthakla”      be Des Pi        with. any ischeme,.‘we select BGV because: ‘it ‘is; amenable:
+5. Instantiating Verifiable FHE in. Practice             to.integer-based ZKP and requires the least.amount of non-
+la this séction, wwe Tnsemntite oui-noton of mali@iouglye  auithMetic operations to realize its ciphertext-maintenance
+secure: ‘verifiable FHE using® state-oi-the-art: FHE. and :.ZKP:    ies DIT SD eesedlinces Cestiicees @ @ondinssnescal afswesealy
+ee            ’ between. ‘the ving based.'FHE ‘computation: and. ‘the. mostly:
+5\:Note thatthe conversénéed not Holdya practical réalization-could rely, field based: ZKP systems. Specifically, BGV uses rings‘of the
+on one-sided boutids: on noise, srowtly,                    form. Rg = Zig [X] /(X* +1), ie:, polynomials with:degree
+
+
+--------------------------------------------------
+
+
+--- 第 11 页 ---
+
+up to NV (usually NV > 21) and coefficients in Z,. Most anid a Statidard field-based. ZKP ‘with logs px 254 bits,, this
+ZKP. systems, on the’ other hand,,:mostly use large. prime enables a4 reduction in the numberof modulo:operations:.
+fields: @.e., ‘Zs ‘where: pis usually: a.254-bit prime). Note       ‘Withotit Our optimization, there ig little: difference bé=
+that ‘multiplying ‘polynomials efficiently requires converting —_ tween the. .RNS and non-RNS approaches! with respect. to.
+them into a form.that.allows element-wise:multiplication via __the: effort required to prove: modulus gates. ‘This is because
+the Number Theoretic Transform,.(NTT), 4 discrete analog'to —the'cost. of proving’a modular reduction. is roughly: linear
+the Fast Fourier'Transformation (FFT), Asa, side-effect, this in the bit-width,of the modulus. However, with our opti-
+also. removes the need ‘to explicitly compute’ the reduction mization, using the RNS approach allows:us: to: reduce: the:
+modulo X"'-+1., However, weimust still take care'to achieve —uimberof tiodularteductions even further, Considering an:
+modular. reduction with regard to the-coefficient modulus.g.  FHE circtit ‘with & arithmetic operations, a non-RNS, nom-
+Maichine the Coefficient Modulus, Existine work mosiy CD24 implementation requires  modular‘reductions of
+Matching the Coefficient Modulus. Existing’ work mostly —_si7e log.,.g. Our optimization reduces this to roughly #2224
+assumes’ that’ it is. possible: to instantiate the'FHE and. ZKP |i. reductions of size low. a. By RNS-splittine ak
+schemes’ so'that the: ZPK field modulus:p is the'sameas the  Odular reductions’ of ‘size Tog, g. By RINS-splitting each
+FHE coefficient: modulus g, While FHE- already needs;fo “ment ‘ite: 2 limbs, ithe size of each. gale as: reduced
+vn pe os      See eee ee eae mee Oto logsq; &  12820 but, without any’ optimizations, the
+support a, wide: range of ciphertext. moduli since:‘this as..an    auiniber: of modular reductions, increases to, kL, negating
+application-dependent parameter, most ZKP: systems.offer Fy < rte, However ‘with out optimisation, we ssquine
+less flexibility, There is also an inherent tension between the tog, ns, 7 108s 4 ws antarrecinetions of roduced cine
+FHE and.ZKP parameters here, since’ FHE security reduces OM/Y PL ogy Bipg;p Modular reductions of reduced size.
+with. larger g (requiring increases in: NV to compensate) while        posed Therefore, with our optimization, RNS allows ws ‘to
+many'‘ZKP’ systems rely, on. élliptic:curves becoming more f€dtice the cost. per modular reduction éven, while already
+secure.as p increases: As a result, while it is possibleto | reducing: their number, For example, with log,¢ ~ 60
+inistatitiaté: FHE. with, a matéhing coefficient, ‘this results bits and logyp ® 254 bits as above, an RNS approach
+in. an unnecessarily inefficient FHE scheme; especially for _ splitting q into-two 30-bit moduli would halve'the cost again,
+smaller circuits:, On the ‘other hand,, for‘larger FHE circuits;  giving:us a total/8* decrease‘in:modular reduction.ovethead..
+q@ might: outgrow. the ZKP modulus: ‘More:fundamentally, | As a. result; we: can.construct comparatively efficient ZKP
+this approach does not support the modulus ‘switching used Circuits for a’ wide range Of FHE applications ‘while allowing
+by BGV and, othér state-of-the-art. FHE schemes to manage freedom. in. FHE and. ZKP parameter selection,              -
+Chinese Remainder’ Theorem (CRT) ‘to decompose the:coef= ie uitterent ZKP systems’ follow different ;       hes in’
+Residue: Number System (RNS) limb independently, This: is     translating the, gore nese of one ine ba HER in anitimenc
+already frequently‘used:in FHE:implementations: to improve        ae eee auness E  erent ae ie uae Integrity 10
+performance: on, existing: ‘hardware; as, computing: tén, 60-    “OW Se ieorettine of the cern OBIE arti nne We
+bit operations is Significantly cheaper than computing one eet eee eee ee OT one at the mae. widoerend
+600-bit operation, However, even with the RNS approach, eee oe ose ee on. one ae eo oe ene
+matching .ZKP and FHE parameters remains difficult and = °"" ree Renken cae a B ‘io ithe cireurts:into a
+inherently’ limited: to: trivial. circuits,. as it ‘cannot express    nen ° d dita a Seaatibice waste a ret oe eiiecte
+more complex: ciphertext:maintenance' operations.                 such as additions and, mu'p ications can. De:realizedcirect'y
+                                                                              ising:a single:-constraint.. However, morecomplex operations
+Emulating ‘the Coefficient Modulus. Removing the need  (€-8-. tounding) require a larger number of constraints. Since
+to match. FHE: and. 'ZKP parameters allows: ‘more’ efficient ‘he’ majority of operations in. (NTT-based) FHE ‘are ‘sim-
+instantiations of both, but requires us to emulate: the FHE Pile: arithmetic: operations, they can’ be efficiently’ translated
+coefficient modulus inside the ZKP field. This can'be done 1. RECS... While PLONK-like ‘systems [61] extend RICS
+arithmetic operation, which, is comparatively. cheap, How=    recuining’ sub-cireuits; this Js. only eificient tor’ Jow-degtee
+ever, we:also need: to prove the correctness of the result,  SUb-circuits” In our setting,, the: only’ ‘candidate: for’ such
+which requires two ‘expensive range proofs. Wecintroduce.an  ©X'raction ‘would be ‘the modulo sub-circuit;, but this: is not
+optimization: that:reduces the need ‘to perform. these expen- low-degree ‘circuit. Beyond RICS, STARKs [63]| present
+sive: modulus; emulations., We: observe: that, in practice,.the 87 alternative Way: ‘to. express‘compulations not.as eircuits:
+modulus,. especially for smaller cirouits. Because modular  STARKS is directly related to the size of the state space
+reduction produces’ the same: result whether it is applied to 204 the complexity of the: transition function. describing
+the’ inputs .or‘the: outputs; of an operation, we can wait until    each’ step. Since FHE feature s large ciphertext expansion
+just before thezresults could overflow:and only:compute and 294 a. high-degree' modulo function, this makes it a poor
+prove the modulo reduction then: Specifically; we can: per-
+needing: ‘to: reduce’. .For ‘small circuits: with logyq''60' bits — closéd-source proof-ofconcepe implembntation:exists ac this poiiit.
+
+
+--------------------------------------------------
+
+
+--- 第 12 页 ---
+
+candidate for realization using‘ STARKs. Recent work [64] erations (€.¢.., relinearization) use component-wise-rounding
+can. also ‘forgo explicit arithmetization. and instead directly operations internally. Additionally, -Rinocchio. only provides
+express! arithmetic ‘circuits. However, ‘this:;approach scales only ‘around. ‘60. bits: of (Computational) soundness’ ‘for the’
+poorly with the ‘number of inputs, which. is high'for.FHE — rings*used‘in FHE. ‘We use a simple soundness amplification:
+2N field elements (where N > 2"). As adesult, RICS achieve stronger soundness guarantees. Overall; Rinocchio
+currently remains’ ‘the most. appropriate choice for FHE _ is'much tiore FHE-friendly than previous proof or argument
+integrity applications, and. ‘wei .consider only ZKP systems — systems’, ‘but still. struggles to efficiently represent: state-of-
+eerty app       39, AN We consider Only:       y         systems:     SS SITUSICS £0.        y SP
+with. efficient, support for RICS: arithmetizations.                             the-art FHE optimizations‘natively: Nevertheless; we include
+ee HET ccs Hb cepepesmtg seein sess Vetbapapee eeepc sg co   it ‘because: it; represents an interesting avenue: for future:
+Zz eh eke eee ” one years, a Ee anely    work and, promises significantly improved. performance ‘for.
+One widbemread vos in veal week dovleomotie Howere, the cireuits it can support. Tn, Section 5:3,, we evaliiate our
+Sor ae iach en auitrble enali@ytes for ote ietuntiating ac Construction when instantiated using these ZKP schemes and
+When. Selecting, Suita e CAnMeates, TOF Our astantiation, We also. compare it against: a TEE-based instantiation.
+need to consider that: HHE has slightly different require. 7
+ments than, €.g., blockchain applications. For example, dué 5.2. ‘Verifiable FHE via TEE
+oe ee eee eee oe ies or Tn this sinstantiation, we use hardware attestation rather
+concern in’ FHE, which already. introduces a. noticeable    Hace pemvisysn aipmin{iia aisle wn uagnasttis lon tiguutpen cnuueaes
+communication overhead Instead -weiare-mosilv concerned _Lialll Gtyptogtaphic: proofs to provide. the integrity compo-=
+communication: overhead., Instead, we ‘are mostly concerned    ne Qh Le cd oo et Te Hocecee Lincs Teseects can athe, cdc dhe
+a    rraer        rear artn          es      nent. Weinote that, while there has been.a plethora-of attacks:
+with, achieving .a.good,trade-offbetween prover‘and-verifier     Oy pi    Oe ey eT,    a
+diocese Ree gfe, ee        =   Bn pe ag Ra    =   on. TEE-based, confidentiality guarantees [45]-[47],. there
+time: Note that:-we-do not. require public: verifiability. and            Oe a a ye
+ves aphasia ogapattettl, axccpmmptotttes voc nun cefReesery Aogeltbromegee!     have been. significantly fewer issues ‘with the attestation-
+can, ‘therefore: exploit potentially more efficient. désignated      Pron     ese PAAT 'Niatacisiaaw Gk ai.    3
+corenittintetTtqen aeribecacsnin AYTs, aout] aaner Poscgan murat) apes. pscen ces Ponn    based integrity: guarantees, [47]. .Natarajan ét, al. ‘presented
+verihability schemes, ‘We: select: four candidate. approaches     Hon, Pecan Bon Prec peegitl con fit kd TS tn ES ee ae PYRE
+that are especially: ieuitable for veritabl     i          the: first implementation of this FHE-ii-TEE. approach, [42]
+at.are especially ‘suitable ‘for verifiable .FHE:               ts a a anos. a
+First. we     ‘der Groth [68]. which -       fed a    and Wwe extend. their work to our notion with, server inputs.
+- ists achroush er, Groth vee ‘whic a a ae   In. addition,, we introduce’ an optimization ‘that’ allows: us
+eeanthaies wa te wat nd sith ° cod Gon a cea emea,    to efficiently, compute subfinctions ‘on untrusted. hardware.
+ieeeauives a « orsted aoe evel BOE ot atiee ie    Since: TEEs ‘can :directly' attest: to ‘the program. that ‘they:
+Shue oho on Tr antie is Leman adh een nh    are::tunning;. there. 1s no, need for explicit: .arithmetization.
+see lockchain avoleatione, Howercs in vaifiable bHE,  HOWeVeh. programs will frequently require adjustments to
+the, cifowt a is, applications. ‘ig-weati’ thie trust 1 art, Lover: interface with the enclave. SDK. and to remove
+dna tent ane. server Can. aD waste at nee party’ unsupported operations ‘and performance bottlenecks. Nev-
+NBC an et Lei Se tup : wack i; Party daiee 7 new © hme      ertheless, TEEs support most: FHE: schemes ‘more: naturally:
+i Rivers . feotte. bts mas anttos "the : ait i remes    than ‘ZKP’ systems, including’ offering: native support for,
+Foe catty far cach winenit, Howeyor thie ie rat alot ty & Tunding or-floating-point operations, However, compu-
+FHE wy foreach eireuit. © wally alten not re cara, tations and especially: memory operations inside the enclave
+he, where Parameters are usua’ y’ already circuitsspeciic.. are. significantly slower than operations in, the: untrusted
+that completely remove. the need for such @ set-up. Here, —_ new.optimization that accelerates 'FHE-in-TEE by a factor.
+we. consider Bulletproofs. [66] which is ‘partiof'a generation —_of two. for batched multiplications.. The: key: insight in our
+of ZKSNARKS ‘without ‘trusted setup that brings them into 9p timization is that the server can also rely onthe guarantees
+the ‘same ‘realm ‘of performance’ as traditional efficient con- 9 the enclave to-not leak:its inputs to the clietit, Specifically,
+structions that require (universal or per-circuit) setup. While it can, use lightweight cryptographic proofs that do not
+most implementations of Bulletproofs focus ‘on using itfor have the: zero-knowledge property: to prove to the enclave
+efficient. range proofs, for FHE, ‘we also require the: ability    that ‘computations performed. on. the: untrusted: hardware are’
+to Support. more generic RICS systems. We’ alsovevaluate indeed correct and can be’ relied upon by’ the enclave.. This
+Aurora [67], ‘whichtis ‘part of the: same: generation and trades gables our optimization which. computes computationally
+off asymptotically worse' prover times and proof sizes fora expensive batched thultiplications on untrusted hardware
+move: to post-quantum secure assumptions; which matches andthe uses an éfficient: Schwartz-Zippel-based ‘proof of
+nicely: with the ‘post-quantum security of .PHE ischemes:.            correctness’ ‘to ‘move. them! back to ‘the trusted. domain.. For
+Finally, ‘we also consider .Rinocchio: [31] by Ganesh et _ brevity, we refer’ to Appendix: D :for.a:detdiled. description..
+al.,, which we: briefly discussed in Section.3.1. Rinocchio |
+offers native support for FHE-friendly: rings,. potentially  5-3+ Performance Analysis
+giving: significant performance: benefits: over saystems ‘that         Ta this section, we evaluate our ZKP- and, TEE-based,
+heed fo emulate these tings: We extend Pinocchio. with instantiations cross a range. of workloads representing dif
+fer  to  ‘App endix c for further details. on our opumization. a brief outlook ‘on ‘the :future: of FHE integrity:
+However, its ‘expressiveness: ‘is limited,, as..Rinocchio only:
+supports ‘arithmetic: ring: operations, ‘whereas ‘some; FHE ‘op-            6:. WésOinit, sétiip; results Where ‘additional /setupris required.
+12
+
+
+--------------------------------------------------
+
+
+--- 第 13 页 ---
+
+ZEP system        Setup Prover Verifier. ~=«Selup, = ‘Prover’~=«Werifen’«=‘Selup. = Prover’ Verifier
+FHE:[No Integrity] 0.003 's      0002s 0001s  0:807's      0011s 0.0098 1.053,     0.0148 -0:010'8
+Bulletproofs [66]         & —7569.799 's 552079: s          > 3957122: 278.433 s:          ~ ROO774T is 575.792 5
+Aurora [67] = 1554589 s 328805 BISOATT «79.323. 55 5028. 085's 106.345 ''s
+
+-Grothlo [65] 198:040's 195.941 s 0002'S AI9.2228 ATL TIT § 0.0028 GARMIN'S: «65374118 0002's
+
+Rinoechio [31]     0.485, 8      0:320'8     0.0968  46:700:s 305.000! s     0.153. §}    26:90's: 443.000 's     0181s
+TEE. [Appendix.D]            =       ‘0.154 's            =            =       1,100: s:            =            5       1,260 is            S
+Table 2, PERFORMANCE RESULTS FOR DIFFERENT INSTANTIATIONS OF VERIFIABLE FULLY HOMOMORPHICENCRYPTION.
+
+FOR.EHE, SERUP.= KEY GENERATION, ;PROV.ER.=|HOMOMORPHIG COMPUTATION: AND VERIFIER'= ENCRYPTION/DEGRYPTION,
+Implementation & Setup. We use the Microsoft SEAL [2] Performance. In Table. 2 we present the.performance results
+implementation of the: BGY scheme [14],,.which.isa‘state- for the: different instantiations; compared. against a baseline
+of-the-art RNS- and NTT-based:implementation. We express _ of: non-verified FHE. ‘The FHE*parameters for the workload
+our'ZKP circuits using Circom [68] which translates its;cus-- are; .N = 8192) and logs q'= 1387 = 45 +46 + 46) :and. the
+tom.specification languageto RICS. We-rely:on:a:variety of  zero-knowledge:proofs have between‘2?* and:2?“R1CS con-
+state-of-the-art: ZKP implementations for thé backends! we —_ straints. We observe that the runtimes fallinto three different
+Use the arkworks library [69] to implement’Groth16 [65]..for categories? practical, (seconds),. acceptable. (minutes), and
+Aurora [67] we use. the libiop library by the same authors, impractical (hours), We note ‘that ‘verifier times are. always:
+and for Bulletproofs [66] we use’ the: Dalek’ library [70]."We either practical’ or. at least.acceptable. ‘However, prover. time’
+implement. Rinocchio [31] and extend. it.with.an optimized —_-varies;‘wildly between the: different instantiations. Kor. ex-
+encoding: scheme: (cf. Appendix:C). ‘We: make:‘our imple- ample, transparent SNARKss (Bulletproofs: and. Aurora): take:
+Tiéntation available: as open-soutce®. For the TEE-based several hours to compute the proofs. In, addition, they have
+approach, we: ré-implement. CHEX-MIX, [42] and. extend _— the: slowest verifier times, making them overall whattrac-
+it with our’ optimization (cf. Appendix. D), targeting Intel _ tive ‘for FHE ‘verification, especially when considering that
+SGX via-the OpenEnclave SDK. [71]. We make our FHE-in- | FHE permits.a. straightforward realization of trusted. setups:.
+TEE ‘framework available: as; open-source’. We: evaluate-our  Groth16‘offers’the: best verification time,, being; nearly: :in-
+implementations on an, AWS c5d.4xlarge instance with distinguishable from pure FHE: At the same time; it offers
+16: vCPUs atid 32 GB of RAM. We itiake our instantiations «© acceptable prover’ runtimes in. ‘the-order of minutes. This
+arid evaluation setup publicly available”.                       conies at ‘the cost of several minutes’ Of tristed. setup, but
+
+Fe cP tgs RF pecesanlt Hoes Asean HON Macecg oltonecstyen ga Pe eases    that Gati. bé amortized over many client queries. Rinocchio
+Worklonile. We consider dines differens cimaiisexdhuiep> i iemented with ou optimizations) fleshy slower
+Tesenting: # a ifferent level. Of & ompl exItys (7), Our’ ‘Toy’ eit      but still very: practical client:verification.but‘improves stgnif-
+cuit ‘computes la ciphertext-ciphertext multiplication (ten-    icantly: on: prover time: and. especially. setup times. ‘Finally;
+soring only, no post-processing): on. two ‘inputs provided frie in-TEE offers by far the most practical performance
+by the: client, ‘Le., in the ‘outsourced computation. setting a+ the cost of additional, trust. assumptions and hardware
+considered, ‘by previous work: (ii)The Smal. :cireuit: rep-    requirentenits                         ”
+resents a, more: realistic Jow-depth two-party computation,        dig. ag      ea
+computing, NoiseFlood(z-'v + w) for an encrypted client Outlook. Our work shows that,, while the cost: of robustness
+arithmetic: operations are: ciphertext:plaintext, operations):.    high- ‘value: applications. 1n challenging settings. FHE appli-
+The: presence’ of the: server inputs requires input checks to. Cations currently mostly focus on settings ‘where: latency’ is
+ensure validity: and prevent key-recovéry. attacks. Their pri- Not critical, which. allows them: to tolerate: the: additional
+vate mature requires performing and proving noise-flooding Overhead more easily. While our constructions and instan-
+as: part of the. computation, We follow the approach de- _ lations: explored. (and optimized) existing ‘state-of-the-art
+scribed. in. [30], which. adds :randomily-selected encryptions  FHE and .ZKP schemes; there are. further opportunities: ‘to
+of: zero: to: increase ‘the noise of the ciphertext without  'uprove performance. through. ‘the co-design of EHE and
+modifying the: message: (ii) Finally, our Medium cir- | 2KP schemes, More fundamentally, we need:to improye-our
+cuit introduces ciphertext-mairitenance operations, comput- | Understanding of how to construct efficient and expressive
+ing NoiseFlood (ModSwiteh ((@—w)?)) fora client input © Ting-native ZKP systems. We believe:that the increasing de-
+w and a’private server input 2.Asiin the previous task, this Mand to deploy FHE.in challenging real-world environments
+requires proving the’vdlidity of'the Clientinput:and.ensuring _—WII. also: drive future research. on, these issues.
+server, privacy: ‘via noise-flooding. In addition, it requires Acknowledgments: We’ would.like; to thank)Chaya;Ganesh,,
+computing and. proving: the modulus switching: ciphertext Anca, Nitulescu, Eduardo Soria-Vazquez, Michael. Steiner,
+operation, going well ‘beyond. what. prior work on FHE — Nojan Sheybani,. Erin, Hales; Lea, Niirnberger; Martha Nor-
+integrity is able to express.                                                           berg: Hovd, and ‘the. PPS' Lab téam, for'their insightful, imput
+|                            and ‘feedback. We ‘would also like to acknowledge our
+
+8."hups://eithub.com/MarbleHb/iingSNARK                          sponsors for their generous support, including Meta, Google,
+
+9. https‘//github, com/MarbleHE/FHE-in-TEE                           SNSF through. an: Ambizione Grant: :No:, 186050, and the
+
+10. htyps://sithib.com/MarbleHE/ZRP-FHE                                                    Semiconductor. Research Corporation.
+
+13
+
+
+--------------------------------------------------
+
+
+--- 第 14 页 ---
+
+References                                            [18] J: Loftus, A, Mays .N: P: Smarts and F; ‘Vercauteren, “On: CGA>
+Secure soméwhat Homomorphic; encryption?” in: Selected. Areas: in
+
+veg tg HS oth lh WE Gh ttt sp te th OH         ‘Cryptography, pp.. 55-72;, Springer Berlin Heidelberg, 2012.
+
+[L]  :S. HaleviJand,V- Shoup, “Algorithmistin HEb;” in Advancesin Cryp-         EES      “oer              =
+tology — CRYPTO: 2014, pp: 554-571, Springer’ Berlim Heidelberg, [19] :Z. Li, S, D, Galbraith, and:C..Ma,'“Preventingadaptive key. recovery:
+2014.            .        i           :       attacks, Of. thé «GSW. ‘levelléd shonioiiorphié encryption scheme; iit
+
+wey EE Ais GF Palme aed GP Dimon BG amomensmali’ abdbenet         Provable, Security;. pp.. 373-383; Springer: International ‘Publishing:,
+
+[2] HL. Chen, K. Laine, atid. R. Player, “Simple encrypted. arithmetic,       2016.        oes         oon                  ws
+library. -- SEAL/v2.1," in, Financial Cryptography‘and Data Security,    cep ee. teh Pht pu th ee pee ae
+‘pp- 3418, Springer Iitérnaticnal:Publishing; 2017.                                    [20] J. ‘Lai, R. A, Deng, ‘C. Ma, K. Sakurai, aid. J. Weng, “CCA-Secure
+be RUM mo ay awe         Say ay es          .        ‘Keyed-Fully: homomorphic: encryption,” in Rublic-Key Cryptography:
+
+[3] Av AL Badawi; J, Bates; F: Bergamaschi; D: B: Cousins, S. Erabelli,         BRC2015. po. JOSE, Sorinow: BetlintHeidélbare.D0le
+N:Génise; S. Halevi, H. Hunt, A“Kim, YaLéé, Z.cEiu,DAMicciancio,   oe ©  x BP: 20 8: Springer’! erlins ei elbergs 20) 6: |   |
+I. ‘Quah, 'Y. Polyakoy, 'S. R.v:, .K. Rohloff, J.. Saylor; D., Suporitsky, [21] .K, Enitita, G., Hanaoka, K. -Nuida, G., Ohtake, T. -Matstida, and
+M. ‘Triplett; ‘V. Vaikuntanathan; and Ve’Zueca,; “OpenHHE: Open-         ‘S: “Yamada,, “Chosen: ciphertext secure keyed-homomorphie ‘public-
+Source fully ‘homomorphic éneryption-library,” in: Proceedings. ofthe.                key: cryptosystems,” Des. ‘Codes. :‘Cryptogr.,, vOl.. 86; pp. 1623-1683;,
+J0th Workshop: on Encrypied Computing & Applied Homomorphic               Aug. 2018:,
+
+‘Cryptography; 'WAHC’22; (New, Yorks, NY, USA); pp 53~63,,Asso-   907 2 “Whee ove:         er        fog DIC
+‘ciation: foriComputing; Machinery, 7Noy., 2022:.                     22] Bs Wang: ‘Wang; and Re: Ane; “COAL secure; FHE from EIQ,
+
+nee      revisited?” Cybersecurity;;vol. ‘1, pp: 1<8, Sept. 2018).
+
+[4] -N. Saiiardzic, A. Feldmann, A., Krastey, S. Devadass, R. Dreslinsks,   AE AE Tc WN dtbegs meses alesse pit Ge col 4 necce ca oe lthas TSE Bheserasces
+
+“" \G. Peikert, and D. Sanchezs “El: A fast and:programmable acceler. ‘(#3 Ks Emura,, “On the security’ of. Keyed-Homomorphic' PKE: Prevent:
+ator for:fully, homomorphic: encryption?’ in MICRO-54: 54th.Annual               ing key: recovery” attacks:iand. ciphertext yalidity, attacks,” JHIGE,
+IEEE/ACM. International Symposium on Microarchitecture, MICRO.         ‘Transactions on Fundamentals of Electronics, Communications and.
+"21, (New’ York, NY, USA), pp: 2384252, Association’for Compuling               ‘Computer Sciences: Vol. E104.A, ‘io. ‘1, “pp. 310-314, 2021.
+Machinery, Oct. 2021.                                                                                [24] ‘S. Sato,"K., Emura, and.A. Takayasu;'Keyed-Fully homomorphic en=
+
+[5] ‘Re :Geelen; .M. Var ‘Beirendonck; ‘Hz V: Js: Pereira, B:, Huffman:         cryption’ without ifidistinguishability: obfuscation,” Cryprology ePrint
+‘T, McAuley, B. Selfridge, ‘D, ‘Wagner, G:. Dimou, 1, Verbauwhede,              Arelives 2022.
+
+F, Vercauteren, ‘and D. Wi, Archer, “BASALISC: Flexible ‘asyn- 25] (R.. Gennaro, C. Geritiy, and B. Patho, “Non-interactivé verifiable
+chronious hardware: accelerator for’ fully homomorphic: encryption;                  computing? Outsourcing computation to untrusted workers in Ad»
+
+[6] A: Feldmann; ‘N; Samardzic; A: Krastey, S.. Devadas;, R: Dreslinski,                Heidelberg, 2010.
+
+A, Eldefrawy, N:, Genise, ‘C: Peikert, and.D: Sanchez; “EL: A fast [36] ‘R./Gennaro andD., Wichs, “Fully homomorphic-message authentica-
+and programmable: accelerator’ for fully: homomorphic: encryption        tors?” in Advances in, ‘Crypiology - ASIAGRYPT. 2013: pp: 301-320;,
+extended version)” IT Sept: 2021.                                                  Springer Berlin Héidélberg, 2013:                         ~
+
+[8]   P:Fauzi, M: ‘N; Hovd, and. H, Raddum,, “On theIND-GGAT security:            (pp. 336-352, Springer Berlin’ Heidelberg, 2013.
+
+OL FHE! Schemes,” Cryptology, eBriit Archive, 2021.                                [28] D:, Fiore; "Ri, Gennaro; ‘and V. Pasiro; “Efficiently, verifiable-compur
+
+[9] Zi Zhang, ‘L: Plaritard, and: W; Susilo; “Reaction:attack on outsourced                 ‘tation-on encrypted data;* in-Proceedings‘of the: 2014-ACM, SIGSAG
+Computing with fully. homomiorphic. eiicryption schemes,” in Informa:                Conference. on. Computer: and, Communcanons Security, CCS “Tt,
+tion. Security and, Cryptology - ICISC 2011, pp: 419-436, Spritzer:         (New York; NY; USA); ‘pp: 844-855; Association ‘for, ‘Computing
+itions by’ software faultsinjections”” Cryptology ePrint Archive; 2016:                 computation‘on encrypted data,” in Public: Key"Cryptography —PKG
+
+ee ein yey epee   ee hye pe    ~   “   os   .   _—        2020, pp» 124-154, Springer: International:Publishing;, 2020:-
+
+[Li] “M., Chetal sand Q:. Tang, “Onkey recovery aitticks! against existing    way He we ae      ce aye pe csi kong ts
+‘somewhat: homomorphic encryption 'schemes” in. Progress: i Gryp» [30] As, Bois, J. Cascudo;. D. Hiore, and D. Kim, “Hlexible: ‘and, efficient
+dology = LATINGRYPT 2014, pp: 239-258, Springer’ International:               ‘yerifiable: computation, on, enerypted ‘datay’ in. Rublic-Key :Gryptog+
+‘Publishing, 2015.                                                                                            raphy’ PRC. 2021, pp: 528-558,. Springer’ International-Publishing;,
+
+[12] Bz Chaturvedi; ‘A. Chakraborty, A; Chatterjee;;and-D; Mukhopadhyay;      —      ..       a       a     ;
+“A practiéal full key récovery attack oi THE ahd HHEW by ifidicing —«[3.] ‘€.;Ganesh; A; Nitulescu, and E., Soria: Vazquez; “Rinocchio: SNARKs:
+decryption ertors," Cryptology ePriat:Archive, 9022:                           forring: arithmetic,” Crypiology, éPrint Archive, 2021...
+
+[13] Ji. Fali.aiid ‘R, Vercautéien, “SomewHatepracticalully homomorphic [32] |S: Chatel,:C. Knabenhans;,A; Pyrgelis; and J.-P. Hubaux, “Verifiable;
+encryption” ‘CryprologyePrinr-Archive, 2019.                                               ‘encodings’ for secure homomorphic analytics," July, 2022.
+
+[14] ‘Z::Brakerski, (©) Geniry; and ‘V; ‘Vaikuntanathan,“(leyeled)»fully hoz [33] .D.. Evans, V. Kolesnikoy, and.M. Rosulek, “A pragmatic introduction
+‘fictiorphic eticryption without bootstrapping,” ACM Trans. Compit.,        to, secure MulticParty’ ‘computation,’ Foundations and,'Trends® in
+‘Theory: vol:6; pp, 1-36; July: 2014.,                                                             Privacy. and’ Security,-vol. 2,, n6:.2-3;;pp. 70-246, 2018.
+
+[15] ‘1. Chillotti, N: Gama, M. Geotgieva and M: Izabachetie,“TFHE2 Fase = [34] SS. Goldwasser, ¥., “I! Kalai, R., .A.. Popa, V. Vaikineanathian,, and
+‘fully homomorphic encryption over the tous,” J: Cryptology; vol: 33.                ‘Nz Zeldovich, “How to ‘run ‘turing ‘machines’ on, encrypted: data;* in:
+pp: 34-91, Jan: 2020;                    /     ~                Advances: in Crypiology.— CRYPTO: 2013, pp:.'536-553, Springer.
+
+[16] .L: .Ducas; and .D.. Micciancio, “EHEW.: Bootstrapping homomiorphic:
+
+‘encryption: ‘in less ‘than. ‘a; second,” im: Advances, in: ‘Crypiology — [39] 'G- Gentry, -A. fully homomorphie: eneryption: scheme, ‘PhD. thesis;
+EUROCRYPT 2015; pp.:617-640;. Springer Berlin Heidelberg, 2015',              ‘Stanford University, 2009:
+
+[17] DB: Boneh; ‘Rx Canetti, S: Halevi; and J. (Katz;,“Chosen-Ciphertext [36] ‘O. Regev; “On lattices, learning with‘errors, random linear codesiand.
+security from:Identity-Based. encryption?” SIAM J., Comput:, vol. 36,                eryptography;? Journal ‘of ‘the. AGM,, vol» 56, pp» 34:1-34:40; Sept,
+‘pp. 1301-1328, Jan. 2007.                                                                              2009.
+
+14
+
+
+--------------------------------------------------
+
+
+--- 第 15 页 ---
+
+[37] “V, Eyubasheysky;, G. Reikert, and ©; Regevs “On, ideal, lattices ‘and [56] Ry Canetti; .S: Raghuraman; |S. Richelson; and Vy Vaikuntanathan;
+‘learning: with errors overstings” i Advances in ‘Cryptology = EU:                “<Chosén-Ciphertext secure fully homomorphic:enéryption;” inPublic=
+ROGRYPT 2010, (Beilin Heidelberg, ‘Berlin, Germany), pp. 1-23,        Key (Cryptography, — PKC’ 2017, pp. 213-240,. Springer: Berlin, Hei;
+‘Sptinger Berlin Heidelberg; 2010:                                                                  delberg; 2017;
+
+[38] “Intel®: software: ‘guard extensions: (intel®: SGX)?” https://wwws, [57] As Viand, ©. Knabenhans:, and A. Hithnawi, “Verifiable fully: homo-.
+iniel.comi/contentiwww/us/eti/atchitecture-and=téchnology/software=                morphic encryption.” https://arkivorg/abs/2301.07041v1,, 2023., Ex-
+guard-extensions:html. Accessed: 2022-112,                                              ‘tended version: (v1).
+
+[39] J. .Geater, “ARMO 'TristZone®?*in Trusted. Computing forEmbedded [58] Z: Brakerski; “Fully homomorphic encryption ‘without: modulus
+Systems (B: Candacle, "D; Soudris; and I; Anagnostopoulosy ‘eds,);         switching from. classical GapSVP* im Advances in: ‘Crypiology =
+‘pp. 35245, Cham: Springer’International Publishing; ‘2015.                                -CRYPLO, 2012, pp. 868-886, Springer Berlin, Heidelberg, 2012.
+
+[40] “AMD: SEV:SNP» Siféngthéning, VM ‘isolation -withi dntégtity, [59] .N. P. Smart ‘and B Vercauteren, “Fully homomorphie SIMD? opera-
+‘protection and store.” hupsi//Awwwiaitid.com/systen/files/TechDoes/                tions.”Designs; Codes and ‘Cryptography. An International Journal,
+'SEY-SNP- strengthening-vm: isolation-with-integrity-protection-and-           wOL. 7, pp. S781, 1. Apr..2014.
+more-pdt,                                                  [60] E. Béi-Sassoii, A. Chiésa,D. Genkiii, E. Troimiéd, and, Mi. Virz,
+
+[41] 'S. i, 2X: Wang: and: R. Zhang, “Privacy-Preserving: homomorphic:                “SNARKS for'c: ‘Verifying: program executions;succinetly:and in veto:
+“MACS ‘with éficiétit Verification,” it; Web Services, = TCWS 20/8,               ‘Anowledge:”" Cryptology ePrint Archives 2013
+
+[42] <D. Natarajan;.A., Loveless, W. Dai, sand R. Dreslinski,. “CHEX-MIX®                ‘tions over lagrange-bases ‘for Oécumienical. noninteractive arguments
+
+Combining ‘homomorphic encryption’ with trusted execution‘enyiron-.     of knowledge.” https://eprint-iacr-org/2019/953:paf,, 2022., Accessed:
+anefits for ‘two-party. oblivious inference in the cloud,’ Cryptology.             2022-122
+eP har Archive, 2021.                                         [62] ‘B.. Chen, B. Biiiiz, ‘D. Boneh, and Z. Zhang, “HyperPlonk: ‘Plénk
+
+[43] (S. Benabbas, R. Gennaro; and ‘Y. ‘Valilis, “Verifiable delegation        ‘with Linear-Time prover and High-Degreé custom: gates,” Cryprology.
+‘of computation over’ large datasets” im Advances tin Cryptology: —        ePrint Arehive;:2022.
+
+CRYPTO 2011, pp. 111-131, Springer Berlin-Heidelberg; 2017.       [63] E; Ben-Sasson; I; Bentoy;, ¥; Horesh; and.M: Riabzev, “Scalable,
+[44] °Z: Braketski aiid V; Vaikuiitanaihian, “Fully homomorphicencryption             ‘transparent, and post-quantuim secure Computational integrity,” Cryp=
+
+‘from Ring-LWH and security for key deperident messages; in Ad-                 ttology ebrint Archive, 2018.
+
+‘vances in Cryptology— CRYPTO20 11s ppx505—524, Springer Berlin        [64] “T! Xie; J; Zhang; “Y:, Zhang; ©. ‘Paparanthou;, atid ‘D; Song, “Libra’
+
+Heidelberg; 2011.                                                                                                 ‘Suceinct Zero*Knowledge proofs ‘with optimal:prover computation;*
+
+rattacks.on intel SGX,’ June.2020.                                                        [65] J. Groth, “On.the;size of Pairing-Based jion-interactive arguments,” in
+
+‘SGX and countermeasures: A: survey?" ACM, Comput: Surv; vol: 54;                Berlin Heidelberg, 2016.
+
+pp: 1-36; July 2021:                                                                                     [66] B.-Biiiz,.J. Bootlé;-D.-Boneh;, A. Poelstra, PB, Wuillé,and:G::Maxwell,
+[47] ‘Ky ‘Murdock; ‘D:Oswald;'E) D: Garcia; Ji, Van, Bulcks, Dy Grassy               “Bulletproofs:; Short ‘proofs; for confidential, transactions iand more,”
+and FE ‘Piesseiis, “Plundervolt: Software-baséd fault injection attacks               dn 2018 JEEE Symposium on Securityand Privacy (SP);pp: 315-334.
+
+againstiintel SGX)*in 2020 IEEE SymposiumonSecurityand,Privacy | ——- May 2018.       a         ——
+
+(SP); pp: 1466-1482, TERE, May: 2020.,                                               [67] E. Ben-Sasson, A., Chissi,, M. ‘Riabzev, ‘N. Spooiier, M. “Virza, aid
+[48] Av Wood, K Najarian; and-D:Kahrobaei, “Homomorphic:encryption              N. E Ward, ".Autora: ‘Transparent succinct, arguments:for, R1CS," int
+
+forsitiachitie learning if-mediciné and bidinformatics;? ACM ‘Compu.              Advancesin Cryptology. EUROCRYPT.2019; pp: 103-128; Springer
+
+‘Surv, vol. 53,-pp. 1-35, Aug. 3O20:,                       _ International Publishing; 2019.  —_    7
+[49] ‘Ls °B. Pulido-Gaytam, A, “Telemykfi, J, (Mi ‘Cortés-Mendoza, [68] H. Garcia Navatro, “Design. and. implementation. of. the, citcom 1.0.
+nT Nts Babenko, and: Radchenko. "A. survey’ on privacy preserving        compiler” Master’s thesis, Universidad Complutense: de; Madtid;
+
+machine leariing -with :fully homomorphic: encryption;” in, Latin               2020;
+
+American High Performance Computing Conference, pp. 115-129; [69] .arkwotks corittibutors, “arkworks zkstiatkeecosysteiii,? 2022:
+Springer, 202      —        —      P70] DB. Gayptography, “Ruse Bulletproofs Library Online: hups://sithub,
+[50] ‘€., Marcolla,. Vz Sucasas; M, Manzano;.R. Bassoli; iH: P., Hitzek;              ‘com/dalek-cryptography/bulletproofs, August 2020:
+
+and N; Aaraj, “Survey: on. fully homomorphic encryption; 'theoryand ys ey an Tavs SDR httne//oithubccom/onenenclavelovenenclave:
+
+applicatiotis?’ Maz, 2022.                                         [ZL] “Open enclave SD” https://github. com/openenclave/openenclave:.
+
+Teiy qe qetimasttads Slow onloncer disse GUTWIT EE Ee Sil Eivife demean. 2] Balin D: Miccianecio; M: Schultz; and J, Sorrell; “Securing !approxi-
+
+[51] -K. ees  cent acne CE eee adie oboe               mate horiomorphi¢ éricryption usitig; differential privacy,” Cryptology
+
+ THORP LC} eneryp Hon aaa practice, ‘ TYP ology a “ro Actes 2 22          ePrint Archive; 2009.
+
+Beilin Heldelbeig, 2016. =Sst=<“<i~‘“‘<‘<‘<‘<CS*é‘i=S*”      ‘eryption; schemes for: finite: fields)” Cryptology: ePrint Archives 2021.
+FEAT TH Tpaeansaee wa qoahaal hes Opivarand wtaqreantticatixedep ays [4] BR; Boemer;'S, Kim, G- Seifu; FD, de ‘Souza, ‘V: Gopal, and ‘Others,
+[53] -R.Boursedtid M.Izabachene, “Plug -and- play sanitization for THHE,                “Tatel HEXL (release: 1:2).* heeps://eithub-comi/intel/hexl, 2021.
+
+-CryptologyéPrint Archive, 2022;                              cee pm ee be      ee    ae ee gene    a
+wats Be Whe me Wiis Mosemsonesire ce Vile secasesc thus thas Heat tos thane HB.   [75] ‘O.:Ozerk, C. Elgezen, A. C. Mert, E, Ozturk, and E_-Sayas; “Efficient
+[pa] *€., Gentty,, “Hully, Homomorphic encryption ‘using, ideal, lattices,” in        number theoretic fransform: implementation on GPU: for homomor-
+
+Proceedings’ ‘of, the forty-first annual, ACM. isympostumiton Theory         phic éncryption® Crypiology. ePrini Archive, 2021.
+
+‘of computing, STOC “09, (New: “York, NY, USA), pp» 169-178, ee ee ee Sy Behtiy UR carne
+
+Associationifor Coniptitins. Machinery; May2009.                                 [76] -A.. Bishnoi, :P. L.. Clark, A. Potiktchi,, atid J. :R.. Schinitt, “On.zéros
+cue ws an pm ee eh       of a polynomial, in, a ‘finite erid” Comb, Probab, Comput... vol. 27,
+
+cryption’ for. arithmetic of approximate: ‘numbers;” sin Advances’ in        nn    —    aes      pe as      ra
+
+\Cryptology:=-ASIACRYPT 2017, pp: 409-437, ‘Springer Infemational «(7 7] ‘F; ‘Tramér-and-D., Boneh, “Slalom; ‘Fast;-verifiable:and privaterexecu#
+
+‘Publishing, 2017,                                                                                     tion of neural Tetworks iittsted hardware.” June 2018:.
+
+15
+
+
+--------------------------------------------------
+
+
+--- 第 16 页 ---
+
+Appendix A.,                                 Zero-Knowledge? There exists a PPT simulator S =
+(S1,S2) such that S,, outputs a simulated CRS crs and a
+In this appendix, we provide additional, formal definitions. trapdoor td; On input'crs, ‘@, and'td, Sp outputs a simulated
+proof 7m; and. for all PPT adversaries .A = (Aj,.A9), such
+Definition A.1. (Fully. Homomorphic! Encryption)              that
+A. Fully ‘Homomorphic Encryption (FHE) scheme is’ a tuple,        |    [te w) ER: | (ers,vk) H Setup(1”) ]
+of PPE algorithms: (KGen, Enc; Dec; Eval).                           7       ,        en ere
+ee AS. fe pe                              Pr      A       (w, mw) < Ay (*;ers) |
+e KGen(1*) —> (pk, sk)                              Ast <i  ee ge
+@ Enciey (x) 4 ¢g where: key is either ipk.or sk.                 Ax(n) = 1   me Provecs(@,W) | |
++ Evalpk(f, Cw, w) > cy where y = f(ayw):.and              (@,w)ER | (ers',td) + Si(1*)
+¢ Deca(ey) > y                                                 Astra | see Biepe! eel oa
+FHE ‘schemes, must satisfy. correctness, security, and com-        : alr)    | oes a CFS a td) ae
+pactness properties: We, omit a:formal: treatment here and
+instead refer to. [35]-for a: definition of these properties.        Definition A.5:(e-Correctness)                    7
+A scheme is correct if any: honest ‘computation will decrypt
+Definition A.2 (FHE Circuit Privacy [35])           __, ele expected rests Hor approximate schemes thera tra
+An FHE scheme € iy circuit-private for circuits in. Fe if — USM eTTOr & this 18 zero for standard exact schemes.
+for any ‘key-pair (pk, sk) output by E.KGen(1*) any circuit    §, and forvallx in the domain of f:       !
+f & Fe; and. any fixed. inputs cg inthe image of €.Enc for ©?        .      mer d
+inputs xs .the following. are (statistically) indistinguishable:                             (pksk) & KGen(d, f)
+                           (Cy Ty) — Evaliey (cz)
+Definition A.3 (GNARK)                                               where: l| ‘| is: a scheme-specifie norm; and © is a scheme-
+Let R. be an. efficiently computable binary relation whicn — SPecilic upper bound om the decoding error. (which. may
+consists. of pairs of the form (w,w),.where xis a statement, TePENe on ‘di ple, or other quantities of the scheme):
+and wis a witness. Let. L,.be the language associated with
+the relation, R; te; L= {a |sweR(a;w)= 1}.             Definition A.6 (vVFHE with: Server Circuit Privacy):
+A. triple, of ‘polynomial time algorithms IL = A maliciously-secure: verifiable FHE ‘scheme with. server,
+(Setup; Prove; Verify) isa: SNARK jor ian NP relation circuit privacy. is a tuple (KGen; Enc; Verify;.Dec; Eval) .of
+R,, if the following properties aré satisfied:              .               PPT algorithms,
+Completeness: For every true statement for the relation: R.,       « KGen(1, F) > (pk, sk)
+an: honest prover'with a valid wimess always convinces the         e Enc, Dec, and Verify are defined as in. Definition 4:1
+verifier: V(x, w) CR:                                    _& Evalye (ens f) + (Cyst%y), where y = f(x) for fe F
+re    Boe Crd pda)         Thé séhemé nist satisfy ‘the Coftectiess, completeness
+PE ve fifyge(@,m) = 1  | (crs,vk)  Setup(T") |  =i             soundness, and security properties: defined in. Section'4, In
+L             | T+ Provecs(#, 0) J]         addition, it must.satisfy the server’ circuit privacy. property
+Knowledge Soundness: For every PPT adversary, thereex- ‘defined below.
+ists. a@ PPT extractor that, géts full aécess to the adversary’s
+stare (inchiding its random coins’ and imputs), Whenever — Definition A.7 (Server Circuit Privacy)
+thé adversary produces. a valid argument, the extractor can Informally, a scheme:offers circuit privacy when Eval reveals
+compute a witness: with. high, probability: WARE =              nothing about the function. We: assume. a -semi-honest. PPT
+[Werify(i,8) <4 | ers vk Setup(1)          _    adversary with access ito-all keys, including sk:, Formally, a
+Pry ere on lta cra o Alererey | = NSBICA) Scheme offers server circuit privacy when; for all f © F,
+L ARE, w) = 0. | (a); 0") — AlE(ers)       “the: following are (statistically) indistinguishable:
+We' stress: here: that. this. definition. requires ,a: non-black-                   Evalue. FY A? Evalecleecf)
+box extractor, ie, the: extractor gets full access: to’ the                 Evialpi (Cig £1 Evalpx (Cat)
+adversary’s state.         OB    ;    .     qe
+Succinctness: For anya and w,, the length of the proof is.     Appendix B.
+given by: |x| = poly(A) « polylog(|z| + |w]):.                             In this appendix, we provide generic constructions for the
+remaining variants of our’verifiable FHE notion. We refer'to
+Definition A.4 (k-SNARK)                                   the: extended version of this. paper'for formal proofs [57]- We
+A. Zk-SNARK. for a rélation.R isa SNARK for R.withthe begin witha formal description ‘of ‘the: construction -for.our.
+following additional’ property:                                 core notion. As described in Section 4:5, the ZKP system:
+16
+
+
+--------------------------------------------------
+
+
+--- 第 17 页 ---
+
+could also. be replaced ‘with homomorphic MACs due to the            e LetIl= (1L.KGen, I.Prove, I.Verify) bea genetic:ZKP
+lack of server. inputs.               ,                           with ZKP{w 1:€.Evalpes(C2,w) A we WA d(w)}.
+Construction. 2 (vEHE ‘from: ZKP)                        F o |  S  7  “aKG  construc ‘ Verify, Do, afl a
+74    vO WT    o    orn   ;    aN. 4:            input predicates: (KGen,.Eric, Eval, Verity,.Dec); ‘satistying
++ Let é = (2.kGen, €.Ene, é.Dec, €.Eval), be an            Definition 4.10 from, these: building blocks as follows: ms
+IND-CPA ‘secure FHE scheme. |         —      “ze TAN aL. ON PAN
+« Let Il = (U1.KGen, ‘Il.Prove;. II.Verify):‘be a. ‘proof of       € IKGen(1" ) ff) = (pkg. Dkr); (Skes skr),); where
+knowledge’ (e:g.; a, SNARK) for the relation                  .                   (pkeasks) =EKGen(1" f) and
+Verify, Dec) satisfying; Definition. 4.1. from: these building        Ly: 1. (PREN a" eee ey  where @, — &. Eval Pc, am)
+(E-Encpks (M1), cq, fore €      cen epee     _ Appendix C.
+@ Evalpk (Gx; w) ley; Ty), Where ey = E-Eval(fyeesw):     ~—
+and Ty = HLProve (Cys Tas)      oop                     In. the following, we -deseribe: our optimizations: for’ the:
+o Vetifys (Cy; Tas Fy), =-Verifyig'sk (Zy5Tx)):             Rinocchioprotocol:by Ganesh et al. [31]. The original paper.
+e Decsk(cy) — ys, where y = €-Decsns (Cy)                                introduces two: possible: encodings, for the cyclotomic tings
+We note that we can. construct:a,schemerwith ecorrectress  USed by FHE: The frst one (dubbed, Regev-style’ encoding)
+following: the: same approach, if' we: require .€ to “be .an    encodes each of th oN © Gelficients mL 24, by ene Y ping at
+                                                        a       the: parameters of the encoding ‘scheme:are ‘chosen ‘to: ensure:
+Our constrictions. for VFHE. with Glient. or server) cireuie hat the encodings are’ k-linearly-homomorphic, where k 1s
+ptivacy: are directly detived. from the construction for the  detefmined by the circuit: The second construction ("Torus
+core notion ‘but instantiated with.a universal function that  ©@Coding’)) uses a. variant of the TEHE cryptosystem:
+takes ‘the (private): function as ‘part ‘of the input.           nee Reet en oding has (am lexpansron factor . t
+Co        ee       Wieta = m*logy(@), as it encodes: each: of. the: N
+Construction 3 (vEHE with Client Circuit Privacy) We coefficients ‘in Zg as. an ‘element: of Z%. However, most
+instantiate’ a’ VEHE scheme according to Definition 4:1with  FHE implementations ‘will not be:abile'to ‘support:a plaintext
+f = Au; @ universal, circuit: (for.a.class of functions F)»In modulus of ithe size: of g:(typically hundreds of bits); and
+order’ to compute f(x) for f € we use the input <;,— in practice one would néed to encode: each, of thé 1-CRT
+Enciey(e|f):                                                                                    components. individually, leading to an expansion. factor of
+a        7        a      — bit log, (Q). Using this encoding ‘will thus slow down the
+‘Construction 4:(vFHE with Server’ Circuit Privacy) We —_ prover. and'verifier. significantly, as'all encodings, decodings;,
+instantiate a VEHE scheme with server 'privacy. according to —_ and ‘computations’ over the’ encoding’ space ‘will be’ slow.
+Definition, 4.6 with jf = Fy,,.a ‘universal circuit (for a class       The TEHE encoding; on.‘the-other hand,,-requires us-
+of: functions F). In, order to compute: f(x, w) for fEF'we — ing floating-point arithmetic to encode and, decode; unlike
+use'the: server input:w' = w|f.                                 the FHE scheme used for computation, Additionally, this
+Since we use: a, genetic: ZKP system to enforce validity  °nCoding does ‘not allow us to ‘use the (potentially heavily
+checks, on the server inputs, extending our construction: ito    brary ring: arithmetic libraries provided by the:-FHE
+verifiable FHE, with, input'predicates 18 straight-forward:                   "Therefore; wer-propose: a..new: RLWE: Regew-style, en-
+ge     ete Teese Decndten baa         coding: for’ Rinocchio, taking advantage of the batching
+Construction 5 (yFHE ‘with Input Predicates)               vechnitqve.contnionly ised in PAE. For many FHE schemes,
+o Let € =(E.KGen,, €.Enc, €.Dec, €.Eval) bean      if the: plaintext’ modulus ¢ satisfies: the condition. f = 1
+IND-CPA. ‘secure FHE: scheme: with (FHE): cireuit pri- mod 2N., one’ can. ‘use an. efficient ‘encryption that: packs’
+‘vacy (See: Appendix, A.for‘formal definitions); = == ‘NW plaintext: values (interpreted. as an. ¢lement of /R;) into
+« Let Fx,yy bea set of functions; with f EF if forall a single: ciphertext’ in. R2. For ‘our encoding, we ‘take: ian:
+we tandwe W, €.Dece.s(EEval(Ce;w)) resultsan input in Ry asl polynomials in Ryg; 2; Rg, (this decom-
+a'valid plaintext (which can be:a, subset of all possible —_positiori is already used natively’ by the FHE schertie for
+plaintext,                       efficiency reasons), and encode each. of those ‘polynomials
+e Let ¢i be: a. predicate: on. the: inputs.                      asian: élement in Ri. The expansion, factor in: this case is
+a:   ate ges        .   AE ho ct tt gs    a    Hle82(Q) 1 Jog: (Q). amproving‘on the Regev: encoding by:
+11... Note thatsinversesdoes not have*to hold.-A’ practical‘realization:could,    “Toes (a)      Bq's  2 THP    8:        8        SOY
+rely ofi.one-sided bounds,6n noise. growth..                                                         a factoriof .N > 21°. Using: this: batching technique imposes
+
+
+--------------------------------------------------
+
+
+--- 第 18 页 ---
+
+the requirement g, = 1 mod DN on the ciphertext moduli Ras a polyrioniial of degree k —1 over R,, where ety is
+of the FHE. scheme; this condition. is already necessary for the 7th coefficient.       -
+some ‘schemes: (e.g.,. RNS-optimized BGY. [73]),. and: can. be        ‘The tensoring operation’ takes.‘as input ‘two. ciphertexts
+easily’ satisfied, for’ all other. schemes.                           ct = (cto, etz),,ct’ = (eto, ct!) €.R?, and. outputs cour =
+;     a                               ct et! = (cty~ ct§, cto eth +-ctg ~ ety,et, ~ ct{) € R}.
+Appendix D..                                               Now, ‘evaluating the expected result ct - ct’ at. a. random
+In; the following, we describe our optimization for FHE-in-       B ea) et! fay wletp tacetnlehe ve es, Hic ke .
+TBE: Executing any code ‘inside'a TEE incurs a'slowdown —ntrusted result ctoue at this same point can be: done: using
+(due: to: ‘reduced. computational. power and memory), ‘espe-     Horners. wile: g(a) = eb!"(a) — 8b! be o(ét +aee ti!)
+cially in the: case.of FHE computations; that are’ typically    After’checking that. f(a) -_ aa . we kno ww. that ct-¢ +! — et"
+compute- and:memory-intensive: To alleviate this slowdown; — with high probability (for ane hie coro discussed in this
+We: propose a new method to accelerate. FHE computations —_ paper, \|Al— gi © 2%, 1.¢:, 60 bits of statistical, soundnéss):
+inside ‘TEES, by taking advantage’ of faster (but untrusted) While computing the result has a, concrete complexity. of
+hardware: (e:g., ‘vanilla ‘untrusted, CPU, a. CPU ‘with spe- 1. p-tep,d Xin; verifying the result as outlined above only
+cialized vector instructions:repurposed for FHE [74],a GPU: yequires-4:.4p, 4 pt, 1 RXR:                                  -
+accelerator for HE: [75], or even a ‘dedicated hardware       ‘This approach’can alsoibe-extended.as follows to verify k
+accelerator);        ;          —       ;     tensoring operations :at’ thesame: time:, Let: f(ai,......, a) =
+The key ‘insight to. our improvement is that both the — 5. (eg, . et!) (ai) = Ny (Ctio 4 da ete) » (ebizo +
+TEE ‘and ‘the ‘untrusted. hardware, are: on. the side: of the  *~ ee! oS  d “Tei   el Rak gi i
+(malicious) ‘server: ‘Therefore, the: server’s input does: not %*; © ia), ang ae _ Ger. + is) = Vaeicti(ai) =
+need ‘to ‘be protected from the server, and,can.be stored on  2ui=i (Cty. F Gin (Cty tae ety g)).              ;
+the server’s Own ‘untrusted hardware; the client’s inputs: are     Computing; .b tensoring -operations: has ‘a concrete:
+only: available in their enérypted form, and can thus.also be © Complexity of k Rtas sh RXR; ‘while verifying, the re-
+stored outside the enclave: This insight allows us to;devise a Sult by computing: (a) and g(@) has a ‘complexity: of
+protocol. for verifiably outsourcing certain FHE operations, 44 AX Ry (Gk —~2) nihr,® RX Rs By trading expensive R=R
+In order fo do‘this-efficiently, weerély on a'very-lightweight, | Multiplications. for cheaper .2-R ‘additions and. A-F mult
+information-theoretic argument: of equality, based on the __Plications, we ‘are able to achieve a:non-negligible speed-up,
+generalized Schwartz-Zippel jemma: over rings:                 wie ‘we quantify. ‘an ‘the next peclion.   ‘         font
+oa        Bd Or it FRAT. TEN,           We can: view ‘our. protocol, as: a, much more efficient,
+eee eee ee ener e ee ie Greate hen ery Ronzeto-knowledge: version of Rinocchios indeed, Rinoc-
+ora ring Ih det [= Jt" > Rt be a mvariate nonzero. aio also uses Theorem Ds 1, bil tequites significantly more
+polynomial, let AC R be a fintte exceptional set; and let J rotco) machinery’ in. order to achieve zero-knowledge. In
+deg(s) denote the total degive of fs Thens               addition, Rinocchio’ offers: roughly logy qi, © 60: bits: of
+a       aren ay dew (f)                   computational ‘soundness (and. thus’ requires, a. soundness
+Pig _as|f (a) = 0] < Tal                    amplification: strategy); ‘while: our protocol. offers, logs gi,
+nae bits Of: statistical’ soundness;, and, can, therefore provide a
+-For.a, given. computation, ‘we ‘encode: the: expected. result        satisfactory level of sec arity by steelf,
+in. one polynomial (f), and the: actual result computed on = ““"“‘We note that this optimization is similar to the Slalom
+untrusted. hardware in, another. polynomial (g). The trick for a mework by ‘Tramér and. Boneh [77], ‘which. offloads ma~
+efficiency; then, As fo compute the compute: and. compare    trix. multiplications (over unencrypted) values to untrusted
+J(q) and. 9(q) faster than, computing the full representation i, a»dware: by, usin Freivalds’ algorithm: Slalom. telies on
+of gin the fist place,  Je: the tensorine operation. whichis {LEE both for-integrity and data confidentiality and only
+ing, we will interpret’ a ciphertext ct = (cto,...., ¢tx—1) €           |         ees                     |
+
+
+--------------------------------------------------

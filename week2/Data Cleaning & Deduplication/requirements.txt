@@ -1,0 +1,14 @@
+# 核心依赖包
+langdetect==1.0.9
+datasketch==1.6.5
+beautifulsoup4==4.12.2
+regex==2023.10.3
+numpy>=1.21.0
+pandas>=1.3.0
+
+# 可选的HTML处理
+lxml>=4.6.0
+html5lib>=1.1
+
+# 文本处理
+nltk>=3.8

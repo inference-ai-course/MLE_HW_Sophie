@@ -1,0 +1,41 @@
+# NLP会议演讲样例URL列表
+# Sample NLP Conference Talk URLs
+# 
+# 使用方法: python transcription_bot.py --urls-file sample_urls.txt
+# Usage: python transcription_bot.py --urls-file sample_urls.txt
+
+# ACL, EMNLP, NAACL等顶级NLP会议的演讲视频示例
+# Examples from top NLP conferences like ACL, EMNLP, NAACL
+
+# 注意：以下是示例URL，实际使用时请替换为真实的YouTube视频链接
+# Note: These are example URLs, replace with actual YouTube video links
+
+# https://www.youtube.com/watch?v=EXAMPLE1  # Talk 1: Transformer Architecture
+# https://www.youtube.com/watch?v=EXAMPLE2  # Talk 2: BERT and Pre-training
+# https://www.youtube.com/watch?v=EXAMPLE3  # Talk 3: Question Answering Systems
+# https://www.youtube.com/watch?v=EXAMPLE4  # Talk 4: Neural Machine Translation
+# https://www.youtube.com/watch?v=EXAMPLE5  # Talk 5: Sentiment Analysis
+# https://www.youtube.com/watch?v=EXAMPLE6  # Talk 6: Named Entity Recognition
+# https://www.youtube.com/watch?v=EXAMPLE7  # Talk 7: Text Summarization
+# https://www.youtube.com/watch?v=EXAMPLE8  # Talk 8: Dialog Systems
+# https://www.youtube.com/watch?v=EXAMPLE9  # Talk 9: Multi-modal Learning
+# https://www.youtube.com/watch?v=EXAMPLE10 # Talk 10: Ethics in NLP
+
+# 10个3Blue1Brown深度学习和线性代数教学视频
+# 10 3Blue1Brown Deep Learning and Linear Algebra Educational Videos
+
+# Neural Networks 播放列表 (8个视频)
+# Neural Networks Playlist (8 videos)
+https://www.youtube.com/watch?v=aircAruvnKk  # 1. But what is a neural network? | Deep learning chapter 1
+https://www.youtube.com/watch?v=IHZwWFHWa-w  # 2. Gradient descent, how neural networks learn | Chapter 2
+https://www.youtube.com/watch?v=Ilg3gGewQ5U  # 3. Backpropagation, intuitively | Chapter 3
+https://www.youtube.com/watch?v=tIeHLnjs5U8  # 4. Backpropagation calculus | Chapter 4
+https://www.youtube.com/watch?v=LPZh9BOjkQs  # 5. Large Language Models explained briefly
+https://www.youtube.com/watch?v=wjZofJX0v4M  # 6. Transformers, the tech behind LLMs | Chapter 5
+https://www.youtube.com/watch?v=eMlx5fFNoYc  # 7. Attention in transformers, step-by-step | Chapter 6
+https://www.youtube.com/watch?v=9-Jl0dxWQs8  # 8. How might LLMs store facts | Chapter 7
+
+# Essence of Linear Algebra 播放列表 (选择2个视频)
+# Essence of Linear Algebra Playlist (selected 2 videos)
+https://www.youtube.com/watch?v=fNk_zzaMoSs  # 9. Vectors | Chapter 1, Essence of linear algebra
+https://www.youtube.com/watch?v=k7RM-ot2NWY  # 10. Linear combinations, span, and basis vectors | Chapter 2
