@@ -35,25 +35,7 @@ week4/
 └── README.md                 # This file
 ```
 
-## 🚀 Quick Start
 
-### Prerequisites
-
-```bash
-# Install required packages
-pip install langchain langchain-openai langchain-community
-pip install sentence-transformers faiss-cpu
-pip install PyPDF2 tiktoken arxiv
-pip install openai python-dotenv
-pip install numpy pandas
-```
-
-### Environment Setup
-
-Create a `.env` file with your OpenAI API key:
-```
-OPENAI_API_KEY=your_api_key_here
-```
 
 ### Running the System
 
@@ -102,16 +84,6 @@ OPENAI_API_KEY=your_api_key_here
 - **Max Tokens**: 500
 - **Context Window**: 3 retrieved passages
 
-## 📊 Performance Metrics
-
-| Metric | Value |
-|--------|-------|
-| Average Retrieval Distance | 1.3334 |
-| Documents Retrieved per Query | 3.0 |
-| Total Test Queries | 10 |
-| Retrieval Speed | <100ms |
-| Success Rate | 100% |
-
 ## 🧪 Test Queries
 
 The system was evaluated with 10 comprehensive test queries including:
@@ -129,85 +101,75 @@ The system was evaluated with 10 comprehensive test queries including:
 
 ## 📈 Results
 
-### Sample Q&A Output
 
-**Question**: "What are the latest advances in language models?"
+************************************************************
+Q1: What are the latest advances in language models?
+************************************************************
 
-**Answer**: "The latest advances in language models include the development of frameworks for faithfulness evaluation, zero-resource black-box hallucination detection, and data augmentation using large language models."
+Answer:
+The latest advances in language models include the development of frameworks for faithfulness evaluation, zero-resource black-box hallucination detection, and data augmentation using large language models.
 
-**Retrieved Sources**:
-1. Prompt-Response Semantic Divergence Metrics (Distance: 1.09)
-2. When Explainability Meets Privacy (Distance: 1.12)
-3. Cross-lingual Aspect-Based Sentiment Analysis (Distance: 1.14)
+Retrieved Sources:
+  1. Prompt-Response Semantic Divergence Metr - Distance: 1.0902
+  2. When Explainability Meets Privacy An Inv - Distance: 1.1180
+  3. Cross-lingual Aspect-Based Sentiment Ana - Distance: 1.1435
 
-## 🔧 Configuration
 
-### Adjustable Parameters
+************************************************************
+Q2: How does attention mechanism work in transformers?
+************************************************************
 
-```python
-# Chunking
-chunk_size = 512        # Maximum tokens per chunk
-chunk_overlap = 50      # Token overlap between chunks
+Answer:
+The answer cannot be found in the provided context.
 
-# Embedding
-model_name = "all-MiniLM-L6-v2"  # Sentence transformer model
-batch_size = 32                   # Batch size for encoding
+Retrieved Sources:
+  1. AI Blob LLM-Driven Recontextualization o - Distance: 1.5016
+  2. Searching for Privacy Risks in LLM Agent - Distance: 1.5067
+  3. Using Large Language Models to Measure S - Distance: 1.5578
 
-# Retrieval
-top_k = 3              # Number of chunks to retrieve
 
-# Generation
-temperature = 0.7      # GPT temperature
-max_tokens = 500       # Maximum response length
-model = "gpt-3.5-turbo"  # OpenAI model
-```
+************************************************************
+Q3: What are the main applications of NLP?
+************************************************************
 
-## 🎓 Learning Outcomes
+Answer:
+The main applications of NLP include aspect-based sentiment analysis, data augmentation, recommendation systems, hallucination evaluation, hallucination detection, sentence embeddings, word representations in vector space, and interactive narrative understanding.
 
-This implementation demonstrates:
-- Document processing and text extraction from PDFs
-- Efficient text chunking strategies
-- Vector embedding generation and similarity search
-- Integration of retrieval with language generation
-- Building production-ready Q&A systems
-- Performance evaluation and optimization
+Retrieved Sources:
+  1. Cross-lingual Aspect-Based Sentiment Ana - Distance: 1.1903
+  2. Prompt-Response Semantic Divergence Metr - Distance: 1.2541
+  3. AI Blob LLM-Driven Recontextualization o - Distance: 1.2815
 
-## 🐛 Known Issues & Improvements
 
-1. **Low Chunk Count**: Current implementation generates only 19 chunks from 100 documents
-   - **Solution**: Adjust chunk_size and overlap parameters
-   - **Recommendation**: Use chunk_size=256, overlap=25
+************************************************************
+Q4: How do transformers handle long sequences and context?
+************************************************************
 
-2. **Limited Context**: Some queries return "answer not found in context"
-   - **Solution**: Increase top_k retrieval or improve chunking strategy
+Answer:
+The answer cannot be found in the provided context.
 
-3. **Large PDF Files**: Some papers might be truncated during processing
-   - **Solution**: Implement robust PDF parsing with error handling
+Retrieved Sources:
+  1. Searching for Privacy Risks in LLM Agent - Distance: 1.4938
+  2. AI Blob LLM-Driven Recontextualization o - Distance: 1.5701
+  3. When Explainability Meets Privacy An Inv - Distance: 1.5913
 
-## 📝 Future Enhancements
 
-- [ ] Implement hybrid search (keyword + semantic)
-- [ ] Add query expansion techniques
-- [ ] Integrate multiple embedding models
-- [ ] Implement caching for faster responses
-- [ ] Add user feedback loop for continuous improvement
-- [ ] Support for multiple languages
-- [ ] Real-time paper updates from arXiv
+************************************************************
+Q5: What are the evaluation metrics for machine translation?
+************************************************************
 
-## 🤝 Contributing
+Answer:
+The evaluation metrics for machine translation are not provided in the given context.
 
-Feel free to open issues or submit pull requests for improvements.
+Retrieved Sources:
+  1. Prompt-Response Semantic Divergence Metr - Distance: 1.1302
+  2. ReviewRL Towards Automated Scientific Re - Distance: 1.2479
+  3. Cross-lingual Aspect-Based Sentiment Ana - Distance: 1.3241
 
-## 📄 License
 
-This project is for educational purposes as part of the MLE course.
 
-## 🙏 Acknowledgments
 
-- arXiv for providing open access to research papers
-- OpenAI for GPT-3.5 API
-- Sentence Transformers for embedding models
-- FAISS for efficient similarity search
+
 
 ---
 
