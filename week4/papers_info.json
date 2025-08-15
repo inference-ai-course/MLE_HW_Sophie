@@ -1,0 +1,551 @@
+[
+  {
+    "title": "Searching for Privacy Risks in LLM Agents via Simulation",
+    "authors": [
+      "Yanzhe Zhang",
+      "Diyi Yang"
+    ],
+    "pdf_path": "papers/Searching for Privacy Risks in LLM Agents via Simu.pdf"
+  },
+  {
+    "title": "A Survey on Diffusion Language Models",
+    "authors": [
+      "Tianyi Li",
+      "Mingda Chen",
+      "Bowei Guo",
+      "Zhiqiang Shen"
+    ],
+    "pdf_path": "papers/A Survey on Diffusion Language Models.pdf"
+  },
+  {
+    "title": "SSRL: Self-Search Reinforcement Learning",
+    "authors": [
+      "Yuchen Fan",
+      "Kaiyan Zhang",
+      "Heng Zhou",
+      "Yuxin Zuo",
+      "Yanxu Chen",
+      "Yu Fu",
+      "Xinwei Long",
+      "Xuekai Zhu",
+      "Che Jiang",
+      "Yuchen Zhang",
+      "Li Kang",
+      "Gang Chen",
+      "Cheng Huang",
+      "Zhizhou He",
+      "Bingning Wang",
+      "Lei Bai",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "pdf_path": "papers/SSRL Self-Search Reinforcement Learning.pdf"
+  },
+  {
+    "title": "From Black Box to Transparency: Enhancing Automated Interpreting Assessment with Explainable AI in College Classrooms",
+    "authors": [
+      "Zhaokun Jiang",
+      "Ziyin Zhang"
+    ],
+    "pdf_path": "papers/From Black Box to Transparency Enhancing Automate.pdf"
+  },
+  {
+    "title": "Psyche-R1: Towards Reliable Psychological LLMs through Unified Empathy, Expertise, and Reasoning",
+    "authors": [
+      "Chongyuan Dai",
+      "Jinpeng Hu",
+      "Hongchang Shi",
+      "Zhuo Li",
+      "Xun Yang",
+      "Meng Wang"
+    ],
+    "pdf_path": "papers/Psyche-R1 Towards Reliable Psychological LLMs thr.pdf"
+  },
+  {
+    "title": "Reinforced Language Models for Sequential Decision Making",
+    "authors": [
+      "Jim Dilkes",
+      "Vahid Yazdanpanah",
+      "Sebastian Stein"
+    ],
+    "pdf_path": "papers/Reinforced Language Models for Sequential Decision.pdf"
+  },
+  {
+    "title": "Memory-Augmented Transformers: A Systematic Review from Neuroscience Principles to Technical Solutions",
+    "authors": [
+      "Parsa Omidi",
+      "Xingshuai Huang",
+      "Axel Laborieux",
+      "Bahareh Nikpour",
+      "Tianyu Shi",
+      "Armaghan Eshaghi"
+    ],
+    "pdf_path": "papers/Memory-Augmented Transformers A Systematic Review.pdf"
+  },
+  {
+    "title": "Beyond \"Not Novel Enough\": Enriching Scholarly Critique with LLM-Assisted Feedback",
+    "authors": [
+      "Osama Mohammed Afzal",
+      "Preslav Nakov",
+      "Tom Hope",
+      "Iryna Gurevych"
+    ],
+    "pdf_path": "papers/Beyond Not Novel Enough Enriching Scholarly Cri.pdf"
+  },
+  {
+    "title": "Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models",
+    "authors": [
+      "Zhipeng Chen",
+      "Xiaobo Qin",
+      "Youbin Wu",
+      "Yue Ling",
+      "Qinghao Ye",
+      "Wayne Xin Zhao",
+      "Guang Shi"
+    ],
+    "pdf_path": "papers/Passk Training for Adaptively Balancing Explorati.pdf"
+  },
+  {
+    "title": "Thinking Inside the Mask: In-Place Prompting in Diffusion LLMs",
+    "authors": [
+      "Xiangqi Jin",
+      "Yuxuan Wang",
+      "Yifeng Gao",
+      "Zichen Wen",
+      "Biqing Qi",
+      "Dongrui Liu",
+      "Linfeng Zhang"
+    ],
+    "pdf_path": "papers/Thinking Inside the Mask In-Place Prompting in Di.pdf"
+  },
+  {
+    "title": "Learning from Natural Language Feedback for Personalized Question Answering",
+    "authors": [
+      "Alireza Salemi",
+      "Hamed Zamani"
+    ],
+    "pdf_path": "papers/Learning from Natural Language Feedback for Person.pdf"
+  },
+  {
+    "title": "Continuous Bangla Sign Language Translation: Mitigating the Expense of Gloss Annotation with the Assistance of Graph",
+    "authors": [
+      "Safaeid Hossain Arib",
+      "Rabeya Akter",
+      "Sejuti Rahman"
+    ],
+    "pdf_path": "papers/Continuous Bangla Sign Language Translation Mitig.pdf"
+  },
+  {
+    "title": "Neural Machine Translation for Coptic-French: Strategies for Low-Resource Ancient Languages",
+    "authors": [
+      "Nasma Chaoui",
+      "Richard Khoury"
+    ],
+    "pdf_path": "papers/Neural Machine Translation for Coptic-French Stra.pdf"
+  },
+  {
+    "title": "eDIF: A European Deep Inference Fabric for Remote Interpretability of LLM",
+    "authors": [
+      "Irma Heithoff. Marc Guggenberger",
+      "Sandra Kalogiannis",
+      "Susanne Mayer",
+      "Fabian Maag",
+      "Sigurd Schacht",
+      "Carsten Lanquillon"
+    ],
+    "pdf_path": "papers/eDIF A European Deep Inference Fabric for Remote.pdf"
+  },
+  {
+    "title": "When Language Overrules: Revealing Text Dominance in Multimodal Large Language Models",
+    "authors": [
+      "Huyu Wu",
+      "Meng Tang",
+      "Xinhan Zheng",
+      "Haiyun Jiang"
+    ],
+    "pdf_path": "papers/When Language Overrules Revealing Text Dominance.pdf"
+  },
+  {
+    "title": "Stabilizing Long-term Multi-turn Reinforcement Learning with Gated Rewards",
+    "authors": [
+      "Zetian Sun",
+      "Dongfang Li",
+      "Zhuoen Chen",
+      "Yuhuai Qin",
+      "Baotian Hu"
+    ],
+    "pdf_path": "papers/Stabilizing Long-term Multi-turn Reinforcement Lea.pdf"
+  },
+  {
+    "title": "Improving Value-based Process Verifier via Low-Cost Variance Reduction",
+    "authors": [
+      "Zetian Sun",
+      "Dongfang Li",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "pdf_path": "papers/Improving Value-based Process Verifier via Low-Cos.pdf"
+  },
+  {
+    "title": "Diversity First, Quality Later: A Two-Stage Assumption for Language Model Alignment",
+    "authors": [
+      "Zetian Sun",
+      "Dongfang Li",
+      "Baotian Hu"
+    ],
+    "pdf_path": "papers/Diversity First Quality Later A Two-Stage Assump.pdf"
+  },
+  {
+    "title": "Reverse Physician-AI Relationship: Full-process Clinical Diagnosis Driven by a Large Language Model",
+    "authors": [
+      "Shicheng Xu",
+      "Xin Huang",
+      "Zihao Wei",
+      "Liang Pang",
+      "Huawei Shen",
+      "Xueqi Cheng"
+    ],
+    "pdf_path": "papers/Reverse Physician-AI Relationship Full-process Cl.pdf"
+  },
+  {
+    "title": "When Explainability Meets Privacy: An Investigation at the Intersection of Post-hoc Explainability and Differential Privacy in the Context of Natural Language Processing",
+    "authors": [
+      "Mahdi Dhaini",
+      "Stephen Meisenbacher",
+      "Ege Erdogan",
+      "Florian Matthes",
+      "Gjergji Kasneci"
+    ],
+    "pdf_path": "papers/When Explainability Meets Privacy An Investigatio.pdf"
+  },
+  {
+    "title": "DiFaR: Enhancing Multimodal Misinformation Detection with Diverse, Factual, and Relevant Rationales",
+    "authors": [
+      "Herun Wan",
+      "Jiaying Wu",
+      "Minnan Luo",
+      "Xiangzheng Kong",
+      "Zihan Ma",
+      "Zhi Zeng"
+    ],
+    "pdf_path": "papers/DiFaR Enhancing Multimodal Misinformation Detecti.pdf"
+  },
+  {
+    "title": "Computational Economics in Large Language Models: Exploring Model Behavior and Incentive Design under Resource Constraints",
+    "authors": [
+      "Sandeep Reddy",
+      "Kabir Khan",
+      "Rohit Patil",
+      "Ananya Chakraborty",
+      "Faizan A. Khan",
+      "Swati Kulkarni",
+      "Arjun Verma",
+      "Neha Singh"
+    ],
+    "pdf_path": "papers/Computational Economics in Large Language Models.pdf"
+  },
+  {
+    "title": "Evaluating LLMs on Chinese Idiom Translation",
+    "authors": [
+      "Cai Yang",
+      "Yao Dou",
+      "David Heineman",
+      "Xiaofeng Wu",
+      "Wei Xu"
+    ],
+    "pdf_path": "papers/Evaluating LLMs on Chinese Idiom Translation.pdf"
+  },
+  {
+    "title": "ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long Narrative Reasoning",
+    "authors": [
+      "Juyuan Wang",
+      "Rongchen Zhao",
+      "Wei Wei",
+      "Yufeng Wang",
+      "Mo Yu",
+      "Jie Zhou",
+      "Jin Xu",
+      "Liyan Xu"
+    ],
+    "pdf_path": "papers/ComoRAG A Cognitive-Inspired Memory-Organized RAG.pdf"
+  },
+  {
+    "title": "CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model",
+    "authors": [
+      "Zhuoyuan Yu",
+      "Yuxing Long",
+      "Zihan Yang",
+      "Chengyan Zeng",
+      "Hongwei Fan",
+      "Jiyao Zhang",
+      "Hao Dong"
+    ],
+    "pdf_path": "papers/CorrectNav Self-Correction Flywheel Empowers Visi.pdf"
+  },
+  {
+    "title": "Layer-Wise Perturbations via Sparse Autoencoders for Adversarial Text Generation",
+    "authors": [
+      "Huizhen Shu",
+      "Xuying Li",
+      "Qirui Wang",
+      "Yuji Kosuga",
+      "Mengqiu Tian",
+      "Zhuo Li"
+    ],
+    "pdf_path": "papers/Layer-Wise Perturbations via Sparse Autoencoders f.pdf"
+  },
+  {
+    "title": "Jailbreaking Commercial Black-Box LLMs with Explicitly Harmful Prompts",
+    "authors": [
+      "Chiyu Zhang",
+      "Lu Zhou",
+      "Xiaogang Xu",
+      "Jiafei Wu",
+      "Liming Fang",
+      "Zhe Liu"
+    ],
+    "pdf_path": "papers/Jailbreaking Commercial Black-Box LLMs with Explic.pdf"
+  },
+  {
+    "title": "Improving Generative Cross-lingual Aspect-Based Sentiment Analysis with Constrained Decoding",
+    "authors": [
+      "Jakub Šmíd",
+      "Pavel Přibáň",
+      "Pavel Král"
+    ],
+    "pdf_path": "papers/Improving Generative Cross-lingual Aspect-Based Se.pdf"
+  },
+  {
+    "title": "Large Language Models for Summarizing Czech Historical Documents and Beyond",
+    "authors": [
+      "Václav Tran",
+      "Jakub Šmíd",
+      "Jiří Martínek",
+      "Ladislav Lenc",
+      "Pavel Král"
+    ],
+    "pdf_path": "papers/Large Language Models for Summarizing Czech Histor.pdf"
+  },
+  {
+    "title": "Advancing Cross-lingual Aspect-Based Sentiment Analysis with LLMs and Constrained Decoding for Sequence-to-Sequence Models",
+    "authors": [
+      "Jakub Šmíd",
+      "Pavel Přibáň",
+      "Pavel Král"
+    ],
+    "pdf_path": "papers/Advancing Cross-lingual Aspect-Based Sentiment Ana.pdf"
+  },
+  {
+    "title": "Improving OCR for Historical Texts of Multiple Languages",
+    "authors": [
+      "Hylke Westerdijk",
+      "Ben Blankenborg",
+      "Khondoker Ittehadul Islam"
+    ],
+    "pdf_path": "papers/Improving OCR for Historical Texts of Multiple Lan.pdf"
+  },
+  {
+    "title": "Making Qwen3 Think in Korean with Reinforcement Learning",
+    "authors": [
+      "Jungyup Lee",
+      "Jemin Kim",
+      "Sang Park",
+      "SeungJae Lee"
+    ],
+    "pdf_path": "papers/Making Qwen3 Think in Korean with Reinforcement Le.pdf"
+  },
+  {
+    "title": "Cross-Prompt Encoder for Low-Performing Languages",
+    "authors": [
+      "Beso Mikaberidze",
+      "Teimuraz Saghinadze",
+      "Simon Ostermann",
+      "Philipp Muller"
+    ],
+    "pdf_path": "papers/Cross-Prompt Encoder for Low-Performing Languages.pdf"
+  },
+  {
+    "title": "Beyond Semantic Understanding: Preserving Collaborative Frequency Components in LLM-based Recommendation",
+    "authors": [
+      "Minhao Wang",
+      "Yunhang He",
+      "Cong Xu",
+      "Zhangchi Zhu",
+      "Wei Zhang"
+    ],
+    "pdf_path": "papers/Beyond Semantic Understanding Preserving Collabor.pdf"
+  },
+  {
+    "title": "From Surface to Semantics: Semantic Structure Parsing for Table-Centric Document Analysis",
+    "authors": [
+      "Xuan Li",
+      "Jialiang Dong",
+      "Raymond Wong"
+    ],
+    "pdf_path": "papers/From Surface to Semantics Semantic Structure Pars.pdf"
+  },
+  {
+    "title": "ReviewRL: Towards Automated Scientific Review with RL",
+    "authors": [
+      "Sihang Zeng",
+      "Kai Tian",
+      "Kaiyan Zhang",
+      "Yuru wang",
+      "Junqi Gao",
+      "Runze Liu",
+      "Sa Yang",
+      "Jingxuan Li",
+      "Xinwei Long",
+      "Jiaheng Ma",
+      "Biqing Qi",
+      "Bowen Zhou"
+    ],
+    "pdf_path": "papers/ReviewRL Towards Automated Scientific Review with.pdf"
+  },
+  {
+    "title": "Yet another algorithmic bias: A Discursive Analysis of Large Language Models Reinforcing Dominant Discourses on Gender and Race",
+    "authors": [
+      "Gustavo Bonil",
+      "Simone Hashiguti",
+      "Jhessica Silva",
+      "João Gondim",
+      "Helena Maia",
+      "Nádia Silva",
+      "Helio Pedrini",
+      "Sandra Avila"
+    ],
+    "pdf_path": "papers/Yet another algorithmic bias A Discursive Analysi.pdf"
+  },
+  {
+    "title": "Inductive Bias Extraction and Matching for LLM Prompts",
+    "authors": [
+      "Christian M. Angel",
+      "Francis Ferraro"
+    ],
+    "pdf_path": "papers/Inductive Bias Extraction and Matching for LLM Pro.pdf"
+  },
+  {
+    "title": "A Computational Approach to Analyzing Language Change and Variation in the Constructed Language Toki Pona",
+    "authors": [
+      "Daniel Huang",
+      "Hyoun-A Joo"
+    ],
+    "pdf_path": "papers/A Computational Approach to Analyzing Language Cha.pdf"
+  },
+  {
+    "title": "Personalized Real-time Jargon Support for Online Meetings",
+    "authors": [
+      "Yifan Song",
+      "Wing Yee Au",
+      "Hon Yung Wong",
+      "Brian P. Bailey",
+      "Tal August"
+    ],
+    "pdf_path": "papers/Personalized Real-time Jargon Support for Online M.pdf"
+  },
+  {
+    "title": "Using Large Language Models to Measure Symptom Severity in Patients At Risk for Schizophrenia",
+    "authors": [
+      "Andrew X. Chen",
+      "Guillermo Horga",
+      "Sean Escola"
+    ],
+    "pdf_path": "papers/Using Large Language Models to Measure Symptom Sev.pdf"
+  },
+  {
+    "title": "Understanding Textual Emotion Through Emoji Prediction",
+    "authors": [
+      "Ethan Gordon",
+      "Nishank Kuppa",
+      "Rigved Tummala",
+      "Sriram Anasuri"
+    ],
+    "pdf_path": "papers/Understanding Textual Emotion Through Emoji Predic.pdf"
+  },
+  {
+    "title": "Prompt-Response Semantic Divergence Metrics for Faithfulness Hallucination and Misalignment Detection in Large Language Models",
+    "authors": [
+      "Igor Halperin"
+    ],
+    "pdf_path": "papers/Prompt-Response Semantic Divergence Metrics for Fa.pdf"
+  },
+  {
+    "title": "PakBBQ: A Culturally Adapted Bias Benchmark for QA",
+    "authors": [
+      "Abdullah Hashmat",
+      "Muhammad Arham Mirza",
+      "Agha Ali Raza"
+    ],
+    "pdf_path": "papers/PakBBQ A Culturally Adapted Bias Benchmark for QA.pdf"
+  },
+  {
+    "title": "Efficient Forward-Only Data Valuation for Pretrained LLMs and VLMs",
+    "authors": [
+      "Wenlong Deng",
+      "Jiaming Zhang",
+      "Qi Zeng",
+      "Christos Thrampoulidis",
+      "Boying Gong",
+      "Xiaoxiao Li"
+    ],
+    "pdf_path": "papers/Efficient Forward-Only Data Valuation for Pretrain.pdf"
+  },
+  {
+    "title": "Estimating Machine Translation Difficulty",
+    "authors": [
+      "Lorenzo Proietti",
+      "Stefano Perrella",
+      "Vilém Zouhar",
+      "Roberto Navigli",
+      "Tom Kocmi"
+    ],
+    "pdf_path": "papers/Estimating Machine Translation Difficulty.pdf"
+  },
+  {
+    "title": "LaajMeter: A Framework for LaaJ Evaluation",
+    "authors": [
+      "Gal Amram",
+      "Eitan Farchi",
+      "Shmulik Froimovich",
+      "Raviv Gal",
+      "Avi Ziv"
+    ],
+    "pdf_path": "papers/LaajMeter A Framework for LaaJ Evaluation.pdf"
+  },
+  {
+    "title": "Multi-Turn Puzzles: Evaluating Interactive Reasoning and Strategic Dialogue in LLMs",
+    "authors": [
+      "Kartikeya Badola",
+      "Jonathan Simon",
+      "Arian Hosseini",
+      "Sara Marie Mc Carthy",
+      "Tsendsuren Munkhdalai",
+      "Abhimanyu Goyal",
+      "Tomáš Kočiský",
+      "Shyam Upadhyay",
+      "Bahare Fatemi",
+      "Mehran Kazemi"
+    ],
+    "pdf_path": "papers/Multi-Turn Puzzles Evaluating Interactive Reasoni.pdf"
+  },
+  {
+    "title": "mSCoRe: a $M$ultilingual and Scalable Benchmark for $S$kill-based $Co$mmonsense $Re$asoning",
+    "authors": [
+      "Nghia Trung Ngo",
+      "Franck Dernoncourt",
+      "Thien Huu Nguyen"
+    ],
+    "pdf_path": "papers/mSCoRe a Multilingual and Scalable Benchmark fo.pdf"
+  },
+  {
+    "title": "Nested-ReFT: Efficient Reinforcement Learning for Large Language Model Fine-Tuning via Off-Policy Rollouts",
+    "authors": [
+      "Maxime Heuillet",
+      "Yufei Cui",
+      "Boxing Chen",
+      "Audrey Durand",
+      "Prasanna Parthasarathi"
+    ],
+    "pdf_path": "papers/Nested-ReFT Efficient Reinforcement Learning for.pdf"
+  }
+]

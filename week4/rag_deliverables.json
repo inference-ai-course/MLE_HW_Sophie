@@ -1,0 +1,41 @@
+{
+  "1. Data Collection": {
+    "Papers Downloaded": 100,
+    "Category": "cs.CL (Computational Linguistics)",
+    "Storage Location": "./papers/"
+  },
+  "2. Text Processing": {
+    "Documents Processed": 100,
+    "Average Document Length": "68579 chars",
+    "Metadata Included": "title, authors, abstract, arxiv_id"
+  },
+  "3. Chunking": {
+    "Total Chunks": 19,
+    "Chunk Size": "≤512 tokens",
+    "Chunk Overlap": "50 tokens",
+    "Avg Chunks per Document": "0.2"
+  },
+  "4. Embeddings": {
+    "Model": "all-MiniLM-L6-v2",
+    "Embedding Dimension": 384,
+    "Total Embeddings": 19,
+    "Storage Size": "0.03 MB"
+  },
+  "5. Vector Index": {
+    "Index Type": "FAISS (IndexFlatL2)",
+    "Vectors Indexed": 19,
+    "Index File": "rag_index.pkl",
+    "Search Method": "L2 distance"
+  },
+  "6. Retrieval": {
+    "Top-K": 3,
+    "Average Distance": "1.3334",
+    "Retrieval Speed": "<100ms per query"
+  },
+  "7. Generation": {
+    "LLM Model": "gpt-3.5-turbo",
+    "Temperature": 0.7,
+    "Max Tokens": 500,
+    "Queries Tested": 10
+  }
+}

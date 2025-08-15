@@ -1,0 +1,142 @@
+[
+  {
+    "question": "What are the latest advances in language models?",
+    "answer": "The latest advances in language models include the development of frameworks for faithfulness evaluation, zero-resource black-box hallucination detection, and data augmentation using large language models.",
+    "sources": [
+      "Prompt-Response Semantic Divergence Metrics for Fa.pdf",
+      "When Explainability Meets Privacy An Investigatio.pdf",
+      "Cross-lingual Aspect-Based Sentiment Analysis A S.pdf"
+    ],
+    "distances": [
+      1.0902290344238281,
+      1.1180232763290405,
+      1.1435203552246094
+    ]
+  },
+  {
+    "question": "How does attention mechanism work in transformers?",
+    "answer": "The answer cannot be found in the provided context.",
+    "sources": [
+      "AI Blob LLM-Driven Recontextualization of Italian.pdf",
+      "Searching for Privacy Risks in LLM Agents via Simu.pdf",
+      "Using Large Language Models to Measure Symptom Sev.pdf"
+    ],
+    "distances": [
+      1.5015782117843628,
+      1.5066516399383545,
+      1.5578283071517944
+    ]
+  },
+  {
+    "question": "What are the main applications of NLP?",
+    "answer": "The main applications of NLP include aspect-based sentiment analysis, data augmentation, recommendation systems, hallucination evaluation, hallucination detection, sentence embeddings, word representations in vector space, and interactive narrative understanding.",
+    "sources": [
+      "Cross-lingual Aspect-Based Sentiment Analysis A S.pdf",
+      "Prompt-Response Semantic Divergence Metrics for Fa.pdf",
+      "AI Blob LLM-Driven Recontextualization of Italian.pdf"
+    ],
+    "distances": [
+      1.1903464794158936,
+      1.2540785074234009,
+      1.2815055847167969
+    ]
+  },
+  {
+    "question": "How do transformers handle long sequences and context?",
+    "answer": "The answer cannot be found in the provided context.",
+    "sources": [
+      "Searching for Privacy Risks in LLM Agents via Simu.pdf",
+      "AI Blob LLM-Driven Recontextualization of Italian.pdf",
+      "When Explainability Meets Privacy An Investigatio.pdf"
+    ],
+    "distances": [
+      1.4937608242034912,
+      1.570068597793579,
+      1.5913481712341309
+    ]
+  },
+  {
+    "question": "What are the evaluation metrics for machine translation?",
+    "answer": "The evaluation metrics for machine translation are not provided in the given context.",
+    "sources": [
+      "Prompt-Response Semantic Divergence Metrics for Fa.pdf",
+      "ReviewRL Towards Automated Scientific Review with.pdf",
+      "Cross-lingual Aspect-Based Sentiment Analysis A S.pdf"
+    ],
+    "distances": [
+      1.130187749862671,
+      1.247877597808838,
+      1.3240509033203125
+    ]
+  },
+  {
+    "question": "What is the role of fine-tuning in language models?",
+    "answer": "The role of fine-tuning in language models is not explicitly mentioned in the provided context.",
+    "sources": [
+      "When Explainability Meets Privacy An Investigatio.pdf",
+      "Cross-lingual Aspect-Based Sentiment Analysis A S.pdf",
+      "Prompt-Response Semantic Divergence Metrics for Fa.pdf"
+    ],
+    "distances": [
+      1.1177817583084106,
+      1.1886731386184692,
+      1.2602192163467407
+    ]
+  },
+  {
+    "question": "How does RAG (Retrieval-Augmented Generation) work?",
+    "answer": "The answer to this question cannot be found in the provided context.",
+    "sources": [
+      "AI Blob LLM-Driven Recontextualization of Italian.pdf",
+      "Sample More to Think Less Group Filtered Policy O.pdf",
+      "Searching for Privacy Risks in LLM Agents via Simu.pdf"
+    ],
+    "distances": [
+      1.5979626178741455,
+      1.6182105541229248,
+      1.6559412479400635
+    ]
+  },
+  {
+    "question": "What are the challenges in multilingual NLP?",
+    "answer": "The context provided does not specifically mention the challenges in multilingual NLP.",
+    "sources": [
+      "Cross-lingual Aspect-Based Sentiment Analysis A S.pdf",
+      "Prompt-Response Semantic Divergence Metrics for Fa.pdf",
+      "AI Blob LLM-Driven Recontextualization of Italian.pdf"
+    ],
+    "distances": [
+      1.040663480758667,
+      1.1671066284179688,
+      1.2721834182739258
+    ]
+  },
+  {
+    "question": "How do language models handle bias and fairness?",
+    "answer": "The context provided does not specifically address how language models handle bias and fairness.",
+    "sources": [
+      "Prompt-Response Semantic Divergence Metrics for Fa.pdf",
+      "When Explainability Meets Privacy An Investigatio.pdf",
+      "A Comprehensive Survey of Datasets for Clinical Me.pdf"
+    ],
+    "distances": [
+      1.1195785999298096,
+      1.1860439777374268,
+      1.300628423690796
+    ]
+  },
+  {
+    "question": "What are the recent developments in prompt engineering?",
+    "answer": "Recent developments in prompt engineering include the use of strategic attack selection approaches to manage computational intensity and maximize the comprehensiveness of identified neurons in Language Models. This involves selecting representative data points from different attack categories for analysis.",
+    "sources": [
+      "Searching for Privacy Risks in LLM Agents via Simu.pdf",
+      "Using Large Language Models to Measure Symptom Sev.pdf",
+      "NeuronTune Fine-Grained Neuron Modulation for Bal.pdf"
+    ],
+    "distances": [
+      1.381150484085083,
+      1.550957202911377,
+      1.617568850517273
+    ]
+  }
+]
