@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 720px;
+            margin: 60px auto;
+            padding: 20px;
+            background: #FAFAFA;
+            color: #2C3E50;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            color: #1A1A1A;
+            text-align: center;
+            font-weight: 300;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+            margin-bottom: 40px;
+        }
+        
+        h3 {
+            color: #1A1A1A;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 24px 0 16px 0;
+            letter-spacing: -0.3px;
+        }
+        
+        .upload-area {
+            border: 1.5px dashed #D0D0D0;
+            border-radius: 8px;
+            padding: 48px 32px;
+            text-align: center;
+            margin: 32px 0;
+            background: #FAFAFA;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-area:hover {
+            border-color: #8B8B8B;
+            background: #F5F5F5;
+        }
+        
+        .upload-area p {
+            color: #6B7280;
+            font-size: 14px;
+            margin-bottom: 20px;
+            letter-spacing: 0.2px;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .upload-btn {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 8px;
+            transition: all 0.2s ease;
+            letter-spacing: 0.3px;
+        }
+        
+        .upload-btn:hover {
+            background: #2C2C2C;
+            transform: translateY(-1px);
+        }
+        
+        .upload-btn:active {
+            transform: translateY(0);
+        }
+        
+        .upload-btn:disabled {
+            background: #E0E0E0;
+            color: #9B9B9B;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        #status {
+            margin: 24px 0;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+        }
+        
+        .success {
+            background: #F0F9FF;
+            color: #0369A1;
+            border: 1px solid #E0F2FE;
+        }
+        
+        .error {
+            background: #FEF2F2;
+            color: #991B1B;
+            border: 1px solid #FEE2E2;
+        }
+        
+        .processing {
+            background: #F9FAFB;
+            color: #4B5563;
+            border: 1px solid #E5E7EB;
+        }
+        
+        audio {
+            width: 100%;
+            margin: 16px 0;
+            border-radius: 6px;
+        }
+        
+        .history {
+            margin-top: 40px;
+            padding: 32px;
+            background: #FAFAFA;
+            border-radius: 8px;
+            border: 1px solid #F0F0F0;
+        }
+        
+        .history-item {
+            margin: 12px 0;
+            padding: 16px 20px;
+            background: #FFFFFF;
+            border-radius: 6px;
+            font-size: 14px;
+            border: 1px solid #F0F0F0;
+        }
+        
+        .user-msg {
+            background: #F9FAFB;
+            text-align: right;
+            border-left: 3px solid #1A1A1A;
+        }
+        
+        .bot-msg {
+            background: #FFFFFF;
+            border-left: 3px solid #6B7280;
+        }
+        
+        .record-btn {
+            background: #374151;
+            color: #FFFFFF;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 8px;
+            transition: all 0.2s ease;
+            letter-spacing: 0.3px;
+        }
+        
+        .record-btn:hover {
+            background: #4B5563;
+            transform: translateY(-1px);
+        }
+        
+        .recording {
+            background: #DC2626;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.85; }
+            100% { opacity: 1; }
+        }
+        
+        /* 简化滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #F5F5F5;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #D0D0D0;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B0B0B0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ Voice Assistant</h1>
+        
+        <div class="upload-area" id="dropZone">
+            <p>Select audio file or drag and drop here</p>
+            <input type="file" id="fileInput" accept="audio/*">
+            <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                📁 Select Audio File
+            </button>
+            <button class="record-btn" id="recordBtn" onclick="toggleRecording()">
+                🎤 Record Audio
+            </button>
+        </div>
+
+        <div id="status"></div>
+        
+        <div id="audioResponse"></div>
+
+        <button class="upload-btn" onclick="getHistory()">📜 View History</button>
+        <button class="upload-btn" onclick="clearHistory()">🗑️ Clear History</button>
+
+        <div id="history" class="history" style="display:none;">
+            <h3>Conversation History</h3>
+            <div id="historyContent"></div>
+        </div>
+    </div>
+
+    <script>
+        let mediaRecorder;
+        let audioChunks = [];
+        let isRecording = false;
+
+        // 文件拖拽功能
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#666';
+        });
+
+        dropZone.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#ccc';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#ccc';
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            if (!file.type.startsWith('audio/')) {
+                showStatus('Please select an audio file!', 'error');
+                return;
+            }
+
+            uploadAudio(file);
+        }
+
+        async function uploadAudio(file) {
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('speed', '1.25');
+
+            showStatus('Processing, please wait...', 'processing');
+            
+            try {
+                const response = await fetch('http://localhost:8000/chat/', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const blob = await response.blob();
+                const audioUrl = URL.createObjectURL(blob);
+                
+                showStatus('Processing complete!', 'success');
+                
+                // 显示音频播放器
+                document.getElementById('audioResponse').innerHTML = `
+                    <h3>Assistant Response:</h3>
+                    <audio controls autoplay>
+                        <source src="${audioUrl}" type="audio/wav">
+                        Your browser does not support audio playback.
+                    </audio>
+                `;
+                
+            } catch (error) {
+                showStatus(`Error: ${error.message}`, 'error');
+                console.error('Error:', error);
+            }
+        }
+
+        async function toggleRecording() {
+            const recordBtn = document.getElementById('recordBtn');
+            
+            if (!isRecording) {
+                // 开始录音
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                    mediaRecorder = new MediaRecorder(stream);
+                    audioChunks = [];
+
+                    mediaRecorder.ondataavailable = (event) => {
+                        audioChunks.push(event.data);
+                    };
+
+                    mediaRecorder.onstop = async () => {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        const audioFile = new File([audioBlob], 'recording.wav', { type: 'audio/wav' });
+                        uploadAudio(audioFile);
+                        
+                        // 停止所有音轨
+                        stream.getTracks().forEach(track => track.stop());
+                    };
+
+                    mediaRecorder.start();
+                    isRecording = true;
+                    recordBtn.textContent = '⏹️ Stop Recording';
+                    recordBtn.classList.add('recording');
+                    showStatus('Recording...', 'processing');
+                    
+                } catch (error) {
+                    showStatus(`Cannot access microphone: ${error.message}`, 'error');
+                    console.error('Error accessing microphone:', error);
+                }
+            } else {
+                // 停止录音
+                mediaRecorder.stop();
+                isRecording = false;
+                recordBtn.textContent = '🎤 Record Audio';
+                recordBtn.classList.remove('recording');
+                showStatus('Recording ended, processing...', 'processing');
+            }
+        }
+
+        async function getHistory() {
+            try {
+                const response = await fetch('http://localhost:8000/history');
+                const data = await response.json();
+                
+                const historyDiv = document.getElementById('history');
+                const historyContent = document.getElementById('historyContent');
+                
+                if (data.conversation_history.length === 0) {
+                    historyContent.innerHTML = '<p>No conversation history</p>';
+                } else {
+                    historyContent.innerHTML = data.conversation_history.map(item => `
+                        <div class="history-item ${item.role === 'user' ? 'user-msg' : 'bot-msg'}">
+                            <strong>${item.role === 'user' ? 'User' : 'Assistant'}:</strong>
+                            ${item.content}
+                        </div>
+                    `).join('');
+                }
+                
+                historyDiv.style.display = 'block';
+                
+            } catch (error) {
+                showStatus(`Failed to get history: ${error.message}`, 'error');
+            }
+        }
+
+        async function clearHistory() {
+            try {
+                const response = await fetch('http://localhost:8000/clear_history', {
+                    method: 'POST'
+                });
+                
+                if (response.ok) {
+                    showStatus('History cleared', 'success');
+                    document.getElementById('history').style.display = 'none';
+                }
+                
+            } catch (error) {
+                showStatus(`Failed to clear: ${error.message}`, 'error');
+            }
+        }
+
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = type;
+            
+            if (type === 'success' || type === 'error') {
+                setTimeout(() => {
+                    status.textContent = '';
+                    status.className = '';
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>
